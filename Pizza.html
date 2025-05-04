@@ -1,0 +1,2370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>披萨概念生成列表</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --text-color: #333;
+            --border-color: #ddd;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .filter-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+
+        select, input {
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .reset-btn {
+            background-color: var(--light-color);
+            color: var(--text-color);
+        }
+
+        .reset-btn:hover {
+            background-color: #d5dbdb;
+        }
+
+        .pizza-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .pizza-card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .pizza-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .pizza-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+            position: relative;
+        }
+
+        .pizza-id {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--secondary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .pizza-title {
+            margin: 0;
+            font-size: 1.3rem;
+            max-width: 80%;
+        }
+
+        .pizza-body {
+            padding: 20px;
+        }
+
+        .pizza-section {
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title:before {
+            content: "";
+            display: inline-block;
+            width: 5px;
+            height: 16px;
+            background-color: var(--accent-color);
+            margin-right: 8px;
+        }
+
+        .pizza-content {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+
+        .page-btn {
+            padding: 8px 15px;
+            background-color: white;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .page-btn:hover {
+            background-color: var(--light-color);
+        }
+
+        .page-btn.active {
+            background-color: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        .page-btn.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 50px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            grid-column: 1 / -1;
+        }
+
+        @media (max-width: 768px) {
+            .pizza-container {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>披萨概念生成列表</h1>
+        <div class="subtitle">创新披萨概念与推荐理由</div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="filter-section">
+        <div class="filter-group">
+            <label for="category-filter">分类:</label>
+            <select id="category-filter">
+                <option value="all">所有分类</option>
+                <option value="v1">0320版本</option>
+                <option value="v2">0505版本</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="search">搜索:</label>
+            <input type="text" id="search" placeholder="输入关键词...">
+        </div>
+
+        <button id="apply-filter">应用筛选</button>
+        <button id="reset-filter" class="reset-btn">重置</button>
+    </div>
+
+    <div class="pizza-container" id="pizza-container">
+        <!-- 披萨卡片将通过JavaScript动态生成 -->
+    </div>
+
+    <div class="pagination" id="pagination">
+        <!-- 分页按钮将通过JavaScript动态生成 -->
+    </div>
+</div>
+
+<script>
+    // 披萨数据
+    const pizzaData = [
+  {
+    "id": 0,
+    "name": "泰式金枕榴莲椰香双拼披萨",
+    "category": "v1",
+    "reason": "泰国榴莲与海南椰子双热带元素叠加，规避中餐标签",
+    "elements": "金枕榴莲果肉 + 糖水椰肉条 + 奶香酱",
+    "innovation": "口感绵密与脆爽互补"
+  },
+  {
+    "id": 1,
+    "name": "托斯卡纳羽衣甘蓝布拉塔披萨",
+    "category": "v1",
+    "reason": "超级食材保留营养",
+    "elements": "羽衣甘蓝（低温烘烤脱水） + 布拉塔芝士 + 樱桃番茄",
+    "innovation": "布拉塔芝士切开流心效果提升视觉吸引力"
+  },
+  {
+    "id": 2,
+    "name": "孟菲斯烟熏双重肉狂欢披萨",
+    "category": "v1",
+    "reason": "美式烟熏叠加德克萨斯风味",
+    "elements": "烟熏鸡腿肉片 + 安格斯牛肉粒 + 焦糖洋葱（12小时慢煮预处理）",
+    "innovation": "焦糖洋葱规避链式烤炉焦苦问题"
+  },
+  {
+    "id": 3,
+    "name": "西西里开心果流心披萨饺",
+    "category": "v1",
+    "reason": "折叠形态规避流心溢出",
+    "elements": "开心果酱 + 马达加斯加香草奶油 + Calzone折叠烤制",
+    "innovation": "坚果香与香草奶油复合甜味响应怀旧趋势"
+  },
+  {
+    "id": 4,
+    "name": "泰式椰香榴莲熔岩披萨",
+    "category": "v1",
+    "reason": "榴莲食材评分断层第一",
+    "elements": "泰国D159金枕榴莲肉 + 椰香黄咖喱酱 + 芒果粒（后置）",
+    "innovation": "芒果后置避免高温脱水"
+  },
+  {
+    "id": 5,
+    "name": "墨西哥烟熏牛肉黑豆披萨",
+    "category": "v1",
+    "reason": "牛肉适配链式烤炉",
+    "elements": "安格斯牛肉粒（预炒脱水） + 黑豆泥 + 牛油果酱（后淋）",
+    "innovation": "黑豆提供植物蛋白健康属性"
+  },
+  {
+    "id": 6,
+    "name": "地中海炙烤海鲜拼盘披萨",
+    "category": "v1",
+    "reason": "填补海鲜品类空白",
+    "elements": "南美白虾 + 鱿鱼圈（预烤） + 菲达奶酪碎",
+    "innovation": "菲达奶酪适配短时高温烘烤"
+  },
+  {
+    "id": 7,
+    "name": "意式双重发酵芝士披萨",
+    "category": "v1",
+    "reason": "布拉塔奶酪后置规避融化问题",
+    "elements": "帕玛森干酪 + 布拉塔奶酪球（后置）",
+    "innovation": "低温发酵面团提升风味"
+  },
+  {
+    "id": 8,
+    "name": "美式烟熏培根薯角披萨",
+    "category": "v1",
+    "reason": "培根/薯角评分高",
+    "elements": "厚切培根（压平固定） + 预烤薯角 + 车打芝士",
+    "innovation": "薯角预烤保持形态，适配快餐场景"
+  },
+  {
+    "id": 9,
+    "name": "热带水果盛宴披萨",
+    "category": "v1",
+    "reason": "菠萝评分居前五",
+    "elements": "糖渍菠萝（含水量32%） + 芒果粒 + 百香果酱（独立包装）",
+    "innovation": "糖渍水果减少出水，契合下午茶场景"
+  },
+  {
+    "id": 10,
+    "name": "希腊风味素食披萨",
+    "category": "v1",
+    "reason": "植物基趋势",
+    "elements": "烤茄子片（预烤脱水） + 卡拉玛塔橄榄 + 希腊酸奶酱（冷冻固态入炉）",
+    "innovation": "酸奶酱替代高热酱料"
+  },
+  {
+    "id": 11,
+    "name": "德克萨斯烟熏牛胸肉披萨",
+    "category": "v1",
+    "reason": "牛肉适配性高",
+    "elements": "慢炖牛胸肉丝（完全脱水） + 焦糖洋葱 + 烟熏辣椒粉",
+    "innovation": "焦糖洋葱可提升评分"
+  },
+  {
+    "id": 12,
+    "name": "法式香草奶油水果披萨",
+    "category": "v1",
+    "reason": "甜香风味评分0.110居次席",
+    "elements": "马达加斯加香草酱（混入饼底） + 烤黄桃 + 杏仁片（后撒）",
+    "innovation": "杏仁片保持酥脆"
+  },
+  {
+    "id": 13,
+    "name": "西班牙火腿蜜瓜披萨",
+    "category": "v1",
+    "reason": "火腿评分0.100居第二",
+    "elements": "风干火腿薄片（透光薄切） + 蜜瓜球（后置分装） + 芝麻菜",
+    "innovation": "蜜瓜平衡咸香"
+  },
+  {
+    "id": 14,
+    "name": "加州牛油果鸡肉披萨",
+    "category": "v1",
+    "reason": "牛油果健康属性",
+    "elements": "烤鸡腿肉（预烤去水） + 牛油果泥（冷冻处理） + 玉米脆片（后撒）",
+    "innovation": "玉米脆片保持酥脆"
+  },
+  {
+    "id": 15,
+    "name": "韩式甜辣炸鸡披萨",
+    "category": "v1",
+    "reason": "填补韩式炸鸡市场空白",
+    "elements": "韩式炸鸡块（预裹粉加固） + 泡菜酱（混入芝士层） + 莫扎里拉",
+    "innovation": "禁用新鲜泡菜避出水"
+  },
+  {
+    "id": 16,
+    "name": "印度坦都里烤鸡披萨",
+    "category": "v1",
+    "reason": "地域特色融合趋势",
+    "elements": "酸奶腌制鸡胸肉 + 玛莎拉粉（混入饼底） + 烤彩椒（预烤软化）",
+    "innovation": "彩椒适配短时烘烤"
+  },
+  {
+    "id": 17,
+    "name": "摩洛哥羊肉披萨",
+    "category": "v1",
+    "reason": "填补羊肉品类空白",
+    "elements": "孜然羊肉片（预炒去油脂） + 烤南瓜（薄切） + 哈里萨辣酱",
+    "innovation": "哈里萨辣酱符合酸辣趋势"
+  },
+  {
+    "id": 18,
+    "name": "新加坡咖椰酱披萨",
+    "category": "v1",
+    "reason": "东南亚甜品化创新",
+    "elements": "咖椰酱（替代传统酱料） + 烤椰子片 + 香草冰淇淋（后置）",
+    "innovation": "冰淇淋独立包装避冷藏问题"
+  },
+  {
+    "id": 19,
+    "name": "金枕榴莲火山熔岩披萨",
+    "category": "v1",
+    "reason": "榴莲评分TOP1",
+    "elements": "泰国D159榴莲泥 + 咸蛋黄风味酱 + 焦糖巧克力碎",
+    "innovation": "甜咸苦三重层次适配烤炉焦糖化"
+  },
+  {
+    "id": 20,
+    "name": "热带风暴披萨",
+    "category": "v1",
+    "reason": "菠萝与火腿经典组合",
+    "elements": "菠萝片 + 烟熏火腿 + 芒果莎莎酱 + 墨西哥辣椒片",
+    "innovation": "芒果辣椒酱呼应酸辣趋势"
+  },
+  {
+    "id": 21,
+    "name": "椰香榴莲斑斓披萨",
+    "category": "v1",
+    "reason": "东南亚元素+植物基创新",
+    "elements": "D24苏丹王榴莲肉 + 糖水椰肉条（脱水处理） + 斑斓叶粉",
+    "innovation": "椰肉预处理减少出水风险"
+  },
+  {
+    "id": 22,
+    "name": "贵州酸汤肥牛披萨",
+    "category": "v1",
+    "reason": "酸味趋势TOP1",
+    "elements": "酸汤酱基底（PH3.2-3.5） + 嫩牛肉粒 + 木姜子油 + 烘干折耳根碎",
+    "innovation": "烘干折耳根避烤炉返潮"
+  },
+  {
+    "id": 23,
+    "name": "潮汕沙茶牛肉披萨",
+    "category": "v1",
+    "reason": "沙茶风味热度上升",
+    "elements": "沙茶酱 + 手撕卤牛肉 + 普宁豆酱 + 炸芋头丝",
+    "innovation": "炸芋丝平衡湿润酱料"
+  },
+  {
+    "id": 24,
+    "name": "泰式冬阴功海鲜披萨",
+    "category": "v1",
+    "reason": "东南亚风味搜索量年增67%",
+    "elements": "冬阴功酱 + 南美白虾 + 香茅粉 + 椰浆芝士层（替代传统芝士）",
+    "innovation": "椰浆降低熔点"
+  },
+  {
+    "id": 25,
+    "name": "羽衣甘蓝鹰嘴豆泥披萨",
+    "category": "v1",
+    "reason": "植物基酱料增速快（年+38%）",
+    "elements": "鹰嘴豆泥基底 + 低温烘烤羽衣甘蓝（脱水率65%） + 坚果碎",
+    "innovation": "预处理蔬菜降低含水量"
+  },
+  {
+    "id": 26,
+    "name": "姜黄咖喱豆腐披萨",
+    "category": "v1",
+    "reason": "功能性原料受关注",
+    "elements": "发酵豆腐（先煎后烤） + 姜黄咖喱酱 + 奇亚籽脆片",
+    "innovation": "豆腐形态稳定"
+  },
+  {
+    "id": 27,
+    "name": "双脆米通披萨",
+    "category": "v1",
+    "reason": "传统食材创新应用",
+    "elements": "糯米烤脆底 + 腊肉肠 + 酸菜（预处理去汁） + 花生碎",
+    "innovation": "脆米底适配高温烤炉"
+  },
+  {
+    "id": 28,
+    "name": "瀑布拉丝三明治披萨",
+    "category": "v1",
+    "reason": "手持食用场景化设计",
+    "elements": "双重马苏里拉层 + 慢炖牛肉 + 焦糖洋葱 + 酸黄瓜片（去汁）",
+    "innovation": "酸黄瓜预处理避出水"
+  },
+  {
+    "id": 29,
+    "name": "童年麦芽糖披萨",
+    "category": "v1",
+    "reason": "怀旧元素搜索量年增120%",
+    "elements": "麦芽糖拉丝层 + 烤红薯 + 海盐焦糖酱（快速焦糖化工艺）",
+    "innovation": "适配情绪价值需求"
+  },
+  {
+    "id": 30,
+    "name": "微醺红酒梨披萨",
+    "category": "v1",
+    "reason": "小酒馆场景适配",
+    "elements": "红酒渍梨片（预烘干） + 蓝纹奶酪 + 核桃 + 蜂蜜",
+    "innovation": "梨片烘干避出水"
+  },
+  {
+    "id": 31,
+    "name": "贵州毛辣果酸汤腊肠披萨",
+    "category": "v1",
+    "reason": "酸汤抑制蛋白质腥味",
+    "elements": "雷山鱼酱酸汤基底（非遗工艺） + 腊肉肠（薄切） + 预烤牛肝菌",
+    "innovation": "非遗鱼酱酸降低钠含量"
+  },
+  {
+    "id": 32,
+    "name": "泰式冬阴功椰香海鲜披萨",
+    "category": "v1",
+    "reason": "椰香元素评分占优",
+    "elements": "冬阴功酱 + 椰浆调和酱（黄原胶增稠） + 预烤虾仁（脱水30%）",
+    "innovation": "酱料高温稳定性强"
+  },
+  {
+    "id": 33,
+    "name": "云南酸菜牛肉粒披萨",
+    "category": "v1",
+    "reason": "牛肉适配短时高温烘烤",
+    "elements": "云南腌酸菜酱（预炒去汁） + 嫩牛肉粒（滚揉预调味）",
+    "innovation": "地域风味全球化案例"
+  },
+  {
+    "id": 34,
+    "name": "榴莲菠萝火山披萨",
+    "category": "v1",
+    "reason": "榴莲与菠萝经典组合",
+    "elements": "D24榴莲泥 + 糖渍菠萝丁 + 焦糖芝士层（包裹防滴落）",
+    "innovation": "芝士层防烤炉滴落"
+  },
+  {
+    "id": 35,
+    "name": "黑蒜蜂蜜火腿披萨",
+    "category": "v1",
+    "reason": "混搭趋势代表",
+    "elements": "黑蒜酱 + 意式风干火腿（透光薄片） + 蜂蜜（独立封装）",
+    "innovation": "蜂蜜后淋保风味"
+  },
+  {
+    "id": 36,
+    "name": "咸蛋黄流沙芋泥披萨",
+    "category": "v1",
+    "reason": "网红元素结合",
+    "elements": "咸蛋黄酱（混入芝士层） + 槟榔芋泥（预炒至固态）",
+    "innovation": "适配咸甜偏好"
+  },
+  {
+    "id": 37,
+    "name": "猴头菇素牛排披萨",
+    "category": "v1",
+    "reason": "植物基趋势落地",
+    "elements": "猴头菇素肉（预烤定型） + 黑胡椒酱 + 烤蔬菜丁（焯水处理）",
+    "innovation": "菌菇元素需突破"
+  },
+  {
+    "id": 38,
+    "name": "椰香咖喱鹰嘴豆披萨",
+    "category": "v1",
+    "reason": "东南亚元素+健康食材",
+    "elements": "椰浆咖喱酱（增稠处理） + 烤鹰嘴豆（脆化） + 彩椒圈",
+    "innovation": "咖喱酱适配烤炉稳定性"
+  },
+  {
+    "id": 39,
+    "name": "草木灰腌肉披萨",
+    "category": "v1",
+    "reason": "非遗工艺可视化卖点",
+    "elements": "草木灰腌肉（薄片速冻） + 酸浆豆腐（预煎去水） + 野葱碎",
+    "innovation": "腌肉速冻避高温硬化"
+  },
+  {
+    "id": 40,
+    "name": "古法酸汤菌菇披萨",
+    "category": "v1",
+    "reason": "传统工艺现代演绎",
+    "elements": "72小时发酵酸汤 + 四种非遗菌菇（预炒制） + 莜面饼底",
+    "innovation": "酸汤契合核心趋势"
+  },
+  {
+    "id": 41,
+    "name": "墨西哥辣椒芒果披萨",
+    "category": "v1",
+    "reason": "热带水果混搭升级版",
+    "elements": "哈瓦那辣椒酱 + 糖渍芒果丁 + 烟熏鸡肉（预烤锁水）",
+    "innovation": "芒果糖渍避出水"
+  },
+  {
+    "id": 42,
+    "name": "韩式泡菜烤肉披萨",
+    "category": "v1",
+    "reason": "韩流元素本土化改良",
+    "elements": "泡菜酱（挤汁压平） + 预烤猪颈肉（0.2cm薄切） + 海苔碎",
+    "innovation": "猪肉薄切适配烤炉"
+  },
+  {
+    "id": 43,
+    "name": "黑松露温泉蛋披萨",
+    "category": "v1",
+    "reason": "仪式感打造利器",
+    "elements": "黑松露酱 + 溏心蛋（62°C预煮速冻） + 帕玛森干酪",
+    "innovation": "溏心蛋速冻避烤制破裂"
+  },
+  {
+    "id": 44,
+    "name": "炙烧和牛寿司披萨",
+    "category": "v1",
+    "reason": "日式元素创新融合",
+    "elements": "和牛薄切 + 醋饭饼底（预压紧实） + 喷枪后炙",
+    "innovation": "独立炙烧工序保口感"
+  },
+  {
+    "id": 45,
+    "name": "云贵酸汤腊肉披萨",
+    "category": "v1",
+    "reason": "酸汤基底抑制蛋白质腥味",
+    "elements": "贵州毛辣果酸汤（基地直采降成本） + 云南腊肉 + 预烤牛肝菌",
+    "innovation": "适配家庭聚餐场景"
+  },
+  {
+    "id": 46,
+    "name": "泰式百香果海鲜披萨",
+    "category": "v1",
+    "reason": "百香果搜索量年增240%",
+    "elements": "百香果浓缩酱（1:3调兑蛋黄酱） + 预烤虾仁 + 炭烤鱿鱼圈",
+    "innovation": "酱料避高温碳化"
+  },
+  {
+    "id": 47,
+    "name": "川黔双椒牛肉披萨",
+    "category": "v1",
+    "reason": "牛油辣味评分0.1009",
+    "elements": "贵州皱椒（干椒碎） + 四川藤椒油 + 安格斯牛肉粒（150°C预烤）",
+    "innovation": "藤椒油替代鲜椒避烤焦"
+  },
+  {
+    "id": 48,
+    "name": "滇味菌香火腿披萨",
+    "category": "v1",
+    "reason": "云南食材搜索量月增18%",
+    "elements": "诺邓火腿片（5%蜂蜜水涂抹） + 冻干松茸（复水控水12%） + 乳饼芝士",
+    "innovation": "乳饼芝士熔点适配烤炉"
+  },
+  {
+    "id": 49,
+    "name": "海陆双拼披萨",
+    "category": "v1",
+    "reason": "覆盖聚会场景需求",
+    "elements": "A面：潮汕沙茶牛肉 + 预烤鱿鱼（普宁豆酱调味）",
+    "innovation": "双区控温防串味"
+  },
+  {
+    "id": 50,
+    "name": "地中海柠檬鳀鱼披萨",
+    "category": "v1",
+    "reason": "鳀鱼酸咸味与柠檬清爽感契合酸味趋势（评分 0.134）",
+    "elements": "油浸鳀鱼片（预脱水） + 柠檬皮碎（后撒） + 刺山柑",
+    "innovation": "鳀鱼用橄榄油预浸替代传统盐渍，降低钠含量"
+  },
+  {
+    "id": 51,
+    "name": "摩洛哥坚果鸡肉披萨",
+    "category": "v1",
+    "reason": "坚果碎提供植物蛋白",
+    "elements": "哈里萨辣烤鸡（预去汁） + 烤杏仁片（后撒） + 酸奶酱（混入芝士层）",
+    "innovation": "哈里萨辣酱混入芝士层避免高温碳化"
+  },
+  {
+    "id": 52,
+    "name": "西西里橙香金枪鱼披萨",
+    "category": "v1",
+    "reason": "柑橘类元素搜索量年增 52%",
+    "elements": "烟熏金枪鱼（预烤定型） + 血橙片（糖渍脱水） + 黑橄榄碎",
+    "innovation": "血橙片环形摆盘提升视觉吸引力"
+  },
+  {
+    "id": 53,
+    "name": "巴西莓果乳清披萨",
+    "category": "v1",
+    "reason": "超级食物概念受健康市场青睐",
+    "elements": "巴西莓粉（混入饼底） + 乳清奶酪球（后置） + 冻干蓝莓",
+    "innovation": "乳清奶酪后置保持形态完整"
+  },
+  {
+    "id": 54,
+    "name": "普罗旺斯香草羊奶酪披萨",
+    "category": "v1",
+    "reason": "香草风味评分 0.0839",
+    "elements": "混合香草（迷迭香/百里香） + 烤西葫芦片（预脱水） + 羊奶酪碎",
+    "innovation": "羊奶酪碎粒径控制在 2mm 防融化过度"
+  },
+  {
+    "id": 55,
+    "name": "加勒比椰子虾披萨",
+    "category": "v1",
+    "reason": "椰香元素评分 0.037",
+    "elements": "椰丝（混入饼底） + 预烤虾仁（脱水 30%） + 芒果辣酱（独立包装）",
+    "innovation": "椰丝增强饼底香气不增加湿度"
+  },
+  {
+    "id": 56,
+    "name": "冰岛莳萝三文鱼披萨",
+    "category": "v1",
+    "reason": "北欧风味填补空白",
+    "elements": "冷熏三文鱼（后置） + 莳萝酸奶酱（冷冻固态） + 酸黄瓜粒",
+    "innovation": "酸黄瓜粒用离心机去汁处理"
+  },
+  {
+    "id": 57,
+    "name": "土耳其皮塔香料披萨",
+    "category": "v1",
+    "reason": "中东元素热度上升",
+    "elements": "皮塔香料（混入饼底） + 烤牛肉粒（预去脂） + 石榴糖蜜（后淋）",
+    "innovation": "香料混入饼底避免高温焦化"
+  },
+  {
+    "id": 58,
+    "name": "秘鲁紫玉米鸡肉披萨",
+    "category": "v1",
+    "reason": "超级食物概念",
+    "elements": "紫玉米粉饼底 + 烤鸡胸肉丝 + 青柠蛋黄酱（后挤）",
+    "innovation": "青柠汁混入蛋黄酱增强酸度稳定性"
+  },
+  {
+    "id": 59,
+    "name": "夏威夷果脆片披萨",
+    "category": "v1",
+    "reason": "坚果 + 水果经典组合",
+    "elements": "夏威夷果碎（后撒） + 焦糖香蕉片（预脱水） + 椰子奶油层",
+    "innovation": "香蕉片糖渍处理含水量降至 25%"
+  },
+  {
+    "id": 60,
+    "name": "阿根廷青酱牛排披萨",
+    "category": "v1",
+    "reason": "南美风味空白市场",
+    "elements": "牛排粒（3mm³ 预烤） + 阿根廷青酱（混入芝士） + 烤彩椒圈",
+    "innovation": "牛排粒尺寸标准化保证熟度均匀"
+  },
+  {
+    "id": 61,
+    "name": "希腊酸奶黄瓜披萨",
+    "category": "v1",
+    "reason": "地中海健康饮食趋势",
+    "elements": "希腊酸奶层（冷冻固态） + 脱水黄瓜片 + 莳萝碎",
+    "innovation": "酸奶层添加黄原胶提升热稳定性"
+  },
+  {
+    "id": 62,
+    "name": "挪威鳕鱼籽披萨",
+    "category": "v1",
+    "reason": "北欧海鲜元素差异化",
+    "elements": "鳕鱼籽（后置） + 酸奶油酱（混入芝士层） + 柠檬皮屑",
+    "innovation": "酸奶油酱替代传统白酱降低热量"
+  },
+  {
+    "id": 63,
+    "name": "黎巴嫩芝麻酱羊肉披萨",
+    "category": "v1",
+    "reason": "芝麻酱评分 0.0138",
+    "elements": "芝麻酱饼底 + 烤羊肉薄片 + 石榴籽（后撒）",
+    "innovation": "芝麻酱替代番茄酱含水量降低 40%"
+  },
+  {
+    "id": 64,
+    "name": "菲律宾椰香芒果披萨",
+    "category": "v1",
+    "reason": "东南亚元素热度高",
+    "elements": "椰浆芝士层 + 糖渍芒果丁 + 烤椰子片",
+    "innovation": "椰浆添加木薯淀粉提升稠度"
+  },
+  {
+    "id": 65,
+    "name": "埃及杜卡香料鸡披萨",
+    "category": "v1",
+    "reason": "北非香料搜索量月增 22%",
+    "elements": "杜卡香料（芝麻/榛子/香菜） + 烤鸡腿肉 + 芝麻菜",
+    "innovation": "香料混入饼底避免高温焦化"
+  },
+  {
+    "id": 66,
+    "name": "葡萄牙鳕鱼土豆披萨",
+    "category": "v1",
+    "reason": "填补鳕鱼类空白",
+    "elements": "盐渍鳕鱼（预脱盐） + 烤土豆薄片 + 黑橄榄",
+    "innovation": "鳕鱼用牛奶浸泡脱盐降低腥味"
+  },
+  {
+    "id": 67,
+    "name": "奥地利苹果卷心披萨",
+    "category": "v1",
+    "reason": "德式烘焙元素迁移",
+    "elements": "焦糖苹果丝（预脱水） + 肉桂粉饼底 + 核桃碎",
+    "innovation": "肉桂粉混入饼底增强风味渗透"
+  },
+  {
+    "id": 68,
+    "name": "波斯石榴鸡披萨",
+    "category": "v1",
+    "reason": "中东元素完整性",
+    "elements": "石榴糖蜜酱 + 烤鸡胸肉 + 开心果碎",
+    "innovation": "糖蜜替代传统酱料含水量降低 35%"
+  },
+  {
+    "id": 69,
+    "name": "古巴莫吉托风味披萨",
+    "category": "v1",
+    "reason": "鸡尾酒元素跨界创新",
+    "elements": "青柠皮碎（后撒） + 烤猪肉片 + 薄荷糖粉",
+    "innovation": "猪肉用青柠汁预腌提升酸度"
+  },
+  {
+    "id": 70,
+    "name": "荷兰焦糖华夫披萨",
+    "category": "v1",
+    "reason": "甜品化趋势受下午茶场景青睐",
+    "elements": "焦糖华夫碎（后撒） + 香草奶油层 + 草莓冻干",
+    "innovation": "华夫碎粒径 2mm 保证口感均匀"
+  },
+  {
+    "id": 71,
+    "name": "秘鲁紫薯鸡肉披萨",
+    "category": "v1",
+    "reason": "超级根茎类食材",
+    "elements": "紫薯泥（预炒固态） + 烤鸡丝 + 安第斯香草",
+    "innovation": "紫薯泥用椰子油炒制提升风味"
+  },
+  {
+    "id": 72,
+    "name": "约旦芝麻酱茄子披萨",
+    "category": "v1",
+    "reason": "植物基趋势",
+    "elements": "烤茄子片（预脱水） + 芝麻酱层 + 石榴籽",
+    "innovation": "芝麻酱添加鹰嘴豆泥提升蛋白质"
+  },
+  {
+    "id": 73,
+    "name": "夏威夷火山熔岩披萨",
+    "category": "v1",
+    "reason": "经典组合改良",
+    "elements": "糖渍菠萝丁（脱水 30%） + 加拿大培根 + 熔岩芝士",
+    "innovation": "芝士包裹工艺防滴落"
+  },
+  {
+    "id": 74,
+    "name": "黎巴嫩法拉费披萨",
+    "category": "v1",
+    "reason": "中东素食趋势",
+    "elements": "法拉费碎（预烤定型） + 芝麻酱 + 腌萝卜片",
+    "innovation": "法拉费碎粒径 5mm 保证口感"
+  },
+  {
+    "id": 75,
+    "name": "瑞典越橘鹿肉披萨",
+    "category": "v1",
+    "reason": "北欧野味概念",
+    "elements": "烤鹿肉薄片 + 越橘酱（独立包装） + 莳萝碎",
+    "innovation": "鹿肉用杜松子预腌去腥"
+  },
+  {
+    "id": 76,
+    "name": "菲律宾阿斗波披萨",
+    "category": "v1",
+    "reason": "东南亚融合趋势",
+    "elements": "醋腌猪肉片 + 香蕉番茄酱 + 烤菠萝",
+    "innovation": "猪肉用椰醋腌制提升酸味"
+  },
+  {
+    "id": 77,
+    "name": "埃及富尔梅达米披萨",
+    "category": "v1",
+    "reason": "北非传统早餐元素创新应用",
+    "elements": "蚕豆泥基底 + 煮蛋片 + 橄榄油",
+    "innovation": "蚕豆泥添加柠檬汁提升酸度"
+  },
+  {
+    "id": 78,
+    "name": "秘鲁酸橘汁海鲜披萨",
+    "category": "v1",
+    "reason": "酸味趋势 TOP2",
+    "elements": "酸橘汁腌海鲜（预烤） + 紫洋葱碎 + 玉米粒",
+    "innovation": "酸橘汁用巴氏杀菌保持风味"
+  },
+  {
+    "id": 79,
+    "name": "西西里柠檬金枪鱼披萨",
+    "category": "v1",
+    "reason": "地中海风味搜索量年增 45%",
+    "elements": "烟熏金枪鱼片（预烤脱水） + 柠檬皮碎（后撒） + 刺山柑",
+    "innovation": "柠檬皮后撒规避高温苦味"
+  },
+  {
+    "id": 80,
+    "name": "摩洛哥哈里萨羊肉披萨",
+    "category": "v1",
+    "reason": "填补羊肉品类空白",
+    "elements": "孜然羊肉薄片（速冻定型） + 哈里萨辣酱（混入芝士层） + 烤茄子片（预脱水）",
+    "innovation": "速冻羊肉片保持形态"
+  },
+  {
+    "id": 81,
+    "name": "普罗旺斯香草鸡肉披萨",
+    "category": "v1",
+    "reason": "香草风味评分 0.0839",
+    "elements": "迷迭香烤鸡腿肉（预烤去脂） + 烤小番茄（糖渍处理） + 混合香草粉（罗勒/牛至）",
+    "innovation": "糖渍番茄含水量降至 28%，规避烤炉出水"
+  },
+  {
+    "id": 82,
+    "name": "加州牛油果脆片披萨",
+    "category": "v1",
+    "reason": "牛油果健康属性受关注",
+    "elements": "牛油果泥（冷冻固态） + 玉米脆片（独立包装后撒） + 烟熏鸡胸肉丝",
+    "innovation": "冷冻牛油果泥规避氧化变色"
+  },
+  {
+    "id": 83,
+    "name": "巴西莓果酸奶披萨",
+    "category": "v1",
+    "reason": "超级食物趋势",
+    "elements": "巴西莓粉（混入饼底） + 希腊酸奶酱（冷冻固态） + 冷冻混合莓果",
+    "innovation": "冷冻莓果保留花青素，规避高温变色"
+  },
+  {
+    "id": 84,
+    "name": "北海道芝士蟹肉披萨",
+    "category": "v1",
+    "reason": "日式海鲜元素搜索量年增 33%",
+    "elements": "蟹肉棒（预烤定型） + 奶油芝士层（熔点 52°C） + 海苔碎（后撒）",
+    "innovation": "奶油芝士熔点适配链式烤炉温区"
+  },
+  {
+    "id": 85,
+    "name": "土耳其烤肉披萨",
+    "category": "v1",
+    "reason": "中东风味热度上升",
+    "elements": "旋转烤肉片（预烤去汁） + 酸奶酱（混入芝士层） + 烤彩椒圈（预脱水）",
+    "innovation": "旋转烤肉薄切适配高温快烤"
+  },
+  {
+    "id": 86,
+    "name": "法式焦糖苹果披萨",
+    "category": "v1",
+    "reason": "甜香风味评分 0.110 居次席",
+    "elements": "焦糖苹果片（预烤脱水） + 布里奶酪（熔点 32°C） + 核桃碎",
+    "innovation": "布里奶酪后置避免过度融化"
+  },
+  {
+    "id": 87,
+    "name": "加勒比菠萝辣虾披萨",
+    "category": "v1",
+    "reason": "菠萝评分 TOP5",
+    "elements": "糖渍菠萝块（含水量 30%） + 哈瓦那辣椒酱 + 预烤虾仁（脱水 25%）",
+    "innovation": "糖渍菠萝规避烤炉出水"
+  },
+  {
+    "id": 88,
+    "name": "希腊菠菜菲达披萨",
+    "category": "v1",
+    "reason": "地中海健康饮食趋势",
+    "elements": "冷冻菠菜泥（去汁处理） + 菲达奶酪碎（耐高温） + 烤洋葱圈",
+    "innovation": "菠菜泥预去汁保持饼底酥脆"
+  },
+  {
+    "id": 89,
+    "name": "南非波波提披萨",
+    "category": "v1",
+    "reason": "非洲风味空白市场",
+    "elements": "波波提香肠（薄切速冻） + 哈里萨辣酱 + 烤甜玉米粒",
+    "innovation": "波波提香肠含牛肉/猪肉混合，风味层次丰富"
+  },
+  {
+    "id": 90,
+    "name": "挪威烟熏三文鱼披萨",
+    "category": "v1",
+    "reason": "北欧风味热度上升",
+    "elements": "冷熏三文鱼片（后置） + 莳萝酸奶酱（固态冷冻） + 刺山柑",
+    "innovation": "莳萝酱冷冻处理保持形态"
+  },
+  {
+    "id": 91,
+    "name": "马来西亚咖喱鸡披萨",
+    "category": "v1",
+    "reason": "东南亚风味搜索量年增 67%",
+    "elements": "咖喱鸡块（预裹粉定型） + 椰浆芝士层（黄原胶增稠） + 炸洋葱碎",
+    "innovation": "咖喱鸡块预裹粉防散落"
+  },
+  {
+    "id": 92,
+    "name": "冰岛火山岩盐披萨",
+    "category": "v1",
+    "reason": "矿物盐概念受高端市场关注",
+    "elements": "黑岩盐（后撒） + 烟熏三文鱼片 + 莳萝奶油酱（固态）",
+    "innovation": "岩盐后撒保持颗粒感"
+  },
+  {
+    "id": 93,
+    "name": "文昌鸡蟹黄咸鲜披萨",
+    "category": "v2",
+    "reason": "文昌鸡\"想吃\"2396（全网最高）、\"平均喜欢数\"347.5（食材维度第一），蟹黄\"推荐菜中出现次数\"643次（全网最多），咸鲜属性契合口味流行度最高分（9.8）",
+    "elements": "链式烤炉适配：文昌鸡需预烤脱水，蟹黄酱需浓缩后使用，避免水分影响饼底",
+    "innovation": ""
+  },
+  {
+    "id": 94,
+    "name": "拆骨肉香辣红酸汤披萨",
+    "category": "v2",
+    "reason": "拆骨肉\"平均喜欢数\"204.83（肉类第二），红酸汤\"喜欢\"31且社交媒体\"情感浓度提升值\"19.78，香辣口味评分8.5",
+    "elements": "链式烤炉适配：拆骨肉切薄片预炒，红酸汤浓缩为酱汁，控制液体含量",
+    "innovation": ""
+  },
+  {
+    "id": 95,
+    "name": "菌子三重奏蒜香披萨",
+    "category": "v2",
+    "reason": "菌子\"喜欢\"352（菌类第一）、鸡枞\"喜欢\"108、鹿茸菇\"推荐次数\"18次，蒜香口味评分8.2",
+    "elements": "链式烤炉适配：菌类先干煸去水分，蒜片预炸至金黄避免焦糊",
+    "innovation": ""
+  },
+  {
+    "id": 96,
+    "name": "山菌五香草本披萨",
+    "category": "v2",
+    "reason": "山菌\"想吃\"974（菌类最高），草本\"喜欢\"178且契合五香口味（8.0分）",
+    "elements": "链式烤炉适配：山菌切丝预烤，草本香料混合橄榄油制成调味油",
+    "innovation": ""
+  },
+  {
+    "id": 97,
+    "name": "大饼焦糖坚果甜辣披萨",
+    "category": "v2",
+    "reason": "大饼\"推荐次数\"11次（主食类第三），焦糖\"喜欢\"235（甜品类第一），甜辣口味评分9.0",
+    "elements": "链式烤炉适配：大饼碎作饼底夹层，焦糖坚果后撒避免融化",
+    "innovation": ""
+  },
+  {
+    "id": 98,
+    "name": "河鳗鱼照烧紫菜披萨",
+    "category": "v2",
+    "reason": "河鳗鱼 \"想吃\"859（鱼类第一），紫菜社交媒体 \"情感浓度\"97.7%。咸鲜属性强化。",
+    "elements": "链式烤炉适配：鳗鱼预烤至半熟，紫菜切碎拌入芝士。",
+    "innovation": ""
+  },
+  {
+    "id": 99,
+    "name": "紫苏梅子鸭披萨",
+    "category": "v2",
+    "reason": "餐饮点评网数据：梅子平均喜欢数 9.42，紫苏在日料应用增长 27%\n味觉记忆：梅子酸甜 + 紫苏清香构成独特味型",
+    "elements": "链式烤炉适配：梅子需去核制酱，鸭肉预烤去油",
+    "innovation": ""
+  },
+  {
+    "id": 100,
+    "name": "天麻藤椒鸡枞披萨",
+    "category": "v2",
+    "reason": "天麻 \"平均喜欢数\"65.83（药膳类第一），藤椒契合椒麻口味（7.3 分）。",
+    "elements": "链式烤炉适配：天麻切片真空低温预处理，藤椒油替代鲜椒。",
+    "innovation": ""
+  },
+  {
+    "id": 101,
+    "name": "葡挞流心咸蛋黄披萨",
+    "category": "v2",
+    "reason": "葡挞 \"想吃\"450（甜品第二），咸蛋黄社交媒体 \"情感浓度\"97.99%。甜咸碰撞创新。",
+    "elements": "链式烤炉适配：蛋挞液注入特制耐高温容器，避免流淌。",
+    "innovation": ""
+  },
+  {
+    "id": 102,
+    "name": "鸳鸯锅麻辣脆骨披萨",
+    "category": "v2",
+    "reason": "鸳鸯锅 \"想吃\"1191（锅物第一），鸡脚筋 \"喜欢 / 想吃比\"63.11%。麻辣口味评分 8.3。",
+    "elements": "链式烤炉适配：脆骨预炸增加硬度，麻辣油刷面替代汤底。",
+    "innovation": ""
+  },
+  {
+    "id": 103,
+    "name": "蓝龙虾黑胡椒披萨",
+    "category": "v2",
+    "reason": "蓝龙虾 \"平均喜欢数\"37.43（海鲜中等），黑胡椒社交媒体 \"情感浓度\"94.5% 且餐饮网 \"推荐次数\"91 次。",
+    "elements": "链式烤炉适配：龙虾肉预煮后切丁，黑胡椒混入饼皮面团。",
+    "innovation": ""
+  },
+  {
+    "id": 104,
+    "name": "仔姜双脆孜然披萨",
+    "category": "v2",
+    "reason": "仔姜 \"推荐次数\"44 次（配料最多），双脆 \"喜欢\"38。孜然口味评分 7.8。",
+    "elements": "链式烤炉适配：仔姜糖渍降低辛辣度，猪黄喉预炸保脆。",
+    "innovation": ""
+  },
+  {
+    "id": 105,
+    "name": "水性杨花柠檬草披萨",
+    "category": "v2",
+    "reason": "水性杨花 \"推荐次数\"12 次（野菜类第三），柠檬草 \"情感浓度提升值\"10.36。清鲜口味评分 6.8。",
+    "elements": "链式烤炉适配：野菜焯水挤干，柠檬草粉末替代鲜叶。",
+    "innovation": ""
+  },
+  {
+    "id": 106,
+    "name": "布拉塔青提火腿披萨",
+    "category": "v2",
+    "reason": "布拉塔 \"平均喜欢数\"26.18（奶酪类第三），青提 \"推荐次数\"39 次。甜咸平衡创新。",
+    "elements": "链式烤炉适配：布拉塔中心挖空填青提，烤后重新注入。",
+    "innovation": ""
+  },
+  {
+    "id": 107,
+    "name": "雪蟹茶香披萨",
+    "category": "v2",
+    "reason": "雪蟹 \"喜欢\"110（海鲜类第三），龙井茶社交媒体 \"情感浓度\"9.47%。茶香创新口味。",
+    "elements": "链式烤炉适配：蟹肉混合茶粉，茶叶磨碎入饼皮。",
+    "innovation": ""
+  },
+  {
+    "id": 108,
+    "name": "蹄花豆乳酱披萨",
+    "category": "v2",
+    "reason": "蹄花 \"平均喜欢数\"50.2（内脏类第一），豆乳社交媒体 \"情感浓度\"99.22%。酱香口味评分 7.7。",
+    "elements": "链式烤炉适配：蹄花高压锅预软，豆乳酱添加增稠剂。",
+    "innovation": ""
+  },
+  {
+    "id": 109,
+    "name": "南乳脆皮烤肉披萨",
+    "category": "v2",
+    "reason": "南乳 \"推荐次数\"63 次（调料类第二），烤肉 \"想吃\"1700（肉类第一）。",
+    "elements": "链式烤炉适配：南乳涂于饼底，烤肉切薄片交错铺放。",
+    "innovation": ""
+  },
+  {
+    "id": 110,
+    "name": "树莓鹅肝黑醋披萨",
+    "category": "v2",
+    "reason": "树莓社交媒体 \"情感浓度\"98.19%，鹅肝 \"推荐次数\"50 次。酸甜平衡高级料理。",
+    "elements": "链式烤炉适配：鹅肝冻干粉撒面，黑醋做成凝胶颗粒。",
+    "innovation": ""
+  },
+  {
+    "id": 111,
+    "name": "腊肉饵块披萨",
+    "category": "v2",
+    "reason": "饵块 \"平均喜欢数\"35.33（主食类第五），腊肉社交媒体 \"情感浓度\"55.82%。地域特色创新。",
+    "elements": "链式烤炉适配：饵块预煎至微焦，腊肉蒸后去油脂。",
+    "innovation": ""
+  },
+  {
+    "id": 112,
+    "name": "墨鱼汁海鲜披萨",
+    "category": "v2",
+    "reason": "虽未直接列但综合鱿鱼 \"情感浓度\"96.01%、黑芝麻 \"情感浓度\"98.65%。暗黑系视觉冲击。",
+    "elements": "链式烤炉适配：墨鱼汁混入饼皮，海鲜预烤锁住水分。",
+    "innovation": ""
+  },
+  {
+    "id": 113,
+    "name": "拆骨肉海盐焦糖洋葱披萨",
+    "category": "v2",
+    "reason": "拆骨肉平均喜欢数 204.83（TOP2），\"推荐菜中出现次数\"6 次显示适配性强。海盐情感度提升 21.84%（社交媒体评分表），焦糖洋葱可平衡咸甜\n健康价值：拆骨肉含胶原蛋白，海盐替代精制盐更健康",
+    "elements": "链式烤炉适配：洋葱需焦糖化预处理，避免烤制时过度出水",
+    "innovation": ""
+  },
+  {
+    "id": 114,
+    "name": "腊肠红葱头披萨",
+    "category": "v2",
+    "reason": "红葱头在粤菜应用增长 23%，腊肠社交媒体情感度 5.45%",
+    "elements": "成本控制：腊肠的高出成率（达 82%）适合连锁经营\n链式烤炉适配：腊肠斜切薄片，红葱头油炸至金黄后使用",
+    "innovation": ""
+  },
+  {
+    "id": 115,
+    "name": "天麻藤椒鸡脚筋披萨",
+    "category": "v2",
+    "reason": "天麻平均喜欢数 65.83，鸡脚筋 \"喜欢\"65 次体现小众食材潜力\n健康价值：天麻的神经舒缓功能 + 鸡脚筋胶原蛋白形成健康营销点\n口味流行：藤椒味属椒麻类别（评分 7.3），适配年轻群体",
+    "elements": "链式烤炉适配：鸡脚筋需先卤制软化，天麻切薄片预处理",
+    "innovation": ""
+  },
+  {
+    "id": 116,
+    "name": "茴香苗羊肉披萨",
+    "category": "v2",
+    "reason": "羊肉在西北菜系搜索量增长 31%，茴香苗祛腥价值突出\n健康概念：茴香助消化 + 羊肉温补的养生组合",
+    "elements": "链式烤炉适配：羊肉需嫩肉处理，茴香苗焯水挤干",
+    "innovation": ""
+  },
+  {
+    "id": 117,
+    "name": "布拉塔奶酪青提坚果披萨",
+    "category": "v2",
+    "reason": "布拉塔奶酪平均喜欢数 26.18，青提平均喜欢数 13.31 形成奶甜平衡\n社交媒体：布拉塔奶酪在 \"精致早午餐\" 场景提及率增长 67%\n情绪价值：青提的透亮果肉 + 布拉塔爆浆感增强视觉吸引力",
+    "elements": "链式烤炉适配：奶酪需烤后添加，坚果需单独烘烤后撒面",
+    "innovation": ""
+  },
+  {
+    "id": 118,
+    "name": "傣味酸笋仔姜牛肉披萨",
+    "category": "v2",
+    "reason": "仔姜 \"想吃\"1849 次（最高频），酸笋平均喜欢数 16.35 体现特色风味\n口味流行：酸辣口味评分 8.7 分，契合地域美食潮流",
+    "elements": "链式烤炉适配：酸笋需挤干水分，牛肉切薄片预炒断生",
+    "innovation": ""
+  },
+  {
+    "id": 119,
+    "name": "黑蒜蜜豆鳗鱼披萨",
+    "category": "v2",
+    "reason": "河鳗鱼平均喜欢数 82.55，黑蒜平均喜欢数 13.56 形成味觉层次\n社交媒体：黑蒜在 \"养生食材\" 讨论中情感度提升 6.5%\n健康价值：鳗鱼 DHA + 黑蒜大蒜素的抗氧化组合",
+    "elements": "链式烤炉适配：鳗鱼需预烤定型，蜜豆选用罐头产品控水",
+    "innovation": ""
+  },
+  {
+    "id": 120,
+    "name": "冬阴功鲜虾脆哨披萨",
+    "category": "v2",
+    "reason": "冬阴功平均喜欢数 44.29，脆哨平均喜欢数 12.86 提供口感反差\n社交媒体：冬阴功在 \"异国风味\" 话题中情感度增幅 12%",
+    "elements": "链式烤炉适配：鲜虾需开背去线预烤，酱汁需浓缩至 1/3 避免浸软饼底",
+    "innovation": ""
+  },
+  {
+    "id": 121,
+    "name": "腊肉野酸角披萨",
+    "category": "v2",
+    "reason": "野酸角平均喜欢数 14.20，腊肉在社交媒体情感度提升 2.79%\n口味创新：腊肉烟熏味 + 野酸角酸甜感形成云贵风味创新",
+    "elements": "链式烤炉适配：腊肉需蒸煮去盐后切薄片，酸角酱需预调浓稠度",
+    "innovation": ""
+  },
+  {
+    "id": 122,
+    "name": "蓝龙虾红菜头披萨",
+    "category": "v2",
+    "reason": "蓝龙虾平均喜欢数 37.43，红菜平均喜欢数 30.20\n视觉冲击：蓝龙虾钳肉 + 红菜头汁染色饼底形成记忆点",
+    "elements": "链式烤炉适配：龙虾肉需预煮定型，红菜头榨汁后与酱料混合使用",
+    "innovation": ""
+  },
+  {
+    "id": 123,
+    "name": "香茅草椰浆鸡披萨",
+    "category": "v2",
+    "reason": "香茅草平均喜欢数 17.44，椰浆在社交媒体情感度提升 4.15%\n口味流行：东南亚风味连续三年搜索量增长 28%",
+    "elements": "链式烤炉适配：香茅草需切碎融入酱料，鸡肉用腿肉预烤锁汁",
+    "innovation": ""
+  },
+  {
+    "id": 124,
+    "name": "雪蟹藕带披萨",
+    "category": "v2",
+    "reason": "雪蟹平均喜欢数 21.32，藕在社交媒体情感度达 100%\n口感设计：雪蟹腿肉的鲜甜 + 藕带脆爽形成层次",
+    "elements": "链式烤炉适配：蟹肉需手工拆解预拌蛋黄酱防干，藕带用醋渍产品",
+    "innovation": ""
+  },
+  {
+    "id": 125,
+    "name": "青咖喱马蹄披萨",
+    "category": "v2",
+    "reason": "青咖喱平均喜欢数 8.40，马蹄社交媒体情感度提升 6.54%\n健康趋势：马蹄的清热属性 + 咖喱抗炎功能形成概念",
+    "elements": "链式烤炉适配：咖喱酱需浓缩至半固态，马蹄用罐头产品切片",
+    "innovation": ""
+  },
+  {
+    "id": 126,
+    "name": "黑虎虾罗勒披萨",
+    "category": "v2",
+    "reason": "罗勒平均喜欢数 12.32，黑虎虾平均喜欢数 8.73\n情绪价值：罗勒清香 + 虾肉 Q 弹构成地中海风味联想",
+    "elements": "链式烤炉适配：罗勒叶烤前 30 秒撒入，避免高温碳化",
+    "innovation": ""
+  },
+  {
+    "id": 127,
+    "name": "花椒叶牛肋条披萨",
+    "category": "v2",
+    "reason": "牛肋条平均喜欢数 14.57，花椒叶在川菜应用增长 19%\n味觉创新：花椒叶的麻香替代传统辣椒，适配健康饮食趋势",
+    "elements": "链式烤炉适配：牛肋条需炖煮后撕碎，花椒叶低温烘烤后研磨成粉",
+    "innovation": ""
+  },
+  {
+    "id": 128,
+    "name": "沙棘芝士烤鸭披萨",
+    "category": "v2",
+    "reason": "烤鸭平均喜欢数 51.17，沙棘平均喜欢数 13.58\n营养组合：沙棘维生素 C 含量是柠檬 8 倍 + 烤鸭蛋白质",
+    "elements": "链式烤炉适配：烤鸭需去骨切条，沙棘酱需过滤籽粒",
+    "innovation": ""
+  },
+  {
+    "id": 129,
+    "name": "树莓布拉塔披萨",
+    "category": "v2",
+    "reason": "布拉塔奶酪平均喜欢数 26.18，树莓社交媒体情感度达 99.46%\n视觉营销：树莓红 + 奶酪白的色彩对比适合社交传播",
+    "elements": "链式烤炉适配：树莓需冻干处理，奶酪烤后放置",
+    "innovation": ""
+  },
+  {
+    "id": 130,
+    "name": "潮汕牛肉丸沙茶马蹄披萨",
+    "category": "v2",
+    "reason": "牛肋条 14.57 健康评分（高蛋白低脂）× 沙茶酱 2.39% 情感提升 × 马蹄 6.54% 情感增幅",
+    "elements": "链式烤炉适配：牛肉丸预烤定型，沙茶酱混合花生酱（80.43%情感度）做基底，马蹄薄片烘烤时间压缩至90秒保持脆度",
+    "innovation": ""
+  },
+  {
+    "id": 131,
+    "name": "黑虎虾海盐焦糖披萨",
+    "category": "v2",
+    "reason": "黑虎虾餐饮网 8.73 平均喜欢数 × 海盐社交媒体 21.84% 情感增幅 × 焦糖 12.98 情绪价值",
+    "elements": "链式烤炉适配：虾肉开背填焦糖酱（235喜欢数），海盐颗粒在出炉前30秒撒入，利用烤箱余温激发矿物香气",
+    "innovation": ""
+  },
+  {
+    "id": 132,
+    "name": "意式布拉塔草莓披萨",
+    "category": "v2",
+    "reason": "时令设计：布拉塔 26.18 平均喜欢数 × 草莓情绪价值（94.85%社交媒体）× 巴萨米克醋 15.33 喜欢数",
+    "elements": "链式烤炉适配：奶酪中心位冷冻定型，草莓切片厚度1.2mm糖渍处理，醋膏用3mm直径裱花嘴绘制纹路",
+    "innovation": ""
+  },
+  {
+    "id": 133,
+    "name": "泰式打抛猪颈肉披萨",
+    "category": "v2",
+    "reason": "风味平衡：猪颈肉（91.01%情感度）× 打抛叶（香茅草17.44情绪价值）× 青柠预处理",
+    "elements": "链式烤炉适配：肉末混合5%面包糠改善保形性，打抛叶经60℃/2小时烘干磨粉，青柠皮屑冷冻保存香气物质",
+    "innovation": ""
+  },
+  {
+    "id": 134,
+    "name": "法式鹅肝无花果披萨",
+    "category": "v2",
+    "reason": "质感对比：鹅肝 7.28%情感增幅 × 无花果干（94.50%情感度）× 波特酒酱（焦糖235喜欢数）",
+    "elements": "链式烤炉适配：鹅肝经24小时牛奶排酸，无花果浸泡红酒恢复弹性，酱料添加1.5%玉米淀粉防止流坠",
+    "innovation": ""
+  },
+  {
+    "id": 135,
+    "name": "湖南剁椒鱼头披萨",
+    "category": "v2",
+    "reason": "去腥方案：剁椒 2.29%情感增幅 × 鱼头（豆瓣评分8.8）× 紫苏（情绪价值待补充）",
+    "elements": "链式烤炉适配：鱼头肉经3%盐水按摩去腥，剁椒发酵度控制在PH4.2-4.5，紫苏叶切丝混合进芝士层",
+    "innovation": ""
+  },
+  {
+    "id": 136,
+    "name": "墨西哥烟熏辣椒披萨",
+    "category": "v2",
+    "reason": "烟熏控制：烟熏辣椒（待查数据）× 牛油果（社交媒体缺失）× 黑豆 3.17%情感增幅",
+    "elements": "链式烤炉适配：辣椒经液体烟熏处理替代明火，牛油果泥添加0.1%抗坏血酸防氧化，黑豆预煮至裂口率85%",
+    "innovation": ""
+  },
+  {
+    "id": 137,
+    "name": "港式叉烧流心披萨",
+    "category": "v2",
+    "reason": "流心方案：叉烧（烧味9.64平均喜欢数）× 咸蛋黄（待查数据）× 蜂蜜9.23%情感增幅",
+    "elements": "链式烤炉适配：叉烧切3mm薄片交错铺放，咸蛋黄酱注入空心饼边，蜂蜜通过雾化喷枪后置添加",
+    "innovation": ""
+  },
+  {
+    "id": 138,
+    "name": "云南玫瑰鲜花披萨",
+    "category": "v2",
+    "reason": "香气留存：玫瑰 8.52平均喜欢数 × 乳扇8.40情绪价值 × 野生菌10.00健康评分",
+    "elements": "链式烤炉适配：玫瑰糖浆添加0.02%麦芽酚增香，乳扇切菱形片交叉叠放，牛肝菌经超声波清洗去砂",
+    "innovation": ""
+  },
+  {
+    "id": 139,
+    "name": "希腊酸奶黄瓜披萨",
+    "category": "v2",
+    "reason": "降温处理：酸奶 12.98情绪价值 × 黄瓜（需查数据）× 薄荷（待补充）",
+    "elements": "链式烤炉适配：黄瓜片经离心机脱水至含水率62%，酸奶混合5%黄原胶维持形态，薄荷叶液氮粉碎成微粒",
+    "innovation": ""
+  },
+  {
+    "id": 140,
+    "name": "中东羊肉库斯库斯披萨",
+    "category": "v2",
+    "reason": "烹饪融合：羊肉（待查数据）× 库斯库斯（需查数据）× 哈里萨辣酱（待补充）",
+    "elements": "链式烤炉适配：羊肉末混合15%鹰嘴豆泥提升粘性，库斯库斯预蒸后拌入奶酪，辣酱用转印工艺形成花纹",
+    "innovation": ""
+  },
+  {
+    "id": 141,
+    "name": "韩式火鸡面披萨",
+    "category": "v2",
+    "reason": "辣度管控：火鸡面 2.83%情感增幅 × 芝士90.20%社交媒体情感度 × 海苔4.25%情感增幅",
+    "elements": "链式烤炉适配：面饼预涂0.3mm辣酱层，马苏里拉奶酪占比提升至60%缓冲辣感，紫菜碎采用静电吸附工艺",
+    "innovation": ""
+  },
+  {
+    "id": 142,
+    "name": "拆骨肉酸笋双椒爆浆披萨",
+    "category": "v2",
+    "reason": "核心数据：拆骨肉204.83平均喜欢数 × 酸笋16.35健康功能（促消化）× 香茅草17.44情绪价值（东南亚风情）",
+    "elements": "链式烤炉适配：酸笋经离心脱水预处理保留70%酸度，青红椒切丝螺旋摆放避免烤焦，芝士包裹拆骨肉实现\"爆浆\"效果",
+    "innovation": ""
+  },
+  {
+    "id": 143,
+    "name": "文昌鸡山菌芝士披萨",
+    "category": "v2",
+    "reason": "文昌鸡在餐饮点评网获得最高平均喜欢数347.5（喜欢384/推荐次数8），\"想吃\"人数达2396人，说明市场需求强烈。搭配平均喜欢数119.57的菌子（喜欢352/推荐次数7），形成鲜味叠加。使用耐高温的马苏里拉奶酪（推荐次数41），避免链式烤箱奶酪融化问题。山菌的木质香气与鸡肉蛋白香形成层次，符合社交媒体上山菌类食材97.47%的高情感认同。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 144,
+    "name": "拆骨肉牛肝菌脆哨披萨",
+    "category": "v2",
+    "reason": "拆骨肉以204.83的平均喜欢数位列第二（喜欢116/推荐次数6），搭配脆哨（喜欢176/推荐次数51）形成双重脆感。牛肝菌在社交媒体获得95.99%情感度，与餐饮网菌类食材形成跨平台协同。脆哨经预炸处理符合链式烤箱要求，避免生肉水分渗出问题。红酸汤（情感度提升7.03%）可作酱料基底增强酸鲜。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 145,
+    "name": "黄油年糕焦糖坚果披萨",
+    "category": "v2",
+    "reason": "黄油年糕在社交媒体情感度暴涨24.98%且帖子数增长445%，适合制作甜品披萨。焦糖（推荐次数119）与坚果（推荐次数103）在餐饮网分别获得12.98和14.34的平均喜欢数，经预烤处理可避免链式烤箱焦糊。海盐（社交媒体情感度93.41%）撒面提升层次，符合年轻人对咸甜口味的追求。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 146,
+    "name": "黑胡椒天妇罗蟹柳披萨",
+    "category": "v2",
+    "reason": "黑胡椒在双平台均属顶级食材，餐饮网推荐次数91次，社交媒体情感度达94.5%。天妇罗（推荐次数61）与蟹柳（社交媒体情感度79.63%）经预炸处理后适配链式烤箱，解决含水量问题。蟹黄（推荐次数643）作酱料增强鲜味，与黑胡椒的辛香形成日式风味矩阵。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 147,
+    "name": "香茅草蓝龙虾冬阴功披萨",
+    "category": "v2",
+    "reason": "蓝龙虾在餐饮网获得37.43平均喜欢数（喜欢31/推荐次数7），搭配冬阴功（推荐次数21）形成泰式风味。香茅草（推荐次数9）在社交媒体获得17.44平均喜欢数，预烤处理避免碳化。椰汁（社交媒体情感度97.56%）替代传统酱料，符合链式烤箱对液体食材的控制要求。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 148,
+    "name": "山核桃葡挞流心披萨",
+    "category": "v2",
+    "reason": "葡挞在餐饮网获得64.88平均喜欢数（喜欢69/推荐次数8），山核桃社交媒体情感度97.8%。将葡挞液预烤至半凝固状态，避免链式烤箱过度流动。枫糖（推荐次数44）与焦糖（社交媒体情感度12.98%）双重加持，坚果碎（预烤处理）增加口感层次，符合早午餐场景需求。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 149,
+    "name": "青提布拉塔奶酪火腿披萨",
+    "category": "v2",
+    "reason": "布拉塔奶酪（推荐次数11）与青提（推荐次数39）在餐饮网分别获得26.18和13.31平均喜欢数。帕尔马火腿（社交媒体情感度73.92%）经风干处理适配烤箱，青提切片预脱水避免出水。罗勒（推荐次数157）点缀提升清新感，符合ins风轻食潮流。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 150,
+    "name": "藤椒蛙腿掌中宝披萨",
+    "category": "v2",
+    "reason": "蛙腿在餐饮网获得26.53平均喜欢数（喜欢39/推荐次数19），掌中宝（鸡脚筋）获得33.6平均喜欢数。藤椒（社交媒体情感度96.36%）与青花椒油混合刷面，预炸蛙腿确保链式烤箱快速上色。红油（推荐次数46.39）作底酱增强川味辨识度。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 151,
+    "name": "墨鱼汁天麻鲜虾披萨",
+    "category": "v2",
+    "reason": "天麻在餐饮网获得65.83平均喜欢数（喜欢75/推荐次数6），搭配鲜虾（推荐次数37）形成养生概念。墨鱼汁（社交媒体情感度95.56%）替代传统饼底，预烤虾仁解决含水量问题。绣球菌（推荐次数21）增加脆感，符合药膳食材跨界趋势。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 152,
+    "name": "油浸番茄马苏里拉佛卡夏披萨",
+    "category": "v2",
+    "reason": "油浸番茄（社交媒体情感度96.9%）解决新鲜番茄水分问题，佛卡夏面团（推荐次数29）适配链式烤箱高温。马苏里拉（推荐次数41）与黑醋（推荐次数193）形成意式风味，迷迭香（社交媒体情感度97.69%）提升香气层次，符合地中海饮食潮流。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 153,
+    "name": "青咖喱椰浆河鳗披萨",
+    "category": "v2",
+    "reason": "河鳗在餐饮网获得82.55平均喜欢数（喜欢49/推荐次数11），青咖喱（推荐次数5）与椰浆（社交媒体情感度97.56%）调制成酱。预烤鳗鱼段确保链式烤箱快速出餐，芒果干（社交媒体情感度98.86%）碎粒增加热带风味，解决烤箱高温致酸问题。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 154,
+    "name": "腐乳焦糖五花肉披萨",
+    "category": "v2",
+    "reason": "南乳（推荐次数63）在餐饮网获得15.73平均喜欢数，与焦糖（社交媒体情感度12.98%）形成甜咸冲击。五花肉预烤至半熟，腐乳酱（社交媒体帖子数增长59%）刷面，芝麻（推荐次数1250）经预烤后撒面，避免链式烤箱碳化风险。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 155,
+    "name": "松露油野菌温泉蛋披萨",
+    "category": "v2",
+    "reason": "混合野菌（推荐次数16）在餐饮网平均喜欢数30.92，温泉蛋改用预煮溏心蛋（社交媒体情感度98.57%）避免烤箱失控。松露油（社交媒体情感度95.56%）替代新鲜松露适配高温，帕玛森干酪（推荐次数41）碎末提升醇厚度。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 156,
+    "name": "泡椒紫苏牛蛙披萨",
+    "category": "v2",
+    "reason": "牛蛙腿（推荐次数19）与泡椒（社交媒体情感度85.35%）形成鲜辣组合，紫苏（推荐次数157）叶预烤后保持香气。红酸汤（推荐次数9）作底酱，酸笋（推荐次数17）经预炒去除多余水分，符合链式烤箱对湿润食材的控制要求。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 157,
+    "name": "榴莲天妇罗海苔披萨",
+    "category": "v2",
+    "reason": "榴莲（社交媒体情感度98.98%）与天妇罗海苔（推荐次数427）形成日式创新。榴莲肉冷冻后切块，天妇罗海苔作饼底替代传统面团，解决链式烤箱对水果水分的限制。山葵粉（社交媒体情感度91.87%）微量添加平衡甜腻。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 158,
+    "name": "腊肉糍粑辣椒披萨",
+    "category": "v2",
+    "reason": "腊肉（社交媒体情感度55.82%）与糍粑（情感度94.5%）形成云贵风味，辣椒面（推荐次数143）经油浸处理避免高温碳化。折耳根（推荐次数380）碎末预炒后撒面，糍粑块预烤至半焦，适配链式烤箱快速出餐特性。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 159,
+    "name": "咖喱叶沙姜鸡肉披萨",
+    "category": "v2",
+    "reason": "沙姜（推荐次数44）在餐饮网获得43.84平均喜欢数，咖喱叶（社交媒体情感度98.26%）经油爆处理释放香气。鸡腿肉（推荐次数200）预烤锁汁，椰浆（推荐次数57）作酱料基底，避免链式烤箱高温导致酱料分离。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 160,
+    "name": "梅干菜烟熏奶酪披萨",
+    "category": "v2",
+    "reason": "梅干菜（社交媒体情感度96.34%）与烟熏奶酪（推荐次数41）形成绍兴风味创新。梅干菜经三蒸三晒预处理，烟熏高达奶酪（耐高温）替代传统马苏里拉，金桔（推荐次数72）片解腻，符合地方食材复兴趋势。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 161,
+    "name": "芥末蜂蜜脆皮肠披萨",
+    "category": "v2",
+    "reason": "脆皮肠（社交媒体情感度63.78%）与芥末（推荐次数295）形成德式风味变异。蜂蜜（推荐次数202）与第戎芥末（推荐次数73）调制成酱，酸黄瓜（推荐次数267）碎粒预脱水处理，适配链式烤箱对腌制食材的要求。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 162,
+    "name": "紫苏梅子鸭胸披萨",
+    "category": "v2",
+    "reason": "紫苏（推荐次数157）与梅子（推荐次数95）获得餐饮网9.42平均喜欢数，鸭胸（推荐次数180）预煎至五分熟。梅子酱（社交媒体情感度82.16%）替代番茄酱，紫苏叶切丝预烤，解决草本食材高温变性问题。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 163,
+    "name": "花椒叶羊肚菌素披萨",
+    "category": "v2",
+    "reason": "羊肚菌（推荐次数17）在餐饮网获得17.65平均喜欢数，花椒叶（社交媒体情感度98.94%）经低温烘焙保持香气。素芝士（推荐次数1590）替代动物奶酪，松子（推荐次数103）预烤提香，符合素食高端化需求。",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 164,
+    "name": "虾酱空心菜脆米披萨",
+    "category": "v2",
+    "reason": "虾酱（推荐次数56）在餐饮网获得15.77平均喜欢数，脆米（推荐次数515）替代传统",
+    "elements": "",
+    "innovation": ""
+  },
+  {
+    "id": 165,
+    "name": "紫甘蓝黑胡椒咸鲜披萨",
+    "category": "v2",
+    "reason": "紫甘蓝（25口味打分100%，提升值+19%）与黑胡椒（25口味打分98%，提升值+17%）组合，叠加咸鲜口味（流行度9.8分）\n紫甘蓝的高抗氧化性和黑胡椒的新陈代谢促进特性（内在价值表）适配健康趋势",
+    "elements": "两者均为链式烤炉耐受食材（经脱水预处理）",
+    "innovation": ""
+  },
+  {
+    "id": 166,
+    "name": "全麦粉牛排五香披萨",
+    "category": "v2",
+    "reason": "全麦粉（帖子数提升131%）与牛排（25口味打分98%）结合五香风味（流行度8.0分）\n全麦粉的高膳食纤维属性（内在价值表）满足控糖需求",
+    "elements": "牛排薄切预处理避免链式烤炉外焦内生问题",
+    "innovation": ""
+  },
+  {
+    "id": 167,
+    "name": "生椰白巧克力甜辣披萨",
+    "category": "v2",
+    "reason": "生椰（帖子数提升133%）与白巧克力（25口味打分96%）搭配甜辣口味（流行度9.0分）\n生椰的植物基电解质补充特性（内在价值表）平衡白巧克力的甜腻，",
+    "elements": "椰蓉经烘烤脱水适配链式烤炉",
+    "innovation": ""
+  },
+  {
+    "id": 168,
+    "name": "银耳马蹄清鲜披萨",
+    "category": "v2",
+    "reason": "银耳（25口味打分100%）与马蹄（25口味打分99%）组成清鲜风味（流行度6.8分）\n银耳的高胶原蛋白含量（内在价值表）和马蹄的爽脆口感形成层次",
+    "elements": "两者低水分特性完全适配链式烤炉",
+    "innovation": ""
+  },
+  {
+    "id": 169,
+    "name": "小龙虾麻辣酵母饼底披萨",
+    "category": "v2",
+    "reason": "小龙虾（25口味打分99%）与酵母（25口味打分100%）饼底搭配麻辣风味（流行度8.3分）\n酵母饼底的益生菌属性（内在价值表）强化健康标签",
+    "elements": "小龙虾预炒脱水处理规避链式烤炉水分问题",
+    "innovation": ""
+  },
+  {
+    "id": 170,
+    "name": "黑芝麻豆乳葱香披萨",
+    "category": "v2",
+    "reason": "黑芝麻（帖子数提升12%）与豆乳（帖子数提升25%）组合葱香风味（流行度6.5分）\n黑芝麻的钙含量（内在价值表）与豆乳的植物蛋白形成营养互补",
+    "elements": "黑芝麻碎高温耐受性佳",
+    "innovation": ""
+  },
+  {
+    "id": 171,
+    "name": "斑斓叶鸡排咖喱披萨",
+    "category": "v2",
+    "reason": "斑斓叶（25口味打分98%）与鸡排（25口味打分94%）搭配咖喱风味（流行度7.5分）\n斑斓叶的降胆固醇特性（内在价值表）中和鸡排油脂",
+    "elements": "鸡排切薄片适配链式烤炉快速烘烤",
+    "innovation": ""
+  },
+  {
+    "id": 172,
+    "name": "麻花腊味孜然披萨",
+    "category": "v2",
+    "reason": "麻花（25口味打分100%）与腊味（25口味打分100%）结合孜然风味（流行度7.8分）\n麻花的怀旧情绪价值（内在价值表）与腊味的年味符号形成场景化营销",
+    "elements": "两者低水分耐高温",
+    "innovation": ""
+  },
+  {
+    "id": 173,
+    "name": "抹茶红豆沙奶香披萨",
+    "category": "v2",
+    "reason": "抹茶（年讨论量3537次）与红豆沙（25口味打分99%）搭配奶香风味（流行度7.0分）\n抹茶的茶多酚含量（内在价值表）与红豆沙的膳食纤维形成健康组合",
+    "elements": "抹茶粉高温耐受性已验证",
+    "innovation": ""
+  },
+  {
+    "id": 174,
+    "name": "鱿鱼须小米辣酸辣披萨",
+    "category": "v2",
+    "reason": "鱿鱼须（25口味打分99%）与小米辣（帖子数提升1%）组合酸辣风味（流行度8.7分）",
+    "elements": "鱿鱼须预烤去腥处理适配链式烤炉，小米辣的新鲜度通过快速烘烤保留最大辣度",
+    "innovation": ""
+  },
+  {
+    "id": 175,
+    "name": "蚕豆薄荷酱香披萨",
+    "category": "v2",
+    "reason": "蚕豆（25口味打分100%）与薄荷（25口味打分93%）搭配酱香风味（流行度7.7分）\n蚕豆的高植物蛋白（内在价值表）与薄荷的清凉感形成反差",
+    "elements": "薄荷叶后撒避免链式烤炉碳化",
+    "innovation": ""
+  },
+  {
+    "id": 176,
+    "name": "金枪鱼莴笋蒜香披萨",
+    "category": "v2",
+    "reason": "金枪鱼（25口味打分94%）与莴笋（25口味打分97%）结合蒜香风味（流行度8.2分）\n金枪鱼的低脂肪高蛋白特性（内在价值表）与莴笋的膳食纤维构成健身餐定位",
+    "elements": "蒜片预烤提香",
+    "innovation": ""
+  },
+  {
+    "id": 177,
+    "name": "慕斯玫瑰花瓣披萨",
+    "category": "v2",
+    "reason": "慕斯（25口味打分99%）与玫瑰（25口味打分98%）组合\n慕斯的情绪价值（内在价值表\"罪恶幸福感\"）与玫瑰的浪漫属性形成甜品披萨",
+    "elements": "慕斯层后加避免高温融化",
+    "innovation": ""
+  },
+  {
+    "id": 178,
+    "name": "烧麦酥皮椒麻披萨",
+    "category": "v2",
+    "reason": "烧麦（25口味打分98%）与酥皮（25口味打分97%）搭配椒麻风味（流行度7.3分）\n烧麦的便捷性（内在价值表）与酥皮的层次感创新结合",
+    "elements": "酥皮厚度调整适配链式烤炉",
+    "innovation": ""
+  },
+  {
+    "id": 179,
+    "name": "桂圆米酒醪糟披萨",
+    "category": "v2",
+    "reason": "桂圆（25口味打分100%）、米酒（25口味打分100%）、醪糟（25口味打分98%）三重发酵组合\n桂圆的补血特性（内在价值表）与米酒醪糟的益生菌形成养生定位，",
+    "elements": "酒精成分经烘烤挥发",
+    "innovation": ""
+  },
+  {
+    "id": 180,
+    "name": "芦笋扇贝芥末披萨",
+    "category": "v2",
+    "reason": "芦笋（25口味打分100%）与扇贝（25口味打分100%）搭配芥末风味（流行度6.0分）\n芦笋的天门冬酰胺（内在价值表）与扇贝的锌含量构成营养密度卖点",
+    "elements": "扇贝预煎锁水",
+    "innovation": ""
+  },
+  {
+    "id": 181,
+    "name": "豆干麻辣烫披萨",
+    "category": "v2",
+    "reason": "豆干（25口味打分95%）与麻辣烫（25口味打分99%）风味重组\n豆干的植物蛋白（内在价值表）与麻辣烫的街头饮食文化结合",
+    "elements": "辣度通过链式烤炉二次激发",
+    "innovation": ""
+  },
+  {
+    "id": 182,
+    "name": "姜丝黑咖啡布朗尼披萨",
+    "category": "v2",
+    "reason": "姜（25口味打分94%）与黑咖啡（25口味打分96%）布朗尼（25口味打分95%）组合\n姜的驱寒特性（内在价值表）与黑咖啡的零卡路里构成朋克养生概念",
+    "elements": "布朗尼切块后撒",
+    "innovation": ""
+  },
+  {
+    "id": 183,
+    "name": "梨片桂花蜜披萨",
+    "category": "v2",
+    "reason": "梨（25口味打分100%）与桂花蜜（通过内在价值表情绪价值延伸）组合\n梨的润肺特性与桂花的嗅觉记忆形成秋日限定款",
+    "elements": "梨片糖渍脱水处理适配烤炉",
+    "innovation": ""
+  },
+  {
+    "id": 184,
+    "name": "瑞士卷冰淇淋披萨",
+    "category": "v2",
+    "reason": "瑞士卷（25口味打分96%）与冰淇淋（25口味打分97%）冰火组合\n瑞士卷的怀旧价值（内在价值表）与冰淇淋的快乐记忆形成反差体验",
+    "elements": "冰淇淋后加避免融化",
+    "innovation": ""
+  },
+  {
+    "id": 185,
+    "name": "酸萝卜牛肠披萨",
+    "category": "v2",
+    "reason": "酸萝卜（25口味打分99%）与牛肠（25口味打分100%）组合\n酸萝卜的解腻功能（内在价值表）与牛肠的嚼劲形成韩式风味",
+    "elements": "牛肠预煮确保链式烤炉快速烤脆",
+    "innovation": ""
+  },
+  {
+    "id": 186,
+    "name": "海盐焦糖坚果披萨",
+    "category": "v2",
+    "reason": "海盐（帖子数提升51%）与焦糖坚果组合\n海盐的矿物质补充特性（内在价值表）与坚果的优质脂肪形成能量补给定位",
+    "elements": "坚果碎混合奶酪固定防脱落",
+    "innovation": ""
+  },
+  {
+    "id": 187,
+    "name": "豆沙年糕披萨",
+    "category": "v2",
+    "reason": "豆沙（25口味打分94%）与年糕（帖子数提升7%）组合\n豆沙的怀旧情绪（内在价值表）与年糕的咀嚼感构成日式风味",
+    "elements": "年糕薄切避免烤不透",
+    "innovation": ""
+  },
+  {
+    "id": 188,
+    "name": "藤椒牛肉丸披萨",
+    "category": "v2",
+    "reason": "藤椒（通过流行度表椒麻7.3分延伸）与牛肉丸（25口味打分95%）组合\n藤椒的麻感与牛肉丸的弹牙形成川渝风味",
+    "elements": "肉丸预烤定型适配链式烤炉",
+    "innovation": ""
+  },
+  {
+    "id": 189,
+    "name": "黑松露鸡蛋披萨",
+    "category": "v2",
+    "reason": "黑松露（25口味打分99%）与鸡蛋（通过内在价值表延伸）组合\n黑松露的奢侈品属性（内在价值表）与鸡蛋的溏心效果形成高端定位",
+    "elements": "鸡蛋液混合奶酪烘烤避免流淌",
+    "innovation": ""
+  },
+  {
+    "id": 190,
+    "name": "黄油年糕蜜汁披萨",
+    "category": "v2",
+    "reason": "黄油年糕情绪价值提升42%（24-25年情绪分14%→56%），帖子数激增445%（11→60帖）",
+    "elements": "搭配焦糖蜂蜜与马苏里拉奶酪，利用年糕低水分特性适配链式烤炉。甜辣口味9.0分与年糕甜味基底形成层次，少量辣椒粉提味避免过腻",
+    "innovation": ""
+  },
+  {
+    "id": 191,
+    "name": "黑胡椒牛排火山披萨",
+    "category": "v2",
+    "reason": "黑胡椒情绪价值提升79%（4%→83%）+牛排提升32%（60%→92%）",
+    "elements": "牛排薄切预处理适配烤炉，黑胡椒颗粒耐高温不碳化。咸鲜9.8分主调，黑胡椒辛辣延伸香辣8.5分风味，浇淋岩浆芝士增强视觉冲击",
+    "innovation": ""
+  },
+  {
+    "id": 192,
+    "name": "生椰雪崩披萨",
+    "category": "v2",
+    "reason": "生椰讨论量暴增133%（264→614帖），情绪值达97%",
+    "elements": "采用冻干椰粒替代新鲜椰肉避免水分问题，搭配耐烤白巧克力酱（情绪值28%提升）形成\"雪崩\"效果，清鲜6.8分基底缓解甜腻感",
+    "innovation": ""
+  },
+  {
+    "id": 193,
+    "name": "海盐芝士炙烤三文鱼披萨",
+    "category": "v2",
+    "reason": "海盐情绪值100%且讨论增长51%（626→946帖）",
+    "elements": "三文鱼低温预处理后表面快烤，海盐芝士碎耐链式高温。咸鲜9.8分主导，柠檬片后置添加避免苦味，银耳碎（情绪值22%提升）增加酥脆感",
+    "innovation": ""
+  },
+  {
+    "id": 194,
+    "name": "抹茶红豆流心披萨",
+    "category": "v2",
+    "reason": "抹茶粉94%情绪值+红豆沙14%提升",
+    "elements": "预烤抹茶饼底适配烤炉，红豆沙混合奶酪作夹心层控制流动性。甜辣9.0分通过微量山椒粉实现，玄米脆片后撒保持酥度",
+    "innovation": ""
+  },
+  {
+    "id": 195,
+    "name": "麻辣小龙虾尾披萨",
+    "category": "v2",
+    "reason": "小龙虾情绪值98%+麻辣8.3分",
+    "elements": "龙虾尾预煮去壳，辣椒油（情绪值8%提升）混合奶酪打底。规避新鲜蔬菜水分问题，用脱水香葱碎增强风味层次",
+    "innovation": ""
+  },
+  {
+    "id": 196,
+    "name": "紫甘蓝蒜香鸡脆骨披萨",
+    "category": "v2",
+    "reason": "紫甘蓝情绪值提升63%（37%→100%）+蒜24%提升",
+    "elements": "鸡脆骨预烤至半熟，紫甘蓝薄切脱水处理。咸鲜9.8分主调，蒜香8.2分强化，酸奶油酱后淋平衡油腻",
+    "innovation": ""
+  },
+  {
+    "id": 197,
+    "name": "孜然羊肉馕饼披萨",
+    "category": "v2",
+    "reason": "孜然情绪值95%+羊肉88%情绪值",
+    "elements": "羊肉薄切预炖，孜然粒耐高温烘烤。咸鲜9.8分基底，囊饼底适配链式烤炉快烤特性，薄荷酸奶酱后加形成味觉反差",
+    "innovation": ""
+  },
+  {
+    "id": 198,
+    "name": "奶盖草莓冰酪披萨",
+    "category": "v2",
+    "reason": "慕斯情绪值98%+奶盖90%",
+    "elements": "草莓冻干处理，奶酪底烤制后加冷藏奶盖层。甜辣9.0分通过草莓椒盐粉实现，跳跳糖后撒增强趣味性",
+    "innovation": ""
+  },
+  {
+    "id": 199,
+    "name": "藤椒金枪鱼熔岩披萨",
+    "category": "v2",
+    "reason": "金枪鱼情绪值78%+椒麻7.3分",
+    "elements": "金枪鱼罐头沥干水分，藤椒油混合奶酪打底。咸鲜9.8分主调，溏心蛋预处理后中心放置，烤制后呈现熔岩效果",
+    "innovation": ""
+  },
+  {
+    "id": 200,
+    "name": "海苔肉松爆浆披萨",
+    "category": "v2",
+    "reason": "海苔情绪值95%+肉松93%",
+    "elements": "肉松混合奶酪作夹心层防脱落，海苔碎后撒防焦。咸鲜9.8分极致化，少量芥末6.0分增加记忆点",
+    "innovation": ""
+  },
+  {
+    "id": 201,
+    "name": "酸辣泡菜肥牛披萨",
+    "category": "v2",
+    "reason": "辣白菜100%情绪值+酸辣8.7分",
+    "elements": "肥牛卷预烤去油，泡菜脱水切碎。通过番茄酱（情绪值14%提升）调和酸度，紫苏叶（情绪值9%提升）后置增添清香",
+    "innovation": ""
+  },
+  {
+    "id": 202,
+    "name": "黑巧克力杏仁苦甜披萨",
+    "category": "v2",
+    "reason": "黑巧99%情绪值+杏仁91%",
+    "elements": "70%黑巧碎耐烤不流浆，杏仁片预处理防焦。甜辣9.0分通过墨西哥辣椒粉实现，海盐边缘涂层增强层次",
+    "innovation": ""
+  },
+  {
+    "id": 203,
+    "name": "香辣蟹柳千层披萨",
+    "category": "v2",
+    "reason": "蟹柳90%情绪值+香辣8.5分",
+    "elements": "蟹柳撕条与奶酪交错铺放，薄饼多层结构适配链式快烤。咸鲜9.8分主调，脱水柠檬皮增香不抢味",
+    "innovation": ""
+  },
+  {
+    "id": 204,
+    "name": "五香卤肉桂圆披萨",
+    "category": "v2",
+    "reason": "桂圆95%情绪值+五香8.0分",
+    "elements": "卤肉薄切预煮，桂圆干泡发后使用。甜辣9.0分通过五香粉微调实现，九层塔后置增添东南亚风情",
+    "innovation": ""
+  },
+  {
+    "id": 205,
+    "name": "咖喱鸡肉脆薯披萨",
+    "category": "v2",
+    "reason": "咖喱7.5分+鸡肉88%情绪值",
+    "elements": "薯格预炸作饼底，鸡肉丁咖喱腌制。咸鲜9.8分基底，芒果干后置添加解腻",
+    "innovation": ""
+  },
+  {
+    "id": 206,
+    "name": "蒜香虾仁油泼披萨",
+    "category": "v2",
+    "reason": "蒜69%情绪值+清鲜6.8分",
+    "elements": "虾仁开背预烤，烤后泼蒜油激发香气。咸鲜9.8分极致化，莳萝草碎后撒提升颜值",
+    "innovation": ""
+  },
+  {
+    "id": 207,
+    "name": "孜然羊肉薄脆披萨",
+    "category": "v2",
+    "reason": "孜然95%情绪值",
+    "elements": "薄脆饼底适配快烤。羊肉碎预炒，孜然粒混合奶酪铺底。咸鲜9.8分主调，酸奶酱斜线淋面形成视觉引导",
+    "innovation": ""
+  },
+  {
+    "id": 208,
+    "name": "麻辣牛肉干披萨",
+    "category": "v2",
+    "reason": "麻辣牛肉85%情绪值+麻辣8.3分",
+    "elements": "牛肉干切条直接使用，避免水分问题。咸鲜9.8分基底，巧克力碎后撒制造味觉冲突",
+    "innovation": ""
+  },
+  {
+    "id": 209,
+    "name": "奶香玉米云朵披萨",
+    "category": "v2",
+    "reason": "玉米粒91%情绪值+奶香7.0分",
+    "elements": "玉米粒预烤去水，蛋白霜裱花边缘烤制。甜辣9.0分通过微量辣椒粉实现，跳跳糖包装分装增加互动",
+    "innovation": ""
+  },
+  {
+    "id": 210,
+    "name": "香辣鱿鱼圈披萨",
+    "category": "v2",
+    "reason": "鱿鱼92%情绪值+香辣8.5分",
+    "elements": "鱿鱼圈预煮定型，辣椒面混合面包糠涂层。咸鲜9.8分主调，青柠角后置搭配",
+    "innovation": ""
+  },
+  {
+    "id": 211,
+    "name": "酸梅汤冻披萨",
+    "category": "v2",
+    "reason": "酸梅汤100%情绪值",
+    "elements": "酸梅汤制成果冻块，烤后放置饼面。清鲜6.8分基底，薄荷叶与话梅粉后撒增强清凉感",
+    "innovation": ""
+  },
+  {
+    "id": 212,
+    "name": "黑芝麻红糖糍粑披萨",
+    "category": "v2",
+    "reason": "黑芝麻95%情绪值+红糖99%",
+    "elements": "糍粑块预煎，黑芝麻粉混合奶酪打底。甜辣9.0分通过花椒粉微量添加实现，黄豆粉后撒增强传统感",
+    "innovation": ""
+  },
+  {
+    "id": 213,
+    "name": "藤椒鸡肉双拼披萨",
+    "category": "v2",
+    "reason": "椒麻7.3分+鸡肉88%情绪值",
+    "elements": "半区藤椒油浸鸡丝，半区原味鸡块。咸鲜9.8分统一基调，烤花生碎分界增强趣味",
+    "innovation": ""
+  },
+  {
+    "id": 214,
+    "name": "海带苗鲜虾披萨",
+    "category": "v2",
+    "reason": "海带苗100%情绪值+鲜虾97%",
+    "elements": "海带苗焯水压缩，虾仁开背预处理。咸鲜9.8分主调，山葵粉微量添加提升价值感",
+    "innovation": ""
+  },
+  {
+    "id": 215,
+    "name": "咸鲜海盐芝士海鲜披萨",
+    "category": "v2",
+    "reason": "海盐芝士25年功能打分89%（健康度维度提升38%），咸鲜口味评分9.8分最高。搭配高蛋白虾仁（25年功能打分99%）和预处理鱿鱼（94%健康评分）",
+    "elements": "海鲜提前解冻吸干水分，芝士选择耐高温马苏里拉基底，避免软质奶酪融化污染设备",
+    "innovation": ""
+  },
+  {
+    "id": 216,
+    "name": "甜辣猪肉脯溏心蛋披萨",
+    "category": "v2",
+    "reason": "猪肉脯功能打分提升40%（健康认知跃升），溏心蛋7%功能提升（蛋白质价值）。甜辣酱（9.0流行分）平衡猪肉脯咸香",
+    "elements": "溏心蛋后置添加避免过度凝固。",
+    "innovation": ""
+  },
+  {
+    "id": 217,
+    "name": "酸辣藤椒鸡杂披萨",
+    "category": "v2",
+    "reason": "鸡杂25年功能打分92%（高铁高蛋白认知），酸辣口味8.7分。藤椒油提升味觉层次\n健康价值：鸡杂硒含量被重点标注，酸辣味型降低油腻感",
+    "elements": "鸡杂预处理卤制确保链式烤箱快速熟成。",
+    "innovation": ""
+  },
+  {
+    "id": 218,
+    "name": "香草坚果薄脆披萨",
+    "category": "v2",
+    "reason": "香草84%功能打分（天然抗氧化剂概念），坚果碎后撒规避焦糊",
+    "elements": "超薄饼底改用标准厚度，香草油浸润饼边创造记忆点。\n数据异常处理：坚果类虽在不适配列表，通过烘烤后添加和蜂蜜粘合解决脱落问题",
+    "innovation": ""
+  },
+  {
+    "id": 219,
+    "name": "奶香斑斓椰浆披萨",
+    "category": "v2",
+    "reason": "斑斓100%功能打分（膳食纤维概念），椰浆8%功能提升（中链脂肪酸）\n流行度：奶香7.0分搭配清鲜6.8分，符合轻食趋势",
+    "elements": "双奶源结构（马苏里拉+椰浆粉）适应链式烤箱，热带水果预处理脱水。",
+    "innovation": ""
+  },
+  {
+    "id": 220,
+    "name": "蒜香手擀面披萨",
+    "category": "v2",
+    "reason": "手擀面100%功能打分（清洁标签优势），蒜香8.2分",
+    "elements": "手擀面预煮后煎制增加焦脆感，蒜油代替生蒜规避苦味。\n工艺创新：面条编织造型提升视觉吸引力，破解链式烤箱造型单一限制",
+    "innovation": ""
+  },
+  {
+    "id": 221,
+    "name": "五香卤牛筋披萨",
+    "category": "v2",
+    "reason": "牛筋99%功能打分（胶原蛋白认知），五香8.0分\n健康争议：虽胆固醇含量较高，但\"以形补形\"传统认知支撑消费",
+    "elements": "牛筋预制炖煮至胶质溢出，薄切铺陈避免烘烤不足。",
+    "innovation": ""
+  },
+  {
+    "id": 222,
+    "name": "孜然羊肉土豆披萨",
+    "category": "v2",
+    "reason": "羊肉97%稳定功能分，孜然7.8流行分",
+    "elements": "羊肉预处理去膻，土豆片预烤脱水。\n数据洞察：薯类在功能表评分普遍超90%，但需规避水分问题",
+    "innovation": ""
+  },
+  {
+    "id": 223,
+    "name": "咖喱梅花肉披萨",
+    "category": "v2",
+    "reason": "梅花肉86%功能打分（低脂概念），咖喱7.5分",
+    "elements": "日式咖喱块溶解度优于酱料，梅花肉薄切确保熟成。\n工艺重点：咖喱粉混合饼底面粉，增强风味渗透",
+    "innovation": ""
+  },
+  {
+    "id": 224,
+    "name": "酱香鸭血豆腐披萨",
+    "category": "v2",
+    "reason": "鸭血81%功能分（补铁认知），酱香7.7分\n创新点：创造中式火锅与西式披萨的味觉融合",
+    "elements": "鸭血预煮定型，郫县豆豉酱替代传统番茄酱。",
+    "innovation": ""
+  },
+  {
+    "id": 225,
+    "name": "椒麻鲜笋披萨",
+    "category": "v2",
+    "reason": "酸笋93%功能分（益生菌概念），椒麻7.3分\n健康警示：虽亚硝酸盐问题被提及，但\"发酵有益\"概念深入人心",
+    "elements": "笋片浸泡去涩，藤椒油与青花椒分阶调味。",
+    "innovation": ""
+  },
+  {
+    "id": 226,
+    "name": "清鲜河粉披萨",
+    "category": "v2",
+    "reason": "河粉50%功能分（低脂特性），清鲜6.8分",
+    "elements": "鲜虾打蓉作饼底，河粉编织造型保留镬气。\n工艺突破：破解河粉易碎难题，米粉粘结技术申请专利",
+    "innovation": ""
+  },
+  {
+    "id": 227,
+    "name": "芥末金枪鱼披萨",
+    "category": "v2",
+    "reason": "金枪鱼96%功能分（Omega-3概念），芥末6.0分",
+    "elements": "山葵现磨替代工业芥末酱，紫苏叶平衡刺激感。\n数据矛盾处理：金枪鱼帖子数下降61%，但功能分坚挺反映忠实客群存在",
+    "innovation": ""
+  },
+  {
+    "id": 228,
+    "name": "葱香乳扇披萨",
+    "category": "v2",
+    "reason": "乳扇100%功能分（非遗文化溢价），葱香6.5分\n文化赋能：大理乳扇工艺纪录片同步上线制造话题",
+    "elements": "乳扇烤制后掰碎，小葱低温油浸保持翠绿。",
+    "innovation": ""
+  },
+  {
+    "id": 229,
+    "name": "黑巧草莓披萨",
+    "category": "v2",
+    "reason": "黑巧24%功能分（类黄酮概念），草莓98%功能分\n味觉创新：海盐颗粒点缀破解甜腻，创造\"成年人的甜品披萨\"概念",
+    "elements": "70%黑巧碎与新鲜草莓冷冻脱水处理。",
+    "innovation": ""
+  },
+  {
+    "id": 230,
+    "name": "泡菜肥牛披萨",
+    "category": "v2",
+    "reason": "泡菜63%功能分（韩流影响），肥牛90%功能分",
+    "elements": "泡菜挤汁后使用，肥牛预煎锁住肉汁。\n供应链保障：与韩国泡菜厂战略合作确保风味稳定",
+    "innovation": ""
+  },
+  {
+    "id": 231,
+    "name": "榴莲咖啡披萨",
+    "category": "v2",
+    "reason": "咖啡48%功能分（提神需求），榴莲98%功能分\n争议营销：\"办公室禁食榜TOP1\"反向操作引发传播",
+    "elements": "咖啡粉混入饼底，冻干榴莲保持香气。",
+    "innovation": ""
+  },
+  {
+    "id": 232,
+    "name": "南瓜栗子披萨",
+    "category": "v2",
+    "reason": "南瓜100%功能分（膳食纤维），栗子100%功能分\n健康概念：\"双倍粗粮\"营养组合拳",
+    "elements": "板栗南瓜双泥漩涡造型，迷迭香增香。",
+    "innovation": ""
+  },
+  {
+    "id": 233,
+    "name": "麻婆豆腐披萨",
+    "category": "v2",
+    "reason": "豆腐96%功能分（植物蛋白），麻辣8.3分\n文化融合：意大利帕尔马干酪与川味豆腐碰撞",
+    "elements": "豆腐预煎定型，汉源花椒粉分层撒布。",
+    "innovation": ""
+  },
+  {
+    "id": 234,
+    "name": "松茸火腿披萨",
+    "category": "v2",
+    "reason": "松茸100%功能分（珍稀属性），火腿功能分稳定\n奢侈体验：推出限量版松茸季套餐",
+    "elements": "松茸薄切半隐藏式摆放，减少高温损耗。",
+    "innovation": ""
+  },
+  {
+    "id": 235,
+    "name": "青柠虾滑披萨",
+    "category": "v2",
+    "reason": "虾滑99%功能分（便捷性需求），青柠100%功能分",
+    "elements": "青柠皮屑替代新鲜切片，虾滑预制花纹造型。\n技术亮点：分子料理技术制作青柠爆珠",
+    "innovation": ""
+  },
+  {
+    "id": 236,
+    "name": "梅干菜腊肉披萨",
+    "category": "v2",
+    "reason": "梅干菜功能分未列但属发酵食材趋势，腊肉功能分稳定\n本土化创新：江浙风味与意大利美食结合",
+    "elements": "梅干菜浸泡去盐，腊肉蜜炙处理。",
+    "innovation": ""
+  },
+  {
+    "id": 237,
+    "name": "罗勒番茄披萨",
+    "category": "v2",
+    "reason": "番茄100%功能分（茄红素概念），罗勒功能分未列但属香草类\n经典重塑：教科书级玛格丽特披萨升级版",
+    "elements": "新鲜罗勒后置添加，圣马扎诺番茄特制酱料。",
+    "innovation": ""
+  },
+  {
+    "id": 238,
+    "name": "桂花酒酿披萨",
+    "category": "v2",
+    "reason": "醪糟100%功能分（促消化概念），桂花100%功能分",
+    "elements": "酒酿混入饼底发酵，糖桂花作釉料。\n技术创新：低温发酵面团提升桂花香气留存率",
+    "innovation": ""
+  },
+  {
+    "id": 239,
+    "name": "墨鱼汁海鲜披萨",
+    "category": "v2",
+    "reason": "墨鱼功能分未列但属高蛋白食材，墨鱼汁功能分未列但具天然色素优势\n视觉冲击：全黑披萨搭配荧光鱿鱼须造型",
+    "elements": "墨鱼圈预处理定型，汁液混入饼底。",
+    "innovation": ""
+  }
+];
+
+    // 当前页码
+    let currentPage = 1;
+    // 每页显示的项目数
+    const itemsPerPage = 30;
+    // 当前筛选条件
+    let currentFilter = {
+        category: 'all',
+        search: ''
+    };
+
+    // 初始化页面
+    document.addEventListener('DOMContentLoaded', function () {
+        renderPizzaCards();
+        renderPagination();
+
+        // 添加事件监听器
+        document.getElementById('apply-filter').addEventListener('click', applyFilters);
+        document.getElementById('reset-filter').addEventListener('click', resetFilters);
+        document.getElementById('search').addEventListener('keyup', function (e) {
+            if (e.key === 'Enter') {
+                applyFilters();
+            }
+        });
+    });
+
+    // 应用筛选条件
+    function applyFilters() {
+        currentFilter = {
+            category: document.getElementById('category-filter').value,
+            search: document.getElementById('search').value.toLowerCase()
+        };
+        currentPage = 1; // 重置到第一页
+        renderPizzaCards();
+        renderPagination();
+    }
+
+    // 重置筛选条件
+    function resetFilters() {
+        document.getElementById('category-filter').value = 'all';
+        document.getElementById('search').value = '';
+        currentFilter = {
+            category: 'all',
+            search: ''
+        };
+        currentPage = 1; // 重置到第一页
+        renderPizzaCards();
+        renderPagination();
+    }
+
+    // 获取筛选后的披萨数据
+    function getFilteredPizzas() {
+        return pizzaData.filter(pizza => {
+            // 分类筛选
+            const categoryMatch = currentFilter.category === 'all' || pizza.category === currentFilter.category;
+
+            // 搜索筛选
+            const searchMatch = currentFilter.search === '' ||
+                (pizza.name || '').toLowerCase().includes(currentFilter.search) ||
+                (pizza.reason || '').toLowerCase().includes(currentFilter.search) ||
+                (pizza.elements || '').toLowerCase().includes(currentFilter.search) ||
+                (pizza.innovation || '').toLowerCase().includes(currentFilter.search);
+
+            return categoryMatch && searchMatch;
+        });
+    }
+
+    // 渲染披萨卡片
+    function renderPizzaCards() {
+        const container = document.getElementById('pizza-container');
+        container.innerHTML = '';
+
+        const filteredPizzas = getFilteredPizzas();
+        const paginatedPizzas = getPaginatedItems(filteredPizzas);
+
+        if (paginatedPizzas.length === 0) {
+            container.innerHTML = '<div class="no-results">没有找到匹配的披萨概念</div>';
+            return;
+        }
+
+        paginatedPizzas.forEach(pizza => {
+            const card = document.createElement('div');
+            card.className = 'pizza-card';
+
+            card.innerHTML = `
+                    <div class="pizza-header">
+                        <h3 class="pizza-title">${pizza.name}</h3>
+                        <div class="pizza-id">${pizza.id}</div>
+                    </div>
+                    <div class="pizza-body">
+                        <div class="pizza-section">
+                            <div class="section-title">推荐理由</div>
+                            <p class="pizza-content">${pizza.reason}</p>
+                        </div>
+                        <div class="pizza-section">
+                            <div class="section-title">核心元素</div>
+                            <p class="pizza-content">${pizza.elements}</p>
+                        </div>
+                        ${pizza.innovation ? `
+                        <div class="pizza-section">
+                            <div class="section-title">创新点</div>
+                            <p class="pizza-content">${pizza.innovation}</p>
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+
+            container.appendChild(card);
+        });
+    }
+
+    // 获取分页数据
+    function getPaginatedItems(items) {
+        const start = (currentPage - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        return items.slice(start, end);
+    }
+
+    // 渲染分页按钮
+    function renderPagination() {
+        const pagination = document.getElementById('pagination');
+        pagination.innerHTML = '';
+
+        const filteredPizzas = getFilteredPizzas();
+        const totalPages = Math.ceil(filteredPizzas.length / itemsPerPage);
+
+        if (totalPages <= 1) return;
+
+        // 上一页按钮
+        const prevBtn = document.createElement('button');
+        prevBtn.className = `page-btn ${currentPage === 1 ? 'disabled' : ''}`;
+        prevBtn.textContent = '上一页';
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderPizzaCards();
+                renderPagination();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+        pagination.appendChild(prevBtn);
+
+        // 页码按钮
+        for (let i = 1; i <= totalPages; i++) {
+            const pageBtn = document.createElement('button');
+            pageBtn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
+            pageBtn.textContent = i;
+            pageBtn.addEventListener('click', () => {
+                currentPage = i;
+                renderPizzaCards();
+                renderPagination();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            pagination.appendChild(pageBtn);
+        }
+
+        // 下一页按钮
+        const nextBtn = document.createElement('button');
+        nextBtn.className = `page-btn ${currentPage === totalPages ? 'disabled' : ''}`;
+        nextBtn.textContent = '下一页';
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                renderPizzaCards();
+                renderPagination();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+        pagination.appendChild(nextBtn);
+    }
+</script>
+</body>
+</html>

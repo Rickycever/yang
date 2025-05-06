@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长春高新(sz.000661)商业分析报告</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        .report-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .cover {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://img.freepik.com/free-photo/industry-robots-with-3d-rendering-robot-arms_117023-379.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .cover h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .cover h2 {
+            font-size: 28px;
+            font-weight: normal;
+            margin-top: 0;
+        }
+        
+        .cover .date {
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        
+        .section {
+            padding: 30px 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section-title {
+            color: #0066cc;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            width: calc(33.33% - 20px);
+        }
+        
+        .info-card {
+            background: #f1f8ff;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .chart-placeholder {
+            background: #f5f5f5;
+            border: 1px dashed #ccc;
+            border-radius: 5px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .pie-chart {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 50%;
+            background: conic-gradient(
+                #4e79a7 0% 40%, 
+                #f28e2c 40% 75%, 
+                #e15759 75% 100%
+            );
+        }
+        
+        .pie-legend {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+        }
+        
+        .legend-label {
+            font-size: 14px;
+        }
+        
+        .stat-cards {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+        }
+        
+        .stat-value {
+            font-size: 28px;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 5px;
+        }
+        
+        .trend-up {
+            color: #27ae60;
+        }
+        
+        .trend-down {
+            color: #e74c3c;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .data-comparison {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .data-column {
+            width: 48%;
+        }
+        
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .column {
+            width: 48%;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .risk-matrix {
+            width: 100%;
+            height: 300px;
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .risk-item {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .investment-rating {
+            background: #e6f3ff;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .rating-value {
+            font-size: 36px;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+        
+        .text-success {
+            color: #27ae60;
+        }
+        
+        .text-danger {
+            color: #e74c3c;
+        }
+        
+        .text-warning {
+            color: #f39c12;
+        }
+
+        /* 新的风险矩阵样式 */
+        .risk-matrix-modern {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(to bottom right, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            position: relative;
+            margin-bottom: 30px;
+            overflow: hidden;
+            padding: 20px;
+        }
+        
+        .risk-grid {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            right: 20px;
+            bottom: 60px;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        
+        .risk-grid-cell {
+            border: 1px solid #dee2e6;
+            position: relative;
+        }
+        
+        .risk-axis-label {
+            position: absolute;
+            font-size: 12px;
+            color: #6c757d;
+            font-weight: 500;
+        }
+        
+        .risk-axis-x {
+            bottom: 30px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .risk-axis-y {
+            left: -35px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+            white-space: nowrap;
+        }
+        
+        .risk-item-modern {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            font-size: 13px;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+            padding: 12px;
+            width: 130px;
+            max-width: 130px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            z-index: 5;
+        }
+        
+        .risk-item-modern:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .risk-high {
+            background-color: #e74c3c;
+        }
+        
+        .risk-medium {
+            background-color: #f39c12;
+        }
+        
+        .risk-low {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <!-- 封面 -->
+        <div class="cover">
+            <h1>长春高新股份有限公司</h1>
+            <h2>sz.000661 - 商业分析报告</h2>
+            <div class="date">2025-04-29</div>
+        </div>
+        
+        <!-- 目录 -->
+        <div class="section">
+            <h2 class="section-title">目录</h2>
+            <ol>
+                <li>公司概览</li>
+                <li>关键财务指标</li>
+                <li>业务分析与市场表现</li>
+                <li>行业对比与竞争分析</li>
+                <li>风险评估</li>
+                <li>投资建议</li>
+                <li>附录：详细财务数据</li>
+            </ol>
+        </div>
+        
+        <!-- 公司概览 -->
+        <div class="section">
+            <h2 class="section-title">公司概览</h2>
+            <div class="two-column">
+                <div class="column">
+                    <div class="info-card">
+                        <h3>公司基本信息</h3>
+                        <p><strong>公司名称：</strong>长春高新</p>
+                        <p><strong>股票代码：</strong>sz.000661</p>
+                        <p><strong>上市日期：</strong>1996-12-18</p>
+                        <p><strong>所属行业：</strong>生物医药-生长激素细分领域</p>
+                        <p><strong>市场地位：</strong>国内生长激素龙头企业</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>运营概况</h3>
+                        <p><strong>主营业务：</strong>中国生物制药领军企业，核心产品重组人生长激素市占率持续领先，覆盖全国2000多家终端医疗机构，拥有亚洲最大哺乳动物细胞培养生产基地。</p>
+                        <p><strong>业务覆盖：</strong>生长激素市场占有率超70%</p>
+                        <p><strong>年度营收：</strong>85.77亿元（2020年，同比-20.40%）</p>
+                        <p><strong>年度净利润：</strong>33.08亿元（2020年，同比-18.67%）</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>核心业务构成</h3>
+                    <div style="text-align: center;">
+                        <div class="pie-chart"></div>
+                        <div class="pie-legend">
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #4e79a7;"></div>
+                                <div class="legend-label">基因工程生物药品（占比82%）</div>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #f28e2c;"></div>
+                                <div class="legend-label">中成药生产（占比12%）</div>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #e15759;"></div>
+                                <div class="legend-label">房地产及物业服务（占比6%）</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-placeholder" style="height: 150px;">
+                        生长激素市场占有率超70%
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 关键财务指标 -->
+        <div class="section">
+            <h2 class="section-title">关键财务指标</h2>
+            
+            <div class="stat-cards">
+                <div class="stat-card">
+                    <div class="stat-value">11.46% <span class="trend-down">-11.13%</span></div>
+                    <div class="stat-label">ROE (2024Q2)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">27.08亿 
+                        <span class="text-danger">
+                            -43.31%
+                        </span>
+                    </div>
+                    <div class="stat-label">净利润 (2024年)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">134.66亿 
+                        <span class="text-danger">
+                            -7.55%
+                        </span>
+                    </div>
+                    <div class="stat-label">营业收入 (2024年)</div>
+                </div>
+            </div>
+            
+            <div class="info-card" style="margin-top: 10px; margin-bottom: 15px;">
+                <p><strong>财务指标解读：</strong>
+                高毛利特征延续但增长失速，2024年营收/净利润同比下滑7.55%/43.31%，存货周转天数升至909天显示渠道压力，流动比率4.76彰显短期偿债能力优异
+                </p>
+            </div>
+            
+            <h3>营收与净利润趋势（2020-2024）</h3>
+            <div style="position: relative; height: 300px; margin-bottom: 20px;">
+                <canvas id="revenueChart"></canvas>
+            </div>
+            
+            <div class="two-column">
+                <div class="column">
+                    <h3>盈利能力分析</h3>
+                    <div style="position: relative; height: 300px; margin-bottom: 20px;">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>财务健康度评分</h3>
+                    <div class="info-card">
+                        <h4 style="text-align: center; font-size: 24px;">财务健康度：B</h4>
+                        <p><strong>流动比率：</strong>4.76（良好）</p>
+                        <p><strong>资产负债率：</strong>0.16%（较低水平）</p>
+                        <p><strong>现金流充足度：</strong>良好</p>
+                        <p><strong>短期偿债能力：</strong>速动比率4.46，良好</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 业务分析与市场表现 -->
+        <div class="section">
+            <h2 class="section-title">市场表现</h2>
+            
+            <h3>股价走势（近12个月）</h3>
+            <div style="position: relative; height: 300px; margin-bottom: 20px;">
+                <canvas id="stockChart"></canvas>
+            </div>
+        </div>
+        
+        <!-- 行业对比与竞争分析 -->
+        <div class="section">
+            <h2 class="section-title">行业对比与竞争分析</h2>
+            
+            <h3>关键财务指标行业对比</h3>
+            <table>
+                <tr>
+                    <th>指标</th>
+                    <th>长春高新</th>
+                    <th>行业平均</th>
+                    <th>安科生物</th>
+                    <th>特宝生物</th>
+                </tr>
+                <tr>
+                    <td>ROE(%)</td>
+                    <td class="text-success">11.46%</td>
+                    <td>15.00%</td>
+                    <td>18.2%</td>
+                    <td>22.5%</td>
+                </tr>
+                <tr>
+                    <td>毛利率(%)</td>
+                    <td class="text-success">85.72%</td>
+                    <td>80.00%</td>
+                    <td>85.1%</td>
+                    <td>89.3%</td>
+                </tr>
+                <tr>
+                    <td>资产周转率(次)</td>
+                    <td class="text-danger">0.44</td>
+                    <td>0.5</td>
+                    <td>0.38</td>
+                    <td>0.42</td>
+                </tr>
+            </table>
+            
+            <h3>SWOT分析</h3>
+            <table>
+                <tr>
+                    <th width="50%">优势 (Strengths)</th>
+                    <th width="50%">劣势 (Weaknesses)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>生长激素市场绝对龙头地位稳固</li>
+                            <li>研发管线拥有长效剂型等创新产品</li>
+                            <li>现金流充沛（货币资金占总资产35%）</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>集采政策导致产品价格承压</li>
+                            <li>单产品依赖风险（生长激素占比超80%）</li>
+                            <li>存货周转效率持续下降</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>机会 (Opportunities)</th>
+                    <th>威胁 (Threats)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>儿科内分泌治疗需求持续增长</li>
+                            <li>消费医疗升级带动自费市场扩容</li>
+                            <li>海外市场拓展空间打开</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>生物类似药竞争加剧</li>
+                            <li>医保控费政策超预期</li>
+                            <li>基因治疗技术替代风险</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- 风险评估 -->
+        <div class="section">
+            <h2 class="section-title">风险评估</h2>
+            
+            <h3>风险评估矩阵</h3>
+            <div class="risk-matrix-modern">
+                <div class="risk-axis-label risk-axis-x">发生概率</div>
+                <div class="risk-axis-label risk-axis-y">影响程度</div>
+                
+                <!-- 概率和影响标签 -->
+                <div style="position: absolute; left: 25px; top: 60px; font-size: 11px; color: #666; font-weight: bold;">高</div>
+                <div style="position: absolute; left: 25px; bottom: 60px; font-size: 11px; color: #666; font-weight: bold;">低</div>
+                <div style="position: absolute; left: 60px; bottom: 40px; font-size: 11px; color: #666; font-weight: bold;">低</div>
+                <div style="position: absolute; right: 20px; bottom: 40px; font-size: 11px; color: #666; font-weight: bold;">高</div>
+                
+                <div class="risk-grid">
+                    <!-- 网格单元格 -->
+                    <div class="risk-grid-cell"></div>
+                    <div class="risk-grid-cell"></div>
+                    <div class="risk-grid-cell"></div>
+                    <div class="risk-grid-cell"></div>
+                    <div class="risk-grid-cell"></div>
+                    <div class="risk-grid-cell"></div>
+                    <div class="risk-grid-cell"></div>
+                    <div class="risk-grid-cell"></div>
+                    <div class="risk-grid-cell"></div>
+                </div>
+                
+                <!-- 风险项 - 根据概率级别定位 -->
+                <div class="risk-item-modern risk-high" style="top: 80px; right: 120px;">
+                    生长激素纳入全国集采降价超30%
+                </div>
+                <div class="risk-item-modern risk-medium" style="top: 200px; right: 150px;">
+                    竞争格局恶化导致市场份额流失
+                </div>
+                <div class="risk-item-modern risk-low" style="bottom: 80px; right: 180px;">
+                    新产品临床进展不及预期
+                </div>
+                <div class="risk-item-modern risk-high" style="top: 70px; left: 100px;">
+                    行业竞争加剧
+                </div>
+            </div>
+            <div class="info-card">
+                <p><strong>高概率风险：</strong>生长激素纳入全国集采降价超30%、行业竞争加剧</p>
+                <p><strong>中概率风险：</strong>竞争格局恶化导致市场份额流失</p>
+                <p><strong>低概率风险：</strong>新产品临床进展不及预期</p>
+            </div>
+            
+            <h3>风险管理策略</h3>
+            <table>
+                <tr>
+                    <th>风险类型</th>
+                    <th>风险描述</th>
+                    <th>缓解措施</th>
+                </tr>
+                <tr>
+                    <td>技术风险</td>
+                    <td>生物类似药研发进度落后竞争对手</td>
+                    <td>加大研发投入，建立长效制剂技术壁垒</td>
+                </tr>
+                <tr>
+                    <td>财务风险</td>
+                    <td>集采导致毛利率下滑至80%以下</td>
+                    <td>优化生产成本结构，提升非医保产品占比</td>
+                </tr>
+                <tr>
+                    <td>市场风险</td>
+                    <td>消费者对生长激素认知偏差影响需求</td>
+                    <td>加强患者教育，建设数字化营销体系</td>
+                </tr>
+                <tr>
+                    <td>成本风险</td>
+                    <td>生物反应器耗材进口依赖度高</td>
+                    <td>推进国产替代供应链建设</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- 投资建议 -->
+        <div class="section">
+            <h2 class="section-title">投资建议</h2>
+            
+            <div class="investment-rating">
+                <div class="rating-value">持有</div>
+                <div>目标价：105元（+7.36%）</div>
+            </div>
+            
+            <div class="two-column">
+                <div class="column">
+                    <h3>投资逻辑</h3>
+                    <div class="info-card">
+                        <h4>投资理由</h4>
+                        <ul>
+                            <li>✓ 动态市盈率处于历史10%分位</li>
+                            <li>✓ 现金分红率维持高位（2024年股息率4.6%）</li>
+                            <li>✓ 在研产品管线价值尚未充分定价</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>估值分析</h3>
+                    <div class="info-card">
+                        <p><strong>当前PE（TTM）：</strong>16.61</p>
+                        <p><strong>当前PB：</strong>1.55倍（行业平均3.55倍）</p>
+                        <p><strong>合理估值区间：</strong>PB 1.6-2.1倍</p>
+                        <p><strong>估值结论：</strong>当前PB低于行业平均，存在一定估值修复空间，但需业绩持续改善作为支撑</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>投资建议时间轴</h3>
+            <div class="info-card">
+                <p><strong>短期（1-3个月）：</strong>观望政策落地（1-3个月）</p>
+                <p><strong>中期（3-6个月）：</strong>布局估值修复（3-6个月）</p>
+                <p><strong>长期（6个月以上）：</strong>关注新产品放量（6个月以上）</p>
+            </div>
+        </div>
+        
+        <!-- 附录：详细财务数据 -->
+        <div class="section">
+            <h2 class="section-title">附录：详细财务数据</h2>
+            
+            <h3>季度财务数据</h3>
+            <div style="overflow-x: auto;">
+                <table>
+                    <tr>
+                        <th>季度</th>
+                        <th>营收（亿元）</th>
+                        <th>净利润（亿元）</th>
+                        <th>毛利率(%)</th>
+                        <th>净利率(%)</th>
+                        <th>季度ROE(%)</th>
+                        <th>EPS（元）</th>
+                    </tr>
+                    <tr>
+                        <td>2025Q1</td>
+                        <td>None</td>
+                        <td>4.69</td>
+                        <td>88.22%</td>
+                        <td>15.66%</td>
+                        <td>2.03%</td>
+                        <td>5.39</td>
+                    </tr>
+                    <tr>
+                        <td>2024Q4</td>
+                        <td>134.66</td>
+                        <td>27.08</td>
+                        <td>85.72%</td>
+                        <td>20.11%</td>
+                        <td>11.46%</td>
+                        <td>6.33</td>
+                    </tr>
+                    <tr>
+                        <td>2024Q3</td>
+                        <td>None</td>
+                        <td>29.22</td>
+                        <td>85.60%</td>
+                        <td>28.13%</td>
+                        <td>12.38%</td>
+                        <td>9.22</td>
+                    </tr>
+                    <tr>
+                        <td>2024Q2</td>
+                        <td>66.39</td>
+                        <td>17.95</td>
+                        <td>84.62%</td>
+                        <td>27.05%</td>
+                        <td>7.82%</td>
+                        <td>10.12</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <h3>年度财务摘要</h3>
+            <table>
+                <tr>
+                    <th>年度</th>
+                    <th>营收（亿元）</th>
+                    <th>净利润（亿元）</th>
+                    <th>毛利率(%)</th>
+                    <th>ROE(%)</th>
+                    <th>资产负债率(%)</th>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>145.66</td>
+                    <td>47.76</td>
+                    <td>85.97%</td>
+                    <td>22.59%</td>
+                    <td>18.58%</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>126.27</td>
+                    <td>42.15</td>
+                    <td>88.00%</td>
+                    <td>25.38%</td>
+                    <td>20.06%</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>107.47</td>
+                    <td>38.97</td>
+                    <td>87.61%</td>
+                    <td>29.46%</td>
+                    <td>23.45%</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>85.77</td>
+                    <td>33.08</td>
+                    <td>86.69%</td>
+                    <td>32.04%</td>
+                    <td>26.84%</td>
+                </tr>
+            </table>
+            
+            <div class="info-card">
+                <strong>数据来源：</strong>Baostock数据库，公司公告，行业报告<br>
+                <strong>分析时间：</strong>2025-04-29<br>
+                <strong>注意事项：</strong>季度数据中部分营收数据缺失，行业对比数据需以权威统计为准，部分推断内容需结合公司正式公告验证。
+            </div>
+        </div>
+        
+        <!-- 封底 -->
+        <footer>
+            <h3>分析师信息</h3>
+            <p>分析师：金融大数据AI分析团队</p>
+            <p>联系方式：ai-analyst@example.com</p>
+            
+            <div style="margin: 20px 0; border-top: 1px solid #555; padding-top: 20px;">
+                <h3>免责声明</h3>
+                <p>本报告基于公开数据，仅供参考，不构成投资建议。</p>
+                <p>市场有风险，投资需谨慎。</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // 营收与净利润趋势图
+        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+        const revenueChart = new Chart(revenueCtx, {
+            type: 'line',
+            data: {
+                labels: [
+                    '2020年', 
+                    '2021年', 
+                    '2022年', 
+                    '2023年', 
+                    '2024年'
+                ],
+                datasets: [
+                    {
+                        label: '营收（亿元）',
+                        data: [
+                            "85.77", 
+                            "107.47", 
+                            "126.27", 
+                            "145.66", 
+                            "134.66",
+                        ],
+                        borderColor: '#0066cc',
+                        backgroundColor: 'rgba(0, 102, 204, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        yAxisID: 'y'
+                    },
+                    {
+                        label: '净利润（亿元）',
+                        data: [
+                            "33.08", 
+                            "38.97", 
+                            "42.15", 
+                            "47.76", 
+                            "27.08",
+                        ],
+                        borderColor: '#e74c3c',
+                        backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.3,
+                        yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                        title: {
+                            display: true,
+                            text: '营收（亿元）'
+                        }
+                    },
+                    y1: {
+                        type: 'linear',
+                        display: true,
+                        position: 'right',
+                        title: {
+                            display: true,
+                            text: '净利润（亿元）'
+                        },
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: '长春高新营收与净利润趋势图',
+                        font: {
+                            size: 16
+                        }
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false
+                    }
+                }
+            }
+        });
+
+        // 盈利能力雷达图
+        const radarCtx = document.getElementById('radarChart').getContext('2d');
+        const radarChart = new Chart(radarCtx, {
+            type: 'radar',
+            data: {
+                labels: ['毛利率', '净利率', '资产周转率', 'ROE'],
+                datasets: [
+                    {
+                        label: '长春高新',
+                        data: [
+                            "85.72", 
+                            "20.11", 
+                            "0.44", 
+                            "11.46"
+                        ],
+                        backgroundColor: 'rgba(0, 102, 204, 0.2)',
+                        borderColor: '#0066cc',
+                        pointBackgroundColor: '#0066cc',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: '#0066cc'
+                    },
+                    {
+                        label: '行业平均',
+                        data: [
+                            "80", 
+                            "25", 
+                            "0.5", 
+                            "15"
+                        ],
+                        backgroundColor: 'rgba(231, 76, 60, 0.2)',
+                        borderColor: '#e74c3c',
+                        pointBackgroundColor: '#e74c3c',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: '#e74c3c'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: '盈利能力行业对比',
+                        font: {
+                            size: 16
+                        }
+                    },
+                    legend: {
+                        position: 'bottom'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const label = context.dataset.label || '';
+                                const value = context.raw || 0;
+                                const index = context.dataIndex;
+                                const unit = index === 2 ? '次' : '%';
+                                return `${label}: ${value}${unit}`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    r: {
+                        min: 0,
+                        angleLines: {
+                            display: true
+                        },
+                        ticks: {
+                            backdropColor: 'rgba(255, 255, 255, 0)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // 股价走势图
+        const stockCtx = document.getElementById('stockChart').getContext('2d');
+        const stockChart = new Chart(stockCtx, {
+            type: 'line',
+            data: {
+                labels: [
+                    '2024-04', 
+                    '2024-05', 
+                    '2024-06', 
+                    '2024-07', 
+                    '2024-08', 
+                    '2024-09', 
+                    '2024-10', 
+                    '2024-11', 
+                    '2024-12', 
+                    '2025-01', 
+                    '2025-02', 
+                    '2025-04-29'
+                ],
+                datasets: [
+                    {
+                        label: '股价（元）',
+                        data: [
+                            "113.06", 
+                            "104.81", 
+                            "91.77", 
+                            "94.81", 
+                            "82.32", 
+                            "109.89", 
+                            "104.38", 
+                            "107.22", 
+                            "99.44", 
+                            "92.97", 
+                            "94.98", 
+                            "97.8"
+                        ],
+                        borderColor: '#27ae60',
+                        backgroundColor: 'rgba(39, 174, 96, 0.1)',
+                        borderWidth: 2,
+                        pointRadius: 3,
+                        pointHoverRadius: 6,
+                        tension: 0.3
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: '长春高新股价走势图（近12个月）',
+                        font: {
+                            size: 16
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `股价: ${context.raw}元`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: '股价（元）'
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return value + '元';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // 添加支撑位和阻力位信息文本
+        const stockInfoDiv = document.createElement('div');
+        stockInfoDiv.style.marginTop = '15px';
+        stockInfoDiv.style.textAlign = 'center';
+        stockInfoDiv.style.fontStyle = 'italic';
+        stockInfoDiv.style.backgroundColor = '#f8f9fa';
+        stockInfoDiv.style.padding = '10px';
+        stockInfoDiv.style.borderRadius = '8px';
+        stockInfoDiv.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)';
+        stockInfoDiv.innerHTML = 
+            '<strong>当前股价:</strong> 97.8元 <span style="color:#666">(2025-04-29)</span> | ' + 
+            '<strong>52周区间:</strong> 77.5~125.78元<br>' +
+            '<strong>关键支撑位:</strong> <span style="color: #3498db; font-weight:bold">88.0元</span> | ' + 
+            '<strong>关键阻力位:</strong> <span style="color: #e74c3c; font-weight:bold">107.6元</span> | ' +
+            '<strong>波动性:</strong> 20日波动率43.79%、60日波动率32.39%';
+        document.getElementById('stockChart').parentNode.appendChild(stockInfoDiv);
+    </script>
+</body>
+</html> 

@@ -1,0 +1,218 @@
+/* A4纸张尺寸设置 */
+@page {
+    size: A4;
+    margin: 10mm;
+}
+
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 头部样式 */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.header h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.header-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #666;
+}
+
+/* 时间线样式 */
+.timeline {
+    margin-bottom: 30px;
+}
+
+.timeline h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.timeline-container {
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 120px;
+    top: 0;
+    bottom: -30px;
+    width: 2px;
+    background-color: #e0e0e0;
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+.time {
+    width: 120px;
+    padding-right: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.event {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.event h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.event p {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.transport {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #e0e0e0;
+    color: #666;
+}
+
+/* 提示部分样式 */
+.tips {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.tips h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.tips ul {
+    list-style: none;
+}
+
+.tips li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* 紧急联系方式样式 */
+.emergency {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff3f3;
+    border-radius: 8px;
+}
+
+.emergency h2 {
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.emergency-contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.emergency-contacts div {
+    color: #666;
+}
+
+/* 页脚样式 */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+}
+
+/* 打印按钮样式 */
+.print-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.print-btn:hover {
+    background-color: #2980b9;
+}
+
+/* 图标样式 */
+.fas, .far {
+    margin-right: 8px;
+    color: #3498db;
+}
+
+/* 打印样式优化 */
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .container {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .print-btn {
+        display: none;
+    }
+
+    .event {
+        break-inside: avoid;
+    }
+
+    /* 确保打印时颜色正确 */
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+} 

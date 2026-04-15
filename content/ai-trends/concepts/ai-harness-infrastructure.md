@@ -56,10 +56,42 @@ tags: [harness, memory, context, observability, eval, invisible-failures]
 
 ---
 
+---
+
+## 补充：Harness Engineering实践模式（来自腾讯AI白皮书2026Q1）
+
+2026 Q1，Harness Engineering从BVP所描述的基础设施概念进化为具体的工程实践。三条路线从不同痛点切入，但都在搭同一套东西：
+
+### 接力赛架构（Anthropic）
+- **问题**：任务超过20-30步时，Agent会在第30步前后全局崩溃——不是偶尔犯错，而是彻底丧失全局视野
+- **方案**：初始化Agent负责搭环境并写claude-progress.txt（交接清单）后退场；编码Agent每次上场先读清单，只做一个具体功能，做完更新清单提交代码，再退场
+- **关键设计**：Agent间只通过文件传递信息，不共享对话历史（对话历史会不断膨胀淹没有效信号）
+
+### 甲方乙方架构（Anthropic）
+- **问题**：Agent评价自己工作时系统性打高分（self-deception，自我欺骗）——结构性偏差而非偶然失误
+- **方案**：Planner（规格书）+ Generator（每功能先签Sprint Contract）+ Evaluator（用真实浏览器测试，四维度评分，不达阈值必须返工）
+- **关键发现**：Evaluator必须使用功能性验证，而非外观验证（查代码）
+
+### 仓库卫生学（OpenAI）
+- **仓库即系统记录源**：Agent通过读代码理解架构、读文档理解业务、读测试理解预期行为；代码库质量直接决定Agent工作质量
+- **Doc gardening / anti-slop**：没有定期维护机制，Agent使用的代码仓库约2-3个月后显著劣化
+
+### Harness成熟度光谱（2026 Q1评估）
+
+| 状态 | 内容 |
+|------|------|
+| **已做好** | 指令基底（AGENTS.md等规则文件）、基础执行面（Shell/浏览器/文件/MCP）、基础验证、第一代工作流结构（Planner/Generator/Evaluator） |
+| **进步中但未稳** | 长时状态连续性（跨天跨会话记忆）、生产环境分层评测、多Agent协作 |
+| **明显未解决** | 事务性控制（真正的rollback/compensation/一致性保障）、组织级治理与审计、经济性框架（模型路由/预算分配）、通用多Agent协议 |
+
+**总判断**：足以构成第一代稳定骨架，但不足以成为最终框架。
+
 ## Connections
 
 - [[ai-trends/overview|AI趋势全景概览]] — 所属话题
-- [[ai-trends/sources/bvp-ai-infra-roadmap-2026|BVP AI基础设施路线图]] — 来源（前沿1）
+- [[ai-trends/sources/bvp-ai-infra-roadmap-2026|BVP AI基础设施路线图]] — 来源（前沿1，基础定义）
+- [[ai-trends/sources/tencent-ai-whitepaper-2026q1|腾讯AI白皮书2026Q1]] — 来源（趋势二，具体实践模式）
 - [[ai-trends/concepts/dataops-agentops|DataOps+AgentOps]] — 可观测性与AgentOps在监控维度高度重叠
 - [[ai-trends/concepts/agentic-ai-management|Agent管理]] — Harness基础设施是Agent管理的技术底座
+- [[ai-trends/concepts/skill-knowledge-carrier|Skill知识载体]] — Skill是Harness指令基底层的核心载体
 - [[palantir/concepts/ontology|Ontology]] — Palantir Ontology是企业级语义记忆层的一种实现形式

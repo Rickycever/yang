@@ -1,5 +1,12 @@
 # 更新日志
 
+## [2026-04-15] ingest | ai-trends 补充 | 1 个资料
+
+- ai-trends/sources/tencent-ai-whitepaper-2026q1 — AI趋势研究白皮书2026Q1（腾讯科技，博阳，60页）
+- 新概念页：agent-mainstreaming, recursive-rd-acceleration, skill-knowledge-carrier
+- 新实体页：openclaw
+- 更新概念页：ai-harness-infrastructure（接力赛/甲方乙方/仓库卫生学/成熟度光谱）
+
 ## [2026-04-15] ingest | ai-business 补充 | 1 个资料
 
 - ai-business/sources/huamao-ai-rd-20260225 — AI驱动的工业产品优化与迭代实现方案（华懋科技，2026年2月）

@@ -22,7 +22,10 @@ tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai]
 | [[ai-trends/concepts/geopolitics-of-compute\|算力地缘政治]] | 算力成为国家战略资源；出口管制、主权云、能源瓶颈三重压力 |
 | [[ai-trends/concepts/world-models\|世界模型]] | 从生成式AI到物理AI；NVIDIA Cosmos + Google Genie 3开启机器人训练新范式 |
 | [[ai-trends/concepts/dataops-agentops\|DataOps+AgentOps]] | 统一AIOps平台；AI扩展失败的主因是结构缺失而非算力不足 |
-| [[ai-trends/concepts/ai-harness-infrastructure\|Harness基础设施]] | 记忆/上下文管理+评估可观测性；78%的AI失效不可见；差异化转移到记忆层 |
+| [[ai-trends/concepts/ai-harness-infrastructure\|Harness基础设施]] | 记忆/上下文管理+评估可观测性；78%的AI失效不可见；接力赛/甲方乙方/仓库卫生学三大实践模式 |
+| [[ai-trends/concepts/agent-mainstreaming\|高自动化Agent主流化]] | 2026Q1 Agent从演示变为真实产品；OpenClaw 247K星/200万月活；五种产品形态同时分叉；"龙虾大战" |
+| [[ai-trends/concepts/recursive-rd-acceleration\|递归研发加速]] | AI进入完整研发闭环；AlphaEvolve/Autoresearch/M1三条路线；人脑成为系统限速器 |
+| [[ai-trends/concepts/skill-knowledge-carrier\|Skill知识载体]] | Skill是比prompt更稳/比workflow更活的know-how中间层；ClawHub 13,700+ Skills；Skill吞噬SaaS论点 |
 | [[ai-trends/concepts/continual-learning\|持续学习系统]] | 解决"权重冻结"问题；部署后真正积累知识，避免灾难性遗忘 |
 | [[ai-trends/concepts/rl-platforms\|RL平台]] | 以交互经验替代静态标注数据；训练Agent处理多步骤复杂任务 |
 | [[ai-trends/concepts/inference-inflection\|推理拐点]] | 推理算力需求超越训练；边缘/端侧AI兴起；Jensen Huang GTC 2026 |
@@ -88,6 +91,7 @@ tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai]
 
 - [[ai-trends/sources/ai-trends-report-2026-statworx|AI Trends Report 2026]] — statworx × AI Hub Frankfurt，139页，70+专家洞察
 - [[ai-trends/sources/bvp-ai-infra-roadmap-2026|AI基础设施路线图（BVP）]] — Bessemer Venture Partners，2026年3月，5大技术前沿
+- [[ai-trends/sources/tencent-ai-whitepaper-2026q1|AI趋势研究白皮书2026Q1（腾讯科技）]] — 腾讯科技，2026年4月，60页，4大趋势因果链分析
 
 ---
 
@@ -102,5 +106,6 @@ tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai]
 
 ## Recently Added
 
+- 2026-04-15 · 腾讯AI白皮书2026Q1：1个新来源、3个新概念页（Agent主流化、递归研发加速、Skill知识载体）、1个新实体页（OpenClaw）、更新Harness基础设施（接力赛/甲方乙方/仓库卫生学三大模式）
 - 2026-04-15 · BVP路线图：4个新概念页（Harness基础设施、持续学习、RL平台、推理拐点），更新世界模型（三大架构范式）
 - 2026-04-15 · 新话题：1个来源（AI Trends Report 2026，139页），6个概念页（Agent管理、独角兽微团队、B2AI2C、算力地缘政治、世界模型、DataOps+AgentOps）

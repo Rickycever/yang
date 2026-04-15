@@ -68,6 +68,7 @@ Annual AI trend analysis by statworx & AI Hub Frankfurt. 20 trends across 5 cate
 ## Recently Added
 
 - 2026-04-15 · [[ai-trends/overview|AI趋势 2026]] — 新话题：statworx报告，20个趋势，6个概念页（Agent管理、独角兽微团队、B2AI2C、算力地缘政治、世界模型、DataOps+AgentOps）
+- 2026-04-15 · [[ai-business/overview|AI 商业进化]] — 华懋科技：汽车被动安全AI+CAE三阶段方案，新实体页
 - 2026-04-15 · [[ai-business/overview|AI 商业进化]] — 2026白皮书：4个新概念（主动AI、L1-L4、3x3矩阵、企业判断系统）、5个新实体（玛氏、森马、博世、美的）
 - 2026-04-15 · [[palantir/overview|Palantir]] — 新话题：2个来源、5个概念页、1个实体页、1个综合页（FDE模式、RaaS、价值分享、Ontology、产品矩阵）
 - 2026-04-14 · [[otgo/overview|OTGO]] — Supplemented with 5 new sources, 3 new concepts, 2 new entities (DMWork, MET, 品哲学, Hermes, OpenClaw搜索架构)

@@ -39,11 +39,13 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 | [[ai-business/entities/senma\|森马]] | 数字人直播增收数千万，测款15天，孵化森创启睿 |
 | [[ai-business/entities/bosch-pt\|博世电动工具]] | 虚拟客户公司，AI前置发散+人后置决策 |
 | [[ai-business/entities/midea\|美的]] | 从黑灯工厂到智能体工厂，14智能体×38场景 |
+| [[ai-business/entities/huamao\|华懋科技]] | 汽车被动安全系统（气囊/安全带），AI+CAE三阶段方案，研发周期-30% |
 
 ---
 
 ## Sources
 
+- [[ai-business/sources/huamao-ai-rd-20260225\|华懋科技 AI研发方案（2026）]] — 汽车被动安全系统AI转型，三阶段路线+AI+CAE
 - [[ai-business/sources/ai-blueprint-2026-whitepaper\|AI时代的商业进化蓝图 2026白皮书]] — CEIBS×特赞，主动AI+L1-L4+3x3矩阵+5个案例
 - [[ai-business/sources/gea-speech-20260410\|GEA演讲（AI转写纪要）]] — 2026-04-10，中欧商学院
 - [[ai-business/sources/gea-speech-notes-20260410\|GEA演讲精简纪要]] — 2026-04-10，结构化版本
@@ -67,5 +69,6 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 
 ## Recently Added
 
+- 2026-04-15 · 华懋科技：AI+CAE三阶段方案，新实体页（汽车被动安全系统，20亿营收）
 - 2026-04-15 · 2026白皮书：4个新概念（主动AI、L1-L4、3x3矩阵、企业判断系统）、5个新实体（玛氏、森马、博世、美的、更新安克）
 - 2026-04-14 · 摄入3个来源（GEA演讲×2、安克创新）；创建4个概念、2个实体、1个综合页

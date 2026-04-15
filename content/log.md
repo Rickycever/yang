@@ -1,5 +1,10 @@
 # 更新日志
 
+## [2026-04-15] ingest | ai-business 补充 | 1 个资料
+
+- ai-business/sources/huamao-ai-rd-20260225 — AI驱动的工业产品优化与迭代实现方案（华懋科技，2026年2月）
+- 新实体页：huamao
+
 ## [2026-04-15] ingest | ai-trends（新话题）| 1 个资料
 
 - ai-trends/sources/ai-trends-report-2026-statworx — AI Trends Report 2026（statworx × AI Hub Frankfurt，139页，20趋势×5类别）

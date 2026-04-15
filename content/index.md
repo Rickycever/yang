@@ -65,6 +65,13 @@ Annual AI trend analysis by statworx & AI Hub Frankfurt. 20 trends across 5 cate
 
 ---
 
+### 奔驰 CDP+MA 项目 (Mercedes-Benz CDP+MA)
+Mercedes-Benz China marketing automation platform project. Key themes: CDP+MA integrated platform, three-phase delivery (MVP→Omnichannel→AI-native), data sovereignty (private deployment, data stays in Benz infrastructure), zero-intrusion SDK adapter, automotive ID system (user-vehicle relationship).
+
+→ [[benz/overview|奔驰 CDP+MA 项目全景概览]]
+
+---
+
 ### 阿迪达斯 DMP 标签项目 (Adidas DMP Tag Enrichment)
 Adidas China member data intelligence project. Key themes: 87M members with only 14% complete profiles, third-party tag enrichment for 10M users, Miaozhen/明略科技 as vendor, privacy computing architecture, 5,000+ tag system.
 
@@ -74,6 +81,7 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ## Recently Added
 
+- 2026-04-15 · [[benz/overview|奔驰 CDP+MA 项目]] — 明略科技方案（CDP+MA 五层架构、竞品矩阵、三阶段路线）+ 奔驰采购 SOW（功能/技术/SLA要求）
 - 2026-04-15 · [[adidas/overview|阿迪达斯 DMP 标签项目]] — 秒针明略科技标签增补提案：1个来源页、2个实体页（阿迪达斯、秒针）、2个概念页（第三方标签增补、DMP/CDP）
 - 2026-04-15 · [[ai-trends/overview|AI趋势 2026]] — 腾讯AI白皮书2026Q1：4大趋势（Agent主流化/Harness/递归研发/Skill），3个新概念页，1个新实体页（OpenClaw）
 - 2026-04-15 · [[ai-trends/overview|AI趋势 2026]] — BVP路线图补充：4个新概念（Harness基础设施、持续学习、RL平台、推理拐点）

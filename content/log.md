@@ -1,9 +1,22 @@
 # 更新日志
 
+## [2026-04-15] ingest | benz 补充 | 1 个资料
+
+- benz/sources/miaozhen-cdp-pitch-2026 — 明略科技 CDP 产品提案 2026（通用 Pitch Deck，10页，统·活·智框架，NeuroMA，行业知识底座）
+- 更新实体页：adidas/entities/miaozhen（补充 CDP 产品能力、NeuroMA、头部客户列表）
+
+## [2026-04-15] ingest | benz（新话题）| 2 个资料来源
+
+- benz/sources/miaozhen-benz-cdp-ma-proposal-20260412 — 明略科技奔驰 CDP+MA 完整方案 v1.0（业务框架+技术架构，含竞品矩阵，2026-04-12）
+- benz/sources/benz-sow-ma-saas — 奔驰 MA SaaS 平台采购 SOW（需求方采购文件）
+- 新实体页：benz（奔驰中国）
+- 新概念页：marketing-automation（营销自动化）
+- 新综合页：benz/overview
+
 ## [2026-04-15] ingest | adidas | 新话题，2 个资料来源
 
 - adidas/sources/miaozhen-3rd-party-tags-proposal-20260313 — 秒针明略科技阿迪达斯第三方标签增补提案（PDF，54页，2026/03）
-- RFP docx（二进制，未读取）
+- adidas/sources/adidas-rfp-3rd-party-tagging — 阿迪达斯第三方标签 RFP（DOCX，需求方视角，六大交付要求，技术硬指标）
 - 新实体页：adidas（阿迪达斯中国），miaozhen（秒针/明略科技）
 - 新概念页：third-party-tag-enrichment（第三方标签增补），dmp-cdp（DMP/CDP）
 - 新概览页：adidas/overview

@@ -55,6 +55,7 @@ tags: [adidas, dmp, tag-enrichment, miaozhen, china-market]
 ## 来源
 
 - [[adidas/sources/miaozhen-3rd-party-tags-proposal-20260313|秒针阿迪达斯标签增补提案 2026/03]] — 核心方案文档（PDF，54 页）
+- [[adidas/sources/adidas-rfp-3rd-party-tagging|阿迪达斯第三方标签 RFP]] — 需求方招标书，定义六大交付要求与技术硬指标（DOCX）
 
 ---
 

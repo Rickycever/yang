@@ -69,9 +69,32 @@ tags: [miaozhen, mininglamp, dmp, martech, data-intelligence]
 
 ---
 
+## CDP 产品核心能力（MiningLamp CDP）
+
+明略科技的标准化 CDP 产品定位为"统·活·智"三层架构，品牌为 MiningLamp CDP：
+
+- **统（UNIFY）**：全渠道数据汇聚 + OneID 身份融合 + 消费者 360° 视图
+- **活（ACTIVATE）**：精准圈选实时分发，对接 CRM/MA/广告
+- **智（INTELLIGENT）**：AI 原生决策引擎，旗舰产品 **NeuroMA**（自然语言→分钟级圈选，AI 规则与专家规则吻合度 90%+）
+
+**核心差异化（三个结构性优势）：**
+1. AI 原生：AI 与数据共享同一事实层，含行业知识底座（母婴/快消/汽车信号→意图映射库）
+2. 安全优先：全程 AES 加密 + KMS 密钥管理，数据始终密文流转
+3. 私有化全栈：MinIO + Keycloak + K8S，无第三方依赖，无需公有云
+
+**头部客户（CDP 业务线）：**
+- 汽车：SGM · 奔驰 · BMW（CDP+MA 一体化）
+- 快消：百事 · 可口可乐 · GSK（圈选交付 5天→实时，CTR 提升 40%+）
+- 3C：三星 · 九号出行（CDP+AI 分析）
+- 服饰：UA · 波司登（会员运营体系）
+
+---
+
 ## Connections
 
 - [[adidas/sources/miaozhen-3rd-party-tags-proposal-20260313|秒针阿迪达斯标签增补提案]] — 本实体的核心业务文件
-- [[adidas/entities/adidas|阿迪达斯中国]] — 本项目的客户方
+- [[adidas/entities/adidas|阿迪达斯中国]] — 标签增补项目的客户方
+- [[benz/sources/miaozhen-benz-cdp-ma-proposal-20260412|明略科技奔驰 CDP+MA 完整方案]] — CDP+MA 项目的应标方案
+- [[benz/sources/miaozhen-cdp-pitch-2026|明略科技 CDP 产品提案 2026]] — 产品级通用 Pitch Deck
 - [[adidas/concepts/third-party-tag-enrichment|第三方标签增补]] — 核心服务能力
 - [[adidas/concepts/dmp-cdp|DMP / CDP]] — 产品技术底座

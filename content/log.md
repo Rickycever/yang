@@ -1,5 +1,11 @@
 # 更新日志
 
+## [2026-04-15] ingest | ai-trends（新话题）| 1 个资料
+
+- ai-trends/sources/ai-trends-report-2026-statworx — AI Trends Report 2026（statworx × AI Hub Frankfurt，139页，20趋势×5类别）
+- 新概念页：agentic-ai-management, one-person-unicorn, b2ai2c, geopolitics-of-compute, world-models, dataops-agentops
+- 新综合页：ai-trends/overview
+
 ## [2026-04-15] ingest | ai-business 补充 | 1 个资料
 
 - ai-business/sources/ai-blueprint-2026-whitepaper — AI时代的商业进化蓝图2026白皮书（CEIBS×特赞，65页）

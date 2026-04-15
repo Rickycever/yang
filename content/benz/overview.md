@@ -17,6 +17,7 @@ tags: [benz, cdp, marketing-automation, miaozhen, china-market]
 ## 核心概念
 
 - [[benz/concepts/marketing-automation|Marketing Automation（营销自动化）]] — MA Canvas 编排、全渠道触达、AI Agent 赋能、效果闭环
+- [[benz/concepts/agent-ready-data-platform|Agent-Ready 数据中台]] — 专为 AI Agent 设计的数据基础设施范式（MCP 标准接口 + 全模态存储 + 可观测性）
 
 ---
 
@@ -73,6 +74,8 @@ tags: [benz, cdp, marketing-automation, miaozhen, china-market]
 
 - [[benz/sources/miaozhen-benz-cdp-ma-proposal-20260412|明略科技奔驰 CDP+MA 完整方案]] — 供应商应标方案（业务框架 + 技术架构，含竞品矩阵）
 - [[benz/sources/benz-sow-ma-saas|奔驰 MA SaaS 平台采购 SOW]] — 需求方采购文件（功能/技术/SLA/商务要求）
+- [[benz/sources/miaozhen-cdp-pitch-2026|明略科技 CDP 产品提案 2026]] — 通用产品 Pitch（统·活·智框架，NeuroMA，头部客户）
+- [[benz/sources/miaozhen-agent-data-platform-whitepaper-202604|明略科技 Agent-Ready 数据中台白皮书]] — 技术架构白皮书（MCP 接口层，三路存储，三类 Agent 场景）
 
 ---
 

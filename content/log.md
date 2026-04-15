@@ -1,5 +1,19 @@
 # 更新日志
 
+## [2026-04-15] ingest | nestle（新话题）| 2 个资料来源
+
+- nestle/sources/miaozhen-nestle-dmp-nin-pitch-202512 — 秒针明略雀巢 NIN DMP 提案（PDF，66页，母婴行业专项，2025/12）
+- nestle/sources/nestle-dmp-rfp-202510 — 雀巢广告数据管理与营销优化项目 RFP（DOCX，需求方采购文件，2025/10）
+- 新实体页：nestle（雀巢中国）
+- 新概念页：sales-driven-retargeting（Sales-driven Retargeting / 销售导向再营销）
+- 新综合页：nestle/overview
+
+## [2026-04-15] ingest | benz 补充 | 1 个资料（白皮书）
+
+- benz/sources/miaozhen-agent-data-platform-whitepaper-202604 — 为 AI Agent 服务的数据中台技术架构白皮书（明略科技，2026/04，v1.0）
+- 新概念页：benz/concepts/agent-ready-data-platform（Agent-Ready 数据中台）
+- 重要披露：白皮书确认 Hermes 为明略自研 Agent 框架，AgentPortal 为 Agent 管理产品
+
 ## [2026-04-15] ingest | benz 补充 | 1 个资料
 
 - benz/sources/miaozhen-cdp-pitch-2026 — 明略科技 CDP 产品提案 2026（通用 Pitch Deck，10页，统·活·智框架，NeuroMA，行业知识底座）

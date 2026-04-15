@@ -72,6 +72,13 @@ Mercedes-Benz China marketing automation platform project. Key themes: CDP+MA in
 
 ---
 
+### 雀巢 DMP 项目 (Nestlé Ad-DMP)
+Nestlé China multi-category (coffee, infant formula, snacks) advertising data management project. Key themes: Sales-driven Retargeting (7+ external exposures → e-commerce conversion), M2S attribution (Marketing to Sales), BBV keyword tags (highest intent signal), Miaozhen as vendor, PIPL-compliant privacy computing.
+
+→ [[nestle/overview|雀巢 DMP 项目全景概览]]
+
+---
+
 ### 阿迪达斯 DMP 标签项目 (Adidas DMP Tag Enrichment)
 Adidas China member data intelligence project. Key themes: 87M members with only 14% complete profiles, third-party tag enrichment for 10M users, Miaozhen/明略科技 as vendor, privacy computing architecture, 5,000+ tag system.
 
@@ -81,6 +88,7 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ## Recently Added
 
+- 2026-04-15 · [[nestle/overview|雀巢 DMP 项目]] — 新话题：秒针明略 NIN 提案（BBV标签/活数据/四级评测）+ 雀巢 RFP（Sales-driven Retargeting/M2S/MTA）
 - 2026-04-15 · [[benz/overview|奔驰 CDP+MA 项目]] — 明略科技方案（CDP+MA 五层架构、竞品矩阵、三阶段路线）+ 奔驰采购 SOW（功能/技术/SLA要求）
 - 2026-04-15 · [[adidas/overview|阿迪达斯 DMP 标签项目]] — 秒针明略科技标签增补提案：1个来源页、2个实体页（阿迪达斯、秒针）、2个概念页（第三方标签增补、DMP/CDP）
 - 2026-04-15 · [[ai-trends/overview|AI趋势 2026]] — 腾讯AI白皮书2026Q1：4大趋势（Agent主流化/Harness/递归研发/Skill），3个新概念页，1个新实体页（OpenClaw）

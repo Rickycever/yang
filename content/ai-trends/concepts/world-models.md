@@ -30,6 +30,14 @@ tags: [world-models, physical-ai, robotics, nvidia-cosmos, simulation]
 - 语言模型（LLM）：预测下一个词，无法理解物理约束
 - 世界模型：能"想象"行动后果，具备规划能力
 
+**三大架构范式（BVP 2026）**：
+
+| 范式 | 代表公司 | 特点 | 局限 |
+|------|---------|------|------|
+| 视频生成型 | Reka、Decart | 在像素空间预测未来帧，实时交互，动态响应 | 长时物理一致性较弱 |
+| 显式3D表示型 | World Labs | 构建持久3D场景，空间一致性强，推理成本低 | 目前场景为预生成静态 |
+| 潜在预测型/JEPA | AMI Labs | 在压缩潜在空间预测未来状态，算力效率最高 | 可解释性低 |
+
 ---
 
 ## 为什么重要
@@ -52,5 +60,7 @@ tags: [world-models, physical-ai, robotics, nvidia-cosmos, simulation]
 
 - [[ai-trends/overview|AI趋势全景概览]] — 所属话题
 - [[ai-trends/sources/ai-trends-report-2026-statworx|AI Trends Report 2026]] — 来源（T17）
+- [[ai-trends/sources/bvp-ai-infra-roadmap-2026|BVP AI基础设施路线图]] — 三大架构范式补充（前沿5）
+- [[ai-trends/concepts/rl-platforms|RL平台]] — 世界模型提供RL训练所需的物理仿真环境
 - [[industry-research/concepts/quantum-nvidia|量子计算与NVIDIA]] — NVIDIA在物理AI基础设施领域的战略地位
 - [[ai-business/entities/midea|美的集团]] — 智能体工厂是世界模型落地制造业的近似形态

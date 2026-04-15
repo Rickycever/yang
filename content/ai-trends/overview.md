@@ -8,7 +8,7 @@ tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai]
 
 # AI趋势 2026（AI Trends）
 
-2026年AI进入问责期（Accountability Era）：从试验走向生产，从工具演变为基础设施，从文本生成进化为物理执行。本话题基于 statworx × AI Hub Frankfurt 发布的《AI Trends Report 2026》，覆盖企业、工作、经济、文化、技术五大领域的20个核心趋势。
+2026年AI进入问责期（Accountability Era）：从试验走向生产，从工具演变为基础设施，从文本生成进化为物理执行。本话题覆盖两个视角：statworx × AI Hub Frankfurt 的《AI Trends Report 2026》（20个商业趋势）和 BVP 的《AI基础设施路线图》（5大技术前沿）。
 
 ---
 
@@ -22,6 +22,10 @@ tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai]
 | [[ai-trends/concepts/geopolitics-of-compute\|算力地缘政治]] | 算力成为国家战略资源；出口管制、主权云、能源瓶颈三重压力 |
 | [[ai-trends/concepts/world-models\|世界模型]] | 从生成式AI到物理AI；NVIDIA Cosmos + Google Genie 3开启机器人训练新范式 |
 | [[ai-trends/concepts/dataops-agentops\|DataOps+AgentOps]] | 统一AIOps平台；AI扩展失败的主因是结构缺失而非算力不足 |
+| [[ai-trends/concepts/ai-harness-infrastructure\|Harness基础设施]] | 记忆/上下文管理+评估可观测性；78%的AI失效不可见；差异化转移到记忆层 |
+| [[ai-trends/concepts/continual-learning\|持续学习系统]] | 解决"权重冻结"问题；部署后真正积累知识，避免灾难性遗忘 |
+| [[ai-trends/concepts/rl-platforms\|RL平台]] | 以交互经验替代静态标注数据；训练Agent处理多步骤复杂任务 |
+| [[ai-trends/concepts/inference-inflection\|推理拐点]] | 推理算力需求超越训练；边缘/端侧AI兴起；Jensen Huang GTC 2026 |
 
 ---
 
@@ -83,6 +87,7 @@ tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai]
 ## 来源
 
 - [[ai-trends/sources/ai-trends-report-2026-statworx|AI Trends Report 2026]] — statworx × AI Hub Frankfurt，139页，70+专家洞察
+- [[ai-trends/sources/bvp-ai-infra-roadmap-2026|AI基础设施路线图（BVP）]] — Bessemer Venture Partners，2026年3月，5大技术前沿
 
 ---
 
@@ -97,4 +102,5 @@ tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai]
 
 ## Recently Added
 
+- 2026-04-15 · BVP路线图：4个新概念页（Harness基础设施、持续学习、RL平台、推理拐点），更新世界模型（三大架构范式）
 - 2026-04-15 · 新话题：1个来源（AI Trends Report 2026，139页），6个概念页（Agent管理、独角兽微团队、B2AI2C、算力地缘政治、世界模型、DataOps+AgentOps）

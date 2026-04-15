@@ -5,6 +5,12 @@
 - ai-business/sources/huamao-ai-rd-20260225 — AI驱动的工业产品优化与迭代实现方案（华懋科技，2026年2月）
 - 新实体页：huamao
 
+## [2026-04-15] ingest | ai-trends 补充 | 1 个资料
+
+- ai-trends/sources/bvp-ai-infra-roadmap-2026 — AI基础设施路线图：2026五大前沿（BVP，Taj Shorter）
+- 新概念页：ai-harness-infrastructure, continual-learning, rl-platforms, inference-inflection
+- 更新：ai-trends/concepts/world-models（补充三大架构范式）
+
 ## [2026-04-15] ingest | ai-trends（新话题）| 1 个资料
 
 - ai-trends/sources/ai-trends-report-2026-statworx — AI Trends Report 2026（statworx × AI Hub Frankfurt，139页，20趋势×5类别）

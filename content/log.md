@@ -1,5 +1,13 @@
 # 更新日志
 
+## [2026-04-15] ingest | adidas | 新话题，2 个资料来源
+
+- adidas/sources/miaozhen-3rd-party-tags-proposal-20260313 — 秒针明略科技阿迪达斯第三方标签增补提案（PDF，54页，2026/03）
+- RFP docx（二进制，未读取）
+- 新实体页：adidas（阿迪达斯中国），miaozhen（秒针/明略科技）
+- 新概念页：third-party-tag-enrichment（第三方标签增补），dmp-cdp（DMP/CDP）
+- 新概览页：adidas/overview
+
 ## [2026-04-15] ingest | ai-trends 补充 | 1 个资料
 
 - ai-trends/sources/tencent-ai-whitepaper-2026q1 — AI趋势研究白皮书2026Q1（腾讯科技，博阳，60页）

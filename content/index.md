@@ -65,8 +65,16 @@ Annual AI trend analysis by statworx & AI Hub Frankfurt. 20 trends across 5 cate
 
 ---
 
+### 阿迪达斯 DMP 标签项目 (Adidas DMP Tag Enrichment)
+Adidas China member data intelligence project. Key themes: 87M members with only 14% complete profiles, third-party tag enrichment for 10M users, Miaozhen/明略科技 as vendor, privacy computing architecture, 5,000+ tag system.
+
+→ [[adidas/overview|阿迪达斯 DMP 标签项目全景概览]]
+
+---
+
 ## Recently Added
 
+- 2026-04-15 · [[adidas/overview|阿迪达斯 DMP 标签项目]] — 秒针明略科技标签增补提案：1个来源页、2个实体页（阿迪达斯、秒针）、2个概念页（第三方标签增补、DMP/CDP）
 - 2026-04-15 · [[ai-trends/overview|AI趋势 2026]] — 腾讯AI白皮书2026Q1：4大趋势（Agent主流化/Harness/递归研发/Skill），3个新概念页，1个新实体页（OpenClaw）
 - 2026-04-15 · [[ai-trends/overview|AI趋势 2026]] — BVP路线图补充：4个新概念（Harness基础设施、持续学习、RL平台、推理拐点）
 - 2026-04-15 · [[ai-trends/overview|AI趋势 2026]] — 新话题：statworx报告，20个趋势，6个概念页（Agent管理、独角兽微团队、B2AI2C、算力地缘政治、世界模型、DataOps+AgentOps）

@@ -1,5 +1,27 @@
 # 更新日志
 
+## [2026-04-16] ingest | miaozhen 补充 | 上汽集团AI认知评估优化方案（2026-03-30）
+
+- miaozhen/sources/saic-geo-solution-20260330 — GEO三阶段方法论，Capture→Evaluate→Optimize，SEA内容原则，至境L7实测数据
+- 新概念页：geo-brand-ai-optimization（GEO定义/与SEO-SEM对比/AI可见度指标体系/各平台信源偏好）
+- 新实体页：saic-buick（别克至境L7，AI可见度18.3%，增程词63.3%）
+
+## [2026-04-16] ingest | miaozhen 补充 | ML Data Agent产品介绍（2025-09-18）
+
+- miaozhen/sources/ml-data-agent-intro-0918 — 超级智能体OS全景架构，PLAN-DO-CHECK-ACTION工作流，Cito指令推理大模型，知识治理体系
+- 新概念页：enterprise-ai-four-stages（企业数智化1.0-4.0阶段框架，马太效应数据层级）
+
+## [2026-04-16] ingest | miaozhen 补充 | insightFlow CMS feat.KFC（2024）
+
+- miaozhen/sources/insightflow-cms-kfc-2024 — 洞察驱动内容营销四阶段，KFC热点×产品案例，AI供稿互动量+12%实验数据
+- 新概念页：insightflow-cms（品牌感知偏差起点，decode→选题→生成→运营，总部85%+门店15%分发模式）
+
+## [2026-04-16] ingest | ai-business 补充 | AI大模型&Agent企业级服务探索（Ricky，2025-06）
+
+- ai-business/sources/ricky-ai-agent-enterprise-sharing-202506 — Ricky明略内部分享，企业AI现状观察+餐饮智慧门店全场景案例
+- 新概念页：smart-store-six-dimensions（智慧门店六维框架：看得见/听得见/能感知/会应变/善规划/会思考）
+- 新概念页：company-as-agent（Company as an Agent：大模型+品牌知识库+Workflow+外部数据，L1-L3演进路径）
+
 ## [2026-04-16] ingest | miaozhen 补充 | AIGC 品牌内容一站式解决方案（2025-10-16）
 
 - miaozhen/sources/aigc-brand-content-solution-20251016 — 零壹贰叁科技出品，AIGC社媒内容全链路，KOS/KOC矩阵，多行业案例
@@ -17,6 +39,17 @@
 - miaozhen/sources/miaozhen-wuliangye-dmp-bid-20260330 — 秒针对五粮液浓香酒全链路DMP投标文件（2026-03-30），含报价、人群策略、10个参考合同
 - 新实体页：wuliangye-nongxiang（四川五粮液浓香酒，尖庄品牌）
 - 新概念页：spirits-dmp-audience-strategy（白酒DMP人群三层策略：买酒人群/趋势人群/存量画像）
+
+## [2026-04-16] ingest | my 补充 | 必胜客 π 超级助手（2024-04）
+
+- my/sources/pizzahut-pi-copilot-202404 — Copilot+Agents架构，COL成本管理，RGM三问，数据底座+知识底座，四大价值场景
+
+## [2026-04-16] ingest | my 补充 | 明胜品智餐饮零售数字化业务解决方案（2024）
+
+- my/sources/my-solution-deck-2024 — 明胜品智主销售Deck，四阶段数字化路线图，RTA+123倍，YUMC 8年里程碑，AI预估90%+，AIGC知识库
+- 新实体页：my/entities/mingsheng-pinzhi（明胜品智，明略科技+百胜中国合资，四大平台体系）
+- 新概念页：my/concepts/restaurant-precision-marketing（餐饮精准营销体系：RTA/DMP/CRM/联邦学习）
+- 更新overview页：my/overview（重新定位话题，明胜品智+明奇科技双主线）
 
 ## [2026-04-16] ingest | my（新话题：明胜品智）| 明奇科技品牌私域深度运营案例集
 

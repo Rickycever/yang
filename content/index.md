@@ -80,14 +80,14 @@ Nestlé China multi-category (coffee, infant formula, snacks) advertising data m
 ---
 
 ### 明胜品智（MY）
-餐饮/消费品牌私域深度运营与AI客服智能化参考案例。当前聚焦：明奇科技案例集（哈根达斯/赛百味/海底捞），核心主题：公私域联动拉新、企微会员高频运营、RPA+AI大模型客服、可视化Agent工作流。
+明胜品智（明略科技+百胜中国合资）连锁餐饮数字化解决方案：营销增长（RTA一方会员转化+123倍）、利润管理（AI预估准确率90%+、15000+门店验证）、创新驱动（AIGC知识库/IoT智能餐厅）。参考案例：明奇科技（哈根达斯/赛百味/海底捞私域运营）。
 
 → [[my/overview|明胜品智 全景概览]]
 
 ---
 
 ### 秒针/明略科技 (Miaozhen × Mininglamp)
-中国最大第三方广告监测与DMP平台。核心主题：IVT监测技术革新（HSV/感知哈希双方案）、明日DMP RaaS化转型（UPLIFT模型/MCP开放平台）、DeepMiner AI Use Cases（Media Fast Check / MOB PCU分析 / 人群洞察→TVC创意）。
+中国最大第三方广告监测与DMP平台。核心主题：IVT监测技术革新、明日DMP RaaS化转型、DeepMiner AI Use Cases、GEO（生成式引擎优化）、企业AI四阶段框架、超级智能体OS架构。
 
 → [[miaozhen/overview|秒针/明略科技 全景概览]]
 
@@ -109,9 +109,15 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ## Recently Added
 
+- 2026-04-16 · [[ai-business/overview|AI 商业进化]] — Ricky内部分享（2025-06）：Company as an Agent架构、智慧门店六维框架（看/听/感/应/规/思）、DeepSeek企业落地五大挑战
+- 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — 上汽集团GEO方案：GEO新概念（AI可见度/SEA内容原则）、至境L7实测18.3%、各平台信源偏好对比
+- 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — ML Data Agent产品介绍：企业AI 1.0→4.0四阶段、超级智能体OS全景架构、DeepMiner PLAN-DO-CHECK-ACTION工作流
+- 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — insightFlow CMS feat.KFC：品牌感知图谱、热点decode、总部85%+门店15%分发模式、AI供稿互动+12%
 - 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — AIGC品牌内容一站式方案（零壹贰叁科技）：Content Flow工作流、内容黄金公式、KOS/KOC矩阵、三池流量逻辑
 - 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — DeepMiner商业数据分析智能体Deck：Data Agent框架（2×2定位矩阵）、Swarm+Supervisor架构、CoT模板沉淀、宁德时代案例
 - 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — 五粮液浓香DMP投标：白酒人群三层策略（买酒人群1300万/趋势人群/尖庄画像）+ 1个实体页 + 1个概念页
+- 2026-04-16 · [[my/overview|明胜品智（MY）]] — 必胜客π超级助手：Copilot+3 Agents架构（知识/数据/BSC），COL成本管理，RGM三问，千店千面输出
+- 2026-04-16 · [[my/overview|明胜品智（MY）]] — 明胜品智解决方案Deck（2024）：四阶段数字化路线图、RTA一方会员转化+123倍、AI预估90%+、AIGC知识库案例
 - 2026-04-16 · [[my/overview|明胜品智（MY）]] — 新话题：明奇科技私域案例集（哈根达斯/赛百味/海底捞，私域运营+AI客服+Agent工作流）
 - 2026-04-16 · [[nestle/overview|雀巢 DMP 项目]] — 雀巢×阳狮 Ad-DMP Workshop（2026-01-14）：五大应用场景详解 + As-is/To-be对比 + 2026-2028路线图
 - 2026-04-16 · [[ai-business/overview|AI 商业进化]] — 吴琪（前罗兰·贝格中国区总裁）：认知充裕概念 + 制造业四层能力框架（物理执行→行业翻译→智能基础设施→规则标准）

@@ -23,6 +23,8 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 | [[ai-business/concepts/strategy-matrix-3x3\|3x3战略矩阵]] | 横轴（降本/增长/模式创新）× 纵轴（PoC/扩展/组织重构），2026版升级为"智效"导向 |
 | [[ai-business/concepts/enterprise-judgment-system\|企业判断系统]] | 黄金三角：私有数据资产+行业认知+反馈机制，主动AI的护栏与护城河 |
 | [[ai-business/concepts/ai-three-stages\|AI商业进化三阶段]] | 赋能→原生→觉醒，商业形态维度的演进框架 |
+| [[ai-business/concepts/company-as-agent\|Company as an Agent]] | 企业整体智能体化：大模型+品牌知识库+Workflow+外部数据，L1-L3演进路径 |
+| [[ai-business/concepts/smart-store-six-dimensions\|智慧门店六维框架]] | 看得见/听得见/能感知/会应变/善规划/会思考，餐饮行业AI全场景落地 |
 | [[ai-business/concepts/gea-architecture\|GEA 企业级智能体架构]] | 通用Agent + 上下文 + 技能 + 编排层 |
 | [[ai-business/concepts/context-system\|上下文系统]] | AI时代的企业护城河核心 |
 | [[ai-business/concepts/subjective-world-model\|主观世界模型]] | AI驱动的消费者心智模型模拟 |
@@ -45,6 +47,7 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 
 ## Sources
 
+- [[ai-business/sources/ricky-ai-agent-enterprise-sharing-202506\|Ricky企业AI分享（2025-06）]] — 大模型&Agent企业级探索，智慧门店六维框架，Company as an Agent，新品概念推荐官案例
 - [[ai-business/sources/huamao-ai-rd-20260225\|华懋科技 AI研发方案（2026）]] — 汽车被动安全系统AI转型，三阶段路线+AI+CAE
 - [[ai-business/sources/ai-blueprint-2026-whitepaper\|AI时代的商业进化蓝图 2026白皮书]] — CEIBS×特赞，主动AI+L1-L4+3x3矩阵+5个案例
 - [[ai-business/sources/gea-speech-20260410\|GEA演讲（AI转写纪要）]] — 2026-04-10，中欧商学院
@@ -69,6 +72,7 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 
 ## Recently Added
 
+- 2026-04-16 · Ricky内部分享（2025-06）：Company as an Agent框架 + 智慧门店六维框架（看听感应规划思考）+ 餐饮行业多场景案例
 - 2026-04-15 · 华懋科技：AI+CAE三阶段方案，新实体页（汽车被动安全系统，20亿营收）
 - 2026-04-15 · 2026白皮书：4个新概念（主动AI、L1-L4、3x3矩阵、企业判断系统）、5个新实体（玛氏、森马、博世、美的、更新安克）
 - 2026-04-14 · 摄入3个来源（GEA演讲×2、安克创新）；创建4个概念、2个实体、1个综合页

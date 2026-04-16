@@ -109,6 +109,8 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ## Recently Added
 
+- 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — DeepMiner商业数据分析智能体Deck：Data Agent框架（2×2定位矩阵）、Swarm+Supervisor架构、CoT模板沉淀、宁德时代案例
+- 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — 五粮液浓香DMP投标：白酒人群三层策略（买酒人群1300万/趋势人群/尖庄画像）+ 1个实体页 + 1个概念页
 - 2026-04-16 · [[my/overview|明胜品智（MY）]] — 新话题：明奇科技私域案例集（哈根达斯/赛百味/海底捞，私域运营+AI客服+Agent工作流）
 - 2026-04-16 · [[nestle/overview|雀巢 DMP 项目]] — 雀巢×阳狮 Ad-DMP Workshop（2026-01-14）：五大应用场景详解 + As-is/To-be对比 + 2026-2028路线图
 - 2026-04-16 · [[ai-business/overview|AI 商业进化]] — 吴琪（前罗兰·贝格中国区总裁）：认知充裕概念 + 制造业四层能力框架（物理执行→行业翻译→智能基础设施→规则标准）

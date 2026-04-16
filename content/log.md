@@ -1,5 +1,17 @@
 # 更新日志
 
+## [2026-04-16] ingest | miaozhen 补充 | DeepMiner 商业数据分析智能体产品 Deck（2025-09-20）
+
+- miaozhen/sources/deepminer-data-agent-deck-20250920 — 明略科技DeepMiner产品定位Deck，Data Agent框架，Swarm+Supervisor架构，宁德时代案例
+- 新概念页：data-agent-framework（Data Agent 2×2定位矩阵，ML Data Agent四象限服务策略）
+- 新概念页：deepminer-agent-architecture（Swarm+Supervisor，Mano数据采集，CoT模板，Human-in-loop，MCP集成）
+
+## [2026-04-16] ingest | miaozhen 补充 | 秒针投标·五粮液浓香 DMP 全链路项目
+
+- miaozhen/sources/miaozhen-wuliangye-dmp-bid-20260330 — 秒针对五粮液浓香酒全链路DMP投标文件（2026-03-30），含报价、人群策略、10个参考合同
+- 新实体页：wuliangye-nongxiang（四川五粮液浓香酒，尖庄品牌）
+- 新概念页：spirits-dmp-audience-strategy（白酒DMP人群三层策略：买酒人群/趋势人群/存量画像）
+
 ## [2026-04-16] ingest | my（新话题：明胜品智）| 明奇科技品牌私域深度运营案例集
 
 - my/sources/mingqi-private-domain-cases-202601 — 明奇科技案例集，哈根达斯/赛百味/海底捞，私域运营+AI客服，2026年1月

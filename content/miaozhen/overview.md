@@ -17,6 +17,9 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/concepts/ivt-monitoring-tech|IVT监测技术革新]] — HSV色彩空间+感知哈希双方案，IPTV专网监测突破，蚂蚁集团ID验真合作
 - [[miaozhen/concepts/dmp-ai-insight|明日DMP AI洞察架构]] — RaaS化转型路径，UPLIFT模型，Core TA研究，MCP开放平台
 - [[miaozhen/concepts/ai-tvc-creation|AI赋能人群洞察至TVC创意]] — DeepMiner八步法：249,572条社媒数据→分镜脚本，对比DeepSeek优势显著
+- [[miaozhen/concepts/spirits-dmp-audience-strategy|白酒DMP人群三层策略]] — 买酒人群/趋势人群/存量用户分析三层框架，LBS+标签+CDP集成
+- [[miaozhen/concepts/data-agent-framework|Data Agent框架]] — 问题解决能力×决策执行效率2×2定位矩阵，ML Data Agent四象限服务策略
+- [[miaozhen/concepts/deepminer-agent-architecture|DeepMiner多智能体架构]] — Swarm+Supervisor架构，CoT模板沉淀，Human-in-loop，MCP数据集成
 
 ---
 
@@ -24,6 +27,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 
 - [[byhealth/entities/deepminer|DeepMiner]] — 明略科技AI底座，三个AI Use Case的执行平台
 - [[nestle/entities/miaozhen|秒针明略（公司实体）]] — 公司概况、产品矩阵、主要客户
+- [[miaozhen/entities/wuliangye-nongxiang|五粮液浓香酒]] — DMP项目甲方，尖庄品牌，白酒中端市场
 
 ---
 
@@ -36,6 +40,8 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 | 官网 | www.mininglamp.com |
 | API开发数量 | 23个（涵盖DMP全功能） |
 | DeepMiner社媒数据上传量 | 249,572条（vs DeepSeek约200+条） |
+| 社媒数据日增覆盖 | 市场90%公开社媒数据 |
+| DeepMiner标签体系 | PUGC标签+圈层标签+9大行业知识图谱 |
 | HSV监测正样本准确率 | 99.89% |
 | IVT新突破 | IPTV专网监测（广电总局SDK） |
 | 分析平台提效 | 归因分析执行提效50% |
@@ -55,6 +61,8 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 ## 来源
 
 - [[miaozhen/sources/miaozhen-day-workshop-260131|秒针Day Workshop材料（2026-01-31）]] — 内部Workshop PPT，覆盖Tracking/DMP/AI三大方向，宝洁中国案例
+- [[miaozhen/sources/miaozhen-wuliangye-dmp-bid-20260330|五粮液浓香 DMP 投标文件（2026-03-30）]] — 全链路数据管理项目投标，白酒人群三层策略，10个参考合同
+- [[miaozhen/sources/deepminer-data-agent-deck-20250920|DeepMiner商业数据分析智能体Deck（2025-09-20）]] — 产品定位全景，Data Agent框架，宁德时代案例（KOL分析+全球电池市场预测）
 
 ---
 

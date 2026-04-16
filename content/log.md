@@ -201,3 +201,6 @@
 - 知识库源目录：`/Users/ricky/Documents/AI笔记本`
 - Wiki 目录：`/Users/ricky/Documents/MyWiki`
 - 构建工具：Quartz v4
+
+## [2026-04-16] ingest | miaozhen | DOMO多谋引擎——明略可信跨平台内容种草策略生态（2026-04-13）
+新建来源页（miaozhen/sources/domo-content-grass-strategy-20260413），新建概念页（miaozhen/concepts/domo-dual-matrix-strategy），更新miaozhen/overview + index.md

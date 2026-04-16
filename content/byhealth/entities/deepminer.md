@@ -52,4 +52,4 @@ DeepMiner是明略科技（Mininglamp Technology）推出的新一代企业AI底
 - [[byhealth/concepts/mano-cito|Mano & Cito 双模型]] — DeepMiner核心技术架构详解
 - [[byhealth/concepts/ai-marketing-full-chain|AI营销全链路（六节点）]] — DeepMiner在营销场景的落地框架
 - [[byhealth/sources/deepminer-marketing-proposal-2025|明略科技×汤臣倍健方案]] — 本次项目的原始提案
-- [[nestle/entities/miaozhen|秒针明略科技]] — 同一母公司旗下的数据与广告技术平台
+- [[adidas/entities/miaozhen|秒针明略科技]] — 同一母公司旗下的数据与广告技术平台

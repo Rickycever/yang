@@ -95,4 +95,4 @@ tags: [miaozhen, deepminer, tracking, dmp, ai-use-case, pg-china]
 - [[miaozhen/concepts/dmp-ai-insight|明日DMP AI洞察架构]] — DMP AI化升级路径
 - [[miaozhen/concepts/ai-tvc-creation|AI赋能人群洞察至TVC创意]] — Case 3详解
 - [[byhealth/entities/deepminer|DeepMiner]] — 三个AI Use Case的执行平台
-- [[nestle/entities/miaozhen|秒针明略（nestle项目视角）]] — 同一实体在雀巢项目中的描述
+- [[adidas/entities/miaozhen|秒针明略（公司实体）]] — 同一实体的完整公司页面

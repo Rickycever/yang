@@ -42,5 +42,5 @@ Problem: most enterprises stuck at POC validation. Solution: GEA runs the entire
 
 - [[ai-business/sources/gea-speech-20260410|GEA演讲（AI转写纪要版）]] — full meeting notes version
 - [[ai-business/concepts/subjective-world-model|主观世界模型]] — the user research concept
-- [[ai-business/concepts/full-stack-ai|Full Stack AI]] — the deployment methodology
+- [[ai-business/concepts/gea-architecture|GEA Full Stack 落地方法论]] — the deployment methodology
 - [[ai-business/concepts/gea-architecture|GEA 架构]] — the enterprise agent framework

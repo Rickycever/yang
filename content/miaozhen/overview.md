@@ -18,6 +18,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/concepts/geo-brand-ai-optimization|GEO品牌AI认知优化]] — 生成式引擎优化（GEO），Capture→Evaluate→Optimize三阶段，AI可见度指标体系，SEA内容生产原则，至境L7案例
 
 **内容营销**
+- [[miaozhen/concepts/domo-dual-matrix-strategy|DOMO千人千言双矩阵]] — 品牌账号/IP人设/KOS/素人四层人设生态×AI内容策略，内容生产效率↑300%，CPE↓40%
 - [[miaozhen/concepts/aigc-content-flow|AIGC社媒内容工作流]] — 洞察→生成→分发→反馈闭环，内容黄金公式（产品×卖点×人群×场景×话题），三池流量逻辑
 - [[miaozhen/concepts/insightflow-cms|insightFlow CMS]] — 洞察驱动内容营销工具，品牌感知图谱+热点decode+黄金公式+AIGC批量生成，AI供稿互动量+12%（KFC案例）
 - [[miaozhen/concepts/kos-koc-matrix|KOS/KOC营销矩阵]] — 企业员工（KOS）×真人消费者（KOC）双轨分发，AIGC赋能Brief Agent+全链路管理
@@ -38,7 +39,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 ## 核心实体
 
 - [[byhealth/entities/deepminer|DeepMiner]] — 明略科技AI底座，三个AI Use Case的执行平台
-- [[nestle/entities/miaozhen|秒针明略（公司实体）]] — 公司概况、产品矩阵、主要客户
+- [[adidas/entities/miaozhen|秒针明略（公司实体）]] — 公司概况、产品矩阵、主要客户
 - [[miaozhen/entities/wuliangye-nongxiang|五粮液浓香酒]] — DMP项目甲方，尖庄品牌，白酒中端市场
 - [[miaozhen/entities/saic-buick|上汽通用·别克]] — GEO项目甲方，别克至境L7，AI可见度第三梯队
 
@@ -80,6 +81,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/sources/deepminer-data-agent-deck-20250920|DeepMiner商业数据分析智能体Deck（2025-09-20）]] — 产品定位全景，Data Agent框架，宁德时代案例（KOL分析+全球电池市场预测）
 - [[miaozhen/sources/aigc-brand-content-solution-20251016|AIGC品牌内容一站式解决方案（2025-10-16）]] — 零壹贰叁科技出品，Content Flow工作流，KOS/KOC矩阵，户外/护肤/家具/餐饮多行业案例
 - [[miaozhen/sources/insightflow-cms-kfc-2024|insightFlow CMS feat.KFC（2024）]] — 洞察驱动内容营销四阶段，KFC热点×产品案例，AI供稿互动量+12%实验数据
+- [[miaozhen/sources/domo-content-grass-strategy-20260413|DOMO多谋引擎产品介绍（2026-04-13）]] — 千人千言双矩阵，真人素人库，海外达人全链路AI赋能，标准报价体系
 
 ---
 

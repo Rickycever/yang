@@ -109,6 +109,7 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ## Recently Added
 
+- 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — DOMO多谋引擎：千人千言双矩阵（品牌/IP/KOS/素人四层人设生态×AI内容策略）、全球1.3亿+达人海外能力、效率↑300% CPE↓40%
 - 2026-04-16 · [[ai-business/overview|AI 商业进化]] — 龚斌Robin（谦询）：10-30-60原则（60%是人/组织/流程）、点-线-面-体战略路径、AI领导力6维模型
 - 2026-04-16 · [[ai-business/overview|AI 商业进化]] — Ricky内部分享（2025-06）：Company as an Agent架构、智慧门店六维框架（看/听/感/应/规/思）、DeepSeek企业落地五大挑战
 - 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — 上汽集团GEO方案：GEO新概念（AI可见度/SEA内容原则）、至境L7实测18.3%、各平台信源偏好对比

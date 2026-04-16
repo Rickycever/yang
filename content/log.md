@@ -1,5 +1,10 @@
 # 更新日志
 
+## [2026-04-16] ingest | nestle 补充 | 雀巢×阳狮 Ad-DMP Workshop 20260114
+
+- nestle/sources/nestle-publicis-dmp-workshop-20260114 — 雀巢与阳狮内部Workshop，五大DMP应用场景 + As-is/To-be对比 + 2026-2028路线图
+- 新概念页：dmp-five-scenarios（Retargeting/Look-alike/MET/Consumer Analysis/CRM五大操作场景及组合逻辑）
+
 ## [2026-04-16] ingest | ai-business 补充 | 吴琪：AI如何重写制造业的竞争壁垒与价值逻辑
 
 - ai-business/sources/wuqi-manufacturing-ai-20260413 — 《经济观察报》2026-04-13，作者：吴琪（中欧EMBA2000，前罗兰·贝格中国区总裁）

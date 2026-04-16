@@ -20,6 +20,8 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/concepts/spirits-dmp-audience-strategy|白酒DMP人群三层策略]] — 买酒人群/趋势人群/存量用户分析三层框架，LBS+标签+CDP集成
 - [[miaozhen/concepts/data-agent-framework|Data Agent框架]] — 问题解决能力×决策执行效率2×2定位矩阵，ML Data Agent四象限服务策略
 - [[miaozhen/concepts/deepminer-agent-architecture|DeepMiner多智能体架构]] — Swarm+Supervisor架构，CoT模板沉淀，Human-in-loop，MCP数据集成
+- [[miaozhen/concepts/aigc-content-flow|AIGC社媒内容工作流]] — 洞察→生成→分发→反馈闭环，内容黄金公式（产品×卖点×人群×场景×话题），三池流量逻辑
+- [[miaozhen/concepts/kos-koc-matrix|KOS/KOC营销矩阵]] — 企业员工（KOS）×真人消费者（KOC）双轨分发，AIGC赋能Brief Agent+全链路管理
 
 ---
 
@@ -63,6 +65,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/sources/miaozhen-day-workshop-260131|秒针Day Workshop材料（2026-01-31）]] — 内部Workshop PPT，覆盖Tracking/DMP/AI三大方向，宝洁中国案例
 - [[miaozhen/sources/miaozhen-wuliangye-dmp-bid-20260330|五粮液浓香 DMP 投标文件（2026-03-30）]] — 全链路数据管理项目投标，白酒人群三层策略，10个参考合同
 - [[miaozhen/sources/deepminer-data-agent-deck-20250920|DeepMiner商业数据分析智能体Deck（2025-09-20）]] — 产品定位全景，Data Agent框架，宁德时代案例（KOL分析+全球电池市场预测）
+- [[miaozhen/sources/aigc-brand-content-solution-20251016|AIGC品牌内容一站式解决方案（2025-10-16）]] — 零壹贰叁科技出品，Content Flow工作流，KOS/KOC矩阵，户外/护肤/家具/餐饮多行业案例
 
 ---
 

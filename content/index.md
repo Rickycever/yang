@@ -109,6 +109,7 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ## Recently Added
 
+- 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — AIGC品牌内容一站式方案（零壹贰叁科技）：Content Flow工作流、内容黄金公式、KOS/KOC矩阵、三池流量逻辑
 - 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — DeepMiner商业数据分析智能体Deck：Data Agent框架（2×2定位矩阵）、Swarm+Supervisor架构、CoT模板沉淀、宁德时代案例
 - 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — 五粮液浓香DMP投标：白酒人群三层策略（买酒人群1300万/趋势人群/尖庄画像）+ 1个实体页 + 1个概念页
 - 2026-04-16 · [[my/overview|明胜品智（MY）]] — 新话题：明奇科技私域案例集（哈根达斯/赛百味/海底捞，私域运营+AI客服+Agent工作流）

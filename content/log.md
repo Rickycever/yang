@@ -1,5 +1,11 @@
 # 更新日志
 
+## [2026-04-16] ingest | miaozhen 补充 | AIGC 品牌内容一站式解决方案（2025-10-16）
+
+- miaozhen/sources/aigc-brand-content-solution-20251016 — 零壹贰叁科技出品，AIGC社媒内容全链路，KOS/KOC矩阵，多行业案例
+- 新概念页：aigc-content-flow（Content Flow四阶段工作流，内容黄金公式，三池流量逻辑）
+- 新概念页：kos-koc-matrix（KOS企业员工×KOC真人消费者双轨分发体系，Brief Agent全链路管理）
+
 ## [2026-04-16] ingest | miaozhen 补充 | DeepMiner 商业数据分析智能体产品 Deck（2025-09-20）
 
 - miaozhen/sources/deepminer-data-agent-deck-20250920 — 明略科技DeepMiner产品定位Deck，Data Agent框架，Swarm+Supervisor架构，宁德时代案例

@@ -1,5 +1,12 @@
 # 更新日志
 
+## [2026-04-16] ingest | my（新话题：明胜品智）| 明奇科技品牌私域深度运营案例集
+
+- my/sources/mingqi-private-domain-cases-202601 — 明奇科技案例集，哈根达斯/赛百味/海底捞，私域运营+AI客服，2026年1月
+- 新实体页：mingqi（明奇科技，营运智能创新者）
+- 新概念页：private-domain-operation（私域深度运营三层架构）
+- 新overview页：my/overview
+
 ## [2026-04-16] ingest | nestle 补充 | 雀巢×阳狮 Ad-DMP Workshop 20260114
 
 - nestle/sources/nestle-publicis-dmp-workshop-20260114 — 雀巢与阳狮内部Workshop，五大DMP应用场景 + As-is/To-be对比 + 2026-2028路线图

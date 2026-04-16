@@ -79,6 +79,13 @@ Nestlé China multi-category (coffee, infant formula, snacks) advertising data m
 
 ---
 
+### 明胜品智（MY）
+餐饮/消费品牌私域深度运营与AI客服智能化参考案例。当前聚焦：明奇科技案例集（哈根达斯/赛百味/海底捞），核心主题：公私域联动拉新、企微会员高频运营、RPA+AI大模型客服、可视化Agent工作流。
+
+→ [[my/overview|明胜品智 全景概览]]
+
+---
+
 ### 秒针/明略科技 (Miaozhen × Mininglamp)
 中国最大第三方广告监测与DMP平台。核心主题：IVT监测技术革新（HSV/感知哈希双方案）、明日DMP RaaS化转型（UPLIFT模型/MCP开放平台）、DeepMiner AI Use Cases（Media Fast Check / MOB PCU分析 / 人群洞察→TVC创意）。
 
@@ -102,6 +109,7 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ## Recently Added
 
+- 2026-04-16 · [[my/overview|明胜品智（MY）]] — 新话题：明奇科技私域案例集（哈根达斯/赛百味/海底捞，私域运营+AI客服+Agent工作流）
 - 2026-04-16 · [[nestle/overview|雀巢 DMP 项目]] — 雀巢×阳狮 Ad-DMP Workshop（2026-01-14）：五大应用场景详解 + As-is/To-be对比 + 2026-2028路线图
 - 2026-04-16 · [[ai-business/overview|AI 商业进化]] — 吴琪（前罗兰·贝格中国区总裁）：认知充裕概念 + 制造业四层能力框架（物理执行→行业翻译→智能基础设施→规则标准）
 - 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — 新话题：秒针Day Workshop（IVT监测技术/明日DMP RaaS化/DeepMiner三大AI用例）

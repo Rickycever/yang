@@ -16,6 +16,13 @@
 - miaozhen/sources/insightflow-cms-kfc-2024 — 洞察驱动内容营销四阶段，KFC热点×产品案例，AI供稿互动量+12%实验数据
 - 新概念页：insightflow-cms（品牌感知偏差起点，decode→选题→生成→运营，总部85%+门店15%分发模式）
 
+## [2026-04-16] ingest | ai-business 补充 | 龚斌Robin：企业AI转型落地——AI战略与领导力（2025-04-27）
+
+- ai-business/sources/robin-ai-strategy-leadership-202504 — C-level演讲，10-30-60原则，AI战略屋，AI产业四次浪潮，Mid-training，王总对话案例
+- 新概念页：ai-strategy-deployment（10-30-60原则+点线面体四级战略路径，九步落地方法，技术堆栈选型框架）
+- 新概念页：ai-leadership-model（6维度：数智战略/顶层思维/颠覆常规/场景突破/AI组织变革/AI合规伦理，五力塑造）
+- 新实体页：humble-co-robin（谦询 Robin Kung，清华x-lab创新导师）
+
 ## [2026-04-16] ingest | ai-business 补充 | AI大模型&Agent企业级服务探索（Ricky，2025-06）
 
 - ai-business/sources/ricky-ai-agent-enterprise-sharing-202506 — Ricky明略内部分享，企业AI现状观察+餐饮智慧门店全场景案例

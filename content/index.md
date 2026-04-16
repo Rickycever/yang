@@ -109,6 +109,7 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ## Recently Added
 
+- 2026-04-16 · [[ai-business/overview|AI 商业进化]] — 龚斌Robin（谦询）：10-30-60原则（60%是人/组织/流程）、点-线-面-体战略路径、AI领导力6维模型
 - 2026-04-16 · [[ai-business/overview|AI 商业进化]] — Ricky内部分享（2025-06）：Company as an Agent架构、智慧门店六维框架（看/听/感/应/规/思）、DeepSeek企业落地五大挑战
 - 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — 上汽集团GEO方案：GEO新概念（AI可见度/SEA内容原则）、至境L7实测18.3%、各平台信源偏好对比
 - 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — ML Data Agent产品介绍：企业AI 1.0→4.0四阶段、超级智能体OS全景架构、DeepMiner PLAN-DO-CHECK-ACTION工作流

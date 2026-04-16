@@ -1,5 +1,22 @@
 # 更新日志
 
+## [2026-04-16] ingest | miaozhen（新话题）| 秒针Day Workshop材料 2026-01-31
+
+- miaozhen/sources/miaozhen-day-workshop-260131 — 秒针内部Workshop PPT（宝洁中国，2026/01/31），议程：团队/Tracking/DMP/AI Use Cases
+- 新概念页：ivt-monitoring-tech（IVT监测技术：HSV/感知哈希双方案，IPTV专网，蚂蚁合作）
+- 新概念页：dmp-ai-insight（明日DMP AI洞察架构，UPLIFT模型，Core TA，RaaS化，MCP服务）
+- 新概念页：ai-tvc-creation（DeepMiner八步法，249,572条社媒数据，DeepMiner vs DeepSeek对比）
+- 新overview页：miaozhen/overview
+
+## [2026-04-16] ingest | byhealth（新话题）| 明略科技×汤臣倍健 AI Agent营销全链路提效方案
+
+- byhealth/sources/deepminer-marketing-proposal-2025 — 明略科技为汤臣倍健健臻钻蛋白粉新品上市出具的AI Agent营销方案（PDF，89页，2025/12）
+- 新实体页：byhealth（汤臣倍健，成立30周年，健臻钻蛋白粉新品）
+- 新实体页：deepminer（明略科技AI底座，Mano+Cito双模型，三类商业Agent）
+- 新概念页：ai-marketing-full-chain（六节点营销全链路，AI参与度40-80%）
+- 新概念页：mano-cito（Mano灵巧手+Cito专家脑，BFCL-V4/OS-World双榜第一）
+- 新综合页：byhealth/overview
+
 ## [2026-04-15] ingest | nestle（新话题）| 2 个资料来源
 
 - nestle/sources/miaozhen-nestle-dmp-nin-pitch-202512 — 秒针明略雀巢 NIN DMP 提案（PDF，66页，母婴行业专项，2025/12）

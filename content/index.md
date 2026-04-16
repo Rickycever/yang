@@ -79,6 +79,20 @@ Nestlé China multi-category (coffee, infant formula, snacks) advertising data m
 
 ---
 
+### 秒针/明略科技 (Miaozhen × Mininglamp)
+中国最大第三方广告监测与DMP平台。核心主题：IVT监测技术革新（HSV/感知哈希双方案）、明日DMP RaaS化转型（UPLIFT模型/MCP开放平台）、DeepMiner AI Use Cases（Media Fast Check / MOB PCU分析 / 人群洞察→TVC创意）。
+
+→ [[miaozhen/overview|秒针/明略科技 全景概览]]
+
+---
+
+### 汤臣倍健×明略科技 (By-Health × DeepMiner)
+AI Agent营销全链路解决方案。核心主题：DeepMiner平台（Mano灵巧手+Cito专家脑双模型）、六节点营销框架（AI参与度40-80%）、健臻钻蛋白粉新品上市（动植物双蛋白、PDCAAS=1）。
+
+→ [[byhealth/overview|汤臣倍健×明略科技 全景概览]]
+
+---
+
 ### 阿迪达斯 DMP 标签项目 (Adidas DMP Tag Enrichment)
 Adidas China member data intelligence project. Key themes: 87M members with only 14% complete profiles, third-party tag enrichment for 10M users, Miaozhen/明略科技 as vendor, privacy computing architecture, 5,000+ tag system.
 
@@ -87,6 +101,9 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 ---
 
 ## Recently Added
+
+- 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — 新话题：秒针Day Workshop（IVT监测技术/明日DMP RaaS化/DeepMiner三大AI用例）
+- 2026-04-16 · [[byhealth/overview|汤臣倍健×明略科技]] — 新话题：DeepMiner AI Agent营销全链路方案（Mano/Cito双模型、六节点框架、蛋白粉新品上市）
 
 - 2026-04-15 · [[nestle/overview|雀巢 DMP 项目]] — 新话题：秒针明略 NIN 提案（BBV标签/活数据/四级评测）+ 雀巢 RFP（Sales-driven Retargeting/M2S/MTA）
 - 2026-04-15 · [[benz/overview|奔驰 CDP+MA 项目]] — 明略科技方案（CDP+MA 五层架构、竞品矩阵、三阶段路线）+ 奔驰采购 SOW（功能/技术/SLA要求）

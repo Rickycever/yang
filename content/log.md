@@ -1,5 +1,11 @@
 # 更新日志
 
+## [2026-04-16] ingest | ai-business 补充 | 吴琪：AI如何重写制造业的竞争壁垒与价值逻辑
+
+- ai-business/sources/wuqi-manufacturing-ai-20260413 — 《经济观察报》2026-04-13，作者：吴琪（中欧EMBA2000，前罗兰·贝格中国区总裁）
+- 新概念页：cognitive-abundance（认知充裕：认知活动大规模降价，护城河向"做什么"迁移）
+- 新概念页：manufacturing-capability-layers（四层能力框架：物理执行→行业翻译→智能基础设施→规则标准）
+
 ## [2026-04-16] ingest | miaozhen（新话题）| 秒针Day Workshop材料 2026-01-31
 
 - miaozhen/sources/miaozhen-day-workshop-260131 — 秒针内部Workshop PPT（宝洁中国，2026/01/31），议程：团队/Tracking/DMP/AI Use Cases

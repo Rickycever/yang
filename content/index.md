@@ -102,6 +102,7 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ## Recently Added
 
+- 2026-04-16 · [[ai-business/overview|AI 商业进化]] — 吴琪（前罗兰·贝格中国区总裁）：认知充裕概念 + 制造业四层能力框架（物理执行→行业翻译→智能基础设施→规则标准）
 - 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — 新话题：秒针Day Workshop（IVT监测技术/明日DMP RaaS化/DeepMiner三大AI用例）
 - 2026-04-16 · [[byhealth/overview|汤臣倍健×明略科技]] — 新话题：DeepMiner AI Agent营销全链路方案（Mano/Cito双模型、六节点框架、蛋白粉新品上市）
 

@@ -109,6 +109,8 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ## Recently Added
 
+- 2026-04-17 · [[my/overview|明胜品智（MY）]] — 海底捞AI客服完整GTM方案：单一Agent+MCP架构（HiAgent）、动态飞书知识库、Dify vs Coze选型、10人→2人降本、四大模块复制路径
+
 - 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — DOMO多谋引擎：千人千言双矩阵（品牌/IP/KOS/素人四层人设生态×AI内容策略）、全球1.3亿+达人海外能力、效率↑300% CPE↓40%
 - 2026-04-16 · [[ai-business/overview|AI 商业进化]] — 龚斌Robin（谦询）：10-30-60原则（60%是人/组织/流程）、点-线-面-体战略路径、AI领导力6维模型
 - 2026-04-16 · [[ai-business/overview|AI 商业进化]] — Ricky内部分享（2025-06）：Company as an Agent架构、智慧门店六维框架（看/听/感/应/规/思）、DeepSeek企业落地五大挑战

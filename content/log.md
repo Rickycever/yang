@@ -1,5 +1,11 @@
 # 更新日志
 
+## [2026-04-17] ingest | my | 海底捞AI客服GTM方案（明胜品智，2025）
+
+- my/sources/haidilao-ai-cs-gtm-0620 — 完整架构（单一Agent+MCP+HiAgent）、Dify vs Coze、四大GTM复制模块
+- my/concepts/ai-cs-agent-architecture — 新概念页：单一Agent+MCP架构，6段式提示词框架，人工保底机制
+- my/concepts/dynamic-knowledge-base — 新概念页：飞书同步+RAG分层，千人千聊知识库机制
+
 ## [2026-04-16] ingest | miaozhen 补充 | 上汽集团AI认知评估优化方案（2026-03-30）
 
 - miaozhen/sources/saic-geo-solution-20260330 — GEO三阶段方法论，Capture→Evaluate→Optimize，SEA内容原则，至境L7实测数据

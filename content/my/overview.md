@@ -73,6 +73,7 @@ tags: [my, mingsheng-pinzhi, mingqi, private-domain, ai-agent, restaurant-tech]
 - [[my/sources/my-solution-deck-2024|明胜品智餐饮零售数字化业务解决方案（2024）]] — 主销售Deck，生意增长+利润管理+创新驱动完整方案
 - [[my/sources/pizzahut-pi-copilot-202404|必胜客 π 超级助手（2024-04）]] — Copilot+Agents架构，COL成本管理，RGM三问，数据底座+知识底座
 - [[my/sources/mingqi-private-domain-cases-202601|明奇科技案例集（2026年1月）]] — 哈根达斯/赛百味/海底捞私域+AI客服案例
+- [[my/sources/haidilao-ai-cs-gtm-0620|海底捞AI客服GTM方案（明胜品智，2025）]] — 完整架构（单一Agent+MCP+HiAgent）、动态知识库、Dify vs Coze、四大模块GTM复制路径
 
 ---
 

@@ -19,6 +19,8 @@ tags: [my, mingsheng-pinzhi, mingqi, private-domain, ai-agent, restaurant-tech]
 
 - [[my/concepts/restaurant-precision-marketing|餐饮精准营销体系]] — RTA实时竞价（一方会员+123倍）、CRM全生命周期、标签树体系、YUMC 8年里程碑
 - [[my/concepts/private-domain-operation|私域深度运营]] — 公私域联动拉新 → 高频留存 → AI规模化运营三层架构
+- [[my/concepts/ai-cs-agent-architecture|AI客服智能体架构]] — 单一Agent + MCP架构：意图识别+工作流编排+多系统连接，10人团队→2人完成核心任务
+- [[my/concepts/dynamic-knowledge-base|动态知识库机制]] — 飞书文档（门店自维护）+ 定期同步 + RAG分层检索，支撑千人千聊
 
 ---
 

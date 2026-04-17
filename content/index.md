@@ -107,8 +107,25 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ---
 
+### 百事×明略科技 (PepsiCo Influencer Planner)
+明略科技为百事中国设计的端到端达人策略管理平台。核心主题：Planning/Vetting/Content/Measurement四模块、CCFI达人评分框架（Content/Cost/Follower/Impact）、三级风险评级（红/黄/绿）、DeepMiner热点自动化（40s→6min）、小红书/抖音/快手250W+达人数据库。
+
+→ [[pepsico/overview|百事×明略科技 Influencer Planner 全景概览]]
+
+---
+
+### 中欧商学院×明略科技 (CEIBS Digital Marketing)
+明略科技为中欧国际商学院（CEIBS）提供的数字化招生营销方案。核心主题：四大业务问题（精准拉新→Leads分层→高效分配→有效触达）、三阶段实施路线（SaaS DMP→CDP→企微全流程）、LBS转化率+50%、秒针×个推 ID匹配率80%+、Leads分级模型（Hot/Warm/Cold）、OneID图计算。
+
+→ [[ceibs/overview|中欧商学院×明略科技 全景概览]]
+
+---
+
 ## Recently Added
 
+- 2026-04-17 · [[pepsico/overview|百事×明略科技]] — 新话题：Influencer Planner平台提案（2026.01），Planning/Vetting/Content/Measurement四模块，CCFI评分框架，三级风险评级，DeepMiner 40s→6min热点流水线，250W+达人数据库
+- 2026-04-17 · [[ceibs/overview|中欧商学院×明略科技]] — 新话题：明略科技数字化营销提案（2025.07），四大业务模块+三阶段路线，LBS转化+50%，Leads分级Hot/Warm/Cold，OneID图计算，1000+标签体系
+- 2026-04-17 · [[ai-business/overview|AI 商业进化]] — CEIBS × 钉钉：阿里26年组织变革史 + DSTE战略落地体系（四看三定→OGSM→OKR→闭环）+ 组织大脑七步人才管理 + "数字骨骼"隐喻 + FOMO与AI战略优先级
 - 2026-04-17 · [[my/overview|明胜品智（MY）]] — 海底捞AI客服完整GTM方案：单一Agent+MCP架构（HiAgent）、动态飞书知识库、Dify vs Coze选型、10人→2人降本、四大模块复制路径
 
 - 2026-04-16 · [[miaozhen/overview|秒针/明略科技]] — DOMO多谋引擎：千人千言双矩阵（品牌/IP/KOS/素人四层人设生态×AI内容策略）、全球1.3亿+达人海外能力、效率↑300% CPE↓40%

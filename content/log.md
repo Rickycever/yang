@@ -1,5 +1,29 @@
 # 更新日志
 
+## [2026-04-17] ingest | pepsico | Y2026 PEP Influencer Planner 项目提案（明略科技，2026.01）
+
+- pepsico/sources/influencer-planner-proposal-2026 — 四模块平台 + CCFI框架 + 三级风险评级 + DeepMiner热点自动化
+- pepsico/concepts/influencer-planner-platform — Planning/Vetting/Content/Measurement 端到端架构
+- pepsico/concepts/kol-vetting — 达人三级风险评级 + CCFI 评分框架
+- pepsico/entities/pepsico — 百事中国实体页
+- pepsico/overview — 话题全景页
+
+## [2026-04-17] ingest | ceibs | 中欧商学院数字化营销能力建设提案（明略科技，2025.07）
+
+- ceibs/sources/mininglamp-proposal-2025 — 四大业务模块 + 三阶段路线 + LBS/RTA/Lookalike/OneID
+- ceibs/concepts/leads-grading-model — Leads 分级模型（Hot/Warm/Cold）
+- ceibs/concepts/lbs-targeting — LBS 定向投放，转化率+50%
+- ceibs/concepts/rta-programmatic — RTA 程序化投放架构
+- ceibs/concepts/oneid — OneID 三种打通方式 + 图计算
+- ceibs/entities/ceibs — 中欧国际商学院实体页
+- ceibs/overview — 话题总览页
+
+## [2026-04-17] ingest | ai-business | CEIBS × 钉钉：AI时代战略落地与管理跃迁（2025-07-03）
+
+- ai-business/sources/ceibs-dingtalk-ai-strategy-mgmt-20250703 — 阿里组织变革史 + DSTE + Agoal/TeamBition/组织大脑产品体系
+- ai-business/concepts/dste-strategy-execution — 新概念页：四阶段战略落地闭环（OGSM+OKR+计分卡+绩效评估）
+- ai-business/concepts/dingtalk-org-brain — 新概念页：七步人才管理链路（档案→标签→搜索→池→盘点→继任→罗盘）
+
 ## [2026-04-17] ingest | my | 海底捞AI客服GTM方案（明胜品智，2025）
 
 - my/sources/haidilao-ai-cs-gtm-0620 — 完整架构（单一Agent+MCP+HiAgent）、Dify vs Coze、四大GTM复制模块

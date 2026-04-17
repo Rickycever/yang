@@ -19,6 +19,8 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 **AI战略与领导力**
 | 概念 | 说明 |
 |------|------|
+| [[ai-business/concepts/dste-strategy-execution\|DSTE战略落地体系]] | 阿里方法论：战略规划（四看三定）→解码（OGSM一页纸）→执行监控（OKR+Teambition+计分卡）→评估，只有<10%企业有效落地战略 |
+| [[ai-business/concepts/dingtalk-org-brain\|钉钉组织大脑（七步人才管理链路）]] | 人才档案→标签→搜索→人才池→盘点→继任地图→数据罗盘，核心命题：组织适配战略，人才适配组织 |
 | [[ai-business/concepts/ai-strategy-deployment\|AI战略落地框架：10-30-60与点线面体]] | 60%成败取决于人/组织/流程；点（工具）→线（转型）→面（创新）→体（AI原生） |
 | [[ai-business/concepts/ai-leadership-model\|AI领导力模型]] | 6维度：数智战略/顶层思维/颠覆常规/场景突破/AI组织变革/AI合规伦理 |
 | [[ai-business/concepts/proactive-ai\|主动AI]] | 2026核心范式：AI主动洞察+执行+协同+自我完善，从响应式跃迁到主动式 |
@@ -62,6 +64,7 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 - [[ai-business/sources/gea-speech-20260410\|GEA演讲（AI转写纪要）]] — 2026-04-10，中欧商学院
 - [[ai-business/sources/gea-speech-notes-20260410\|GEA演讲精简纪要]] — 2026-04-10，结构化版本
 - [[ai-business/sources/anker-ai-20260410\|安克创新 AI 转型演讲]] — 2026-04-10，四阶段实践
+- [[ai-business/sources/ceibs-dingtalk-ai-strategy-mgmt-20250703\|CEIBS × 钉钉：AI时代战略落地与管理跃迁（2025-07-03）]] — 阿里组织变革史+DSTE体系+Agoal/TeamBition/组织大脑产品全景+FOMO与数字骨骼隐喻
 
 ---
 

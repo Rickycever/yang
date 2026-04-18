@@ -121,8 +121,16 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ---
 
+### 红星美凯龙×明略科技 (Red Star Macalline CDP+AI)
+明略集团为红星美凯龙提供的用户运营与 CDP 解决方案。核心主题：品牌标签体系三层架构（一方诊断重构+三方增补+运维监测）、红星美凯龙专属三模块标签优先级（房屋状态/需求偏好/意向分级）、高意向打分模型（AUC=0.89）、AI 经纪人产品规划（公域私信留资）。
+
+→ [[hongxing-mkl/overview|红星美凯龙×明略科技 全景概览]]
+
+---
+
 ## Recently Added
 
+- 2026-04-18 · [[hongxing-mkl/overview|红星美凯龙×明略科技]] — 新话题：明略 CDP & AI 交流方案（2026.03），三模块标签体系（房屋状态/需求偏好/意向分级），高意向打分模型 AUC=0.89，三方标签 80%+匹配率，AI 经纪人平台，案例成单 16M+超目标 502%
 - 2026-04-17 · [[pepsico/overview|百事×明略科技]] — 新话题：Influencer Planner平台提案（2026.01），Planning/Vetting/Content/Measurement四模块，CCFI评分框架，三级风险评级，DeepMiner 40s→6min热点流水线，250W+达人数据库
 - 2026-04-17 · [[ceibs/overview|中欧商学院×明略科技]] — 新话题：明略科技数字化营销提案（2025.07），四大业务模块+三阶段路线，LBS转化+50%，Leads分级Hot/Warm/Cold，OneID图计算，1000+标签体系
 - 2026-04-17 · [[ai-business/overview|AI 商业进化]] — CEIBS × 钉钉：阿里26年组织变革史 + DSTE战略落地体系（四看三定→OGSM→OKR→闭环）+ 组织大脑七步人才管理 + "数字骨骼"隐喻 + FOMO与AI战略优先级

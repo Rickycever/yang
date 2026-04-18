@@ -1,5 +1,13 @@
 # 更新日志
 
+## [2026-04-18] ingest | hongxing-mkl | 明略解决方案-红星美凯龙 CDP & AI 交流（2026.03）
+
+- hongxing-mkl/sources/minglie-cdp-ai-2026-03 — 53页完整方案，三大模块+AI经纪人产品规划
+- hongxing-mkl/concepts/brand-tag-system — 标签体系三层架构+红星美凯龙三模块优先级设计
+- hongxing-mkl/concepts/high-intent-scoring-model — LightGBM+DNN+LR&FM 融合模型，AUC=0.89
+- hongxing-mkl/entities/hongxing-mkl — 红星美凯龙实体页
+- hongxing-mkl/overview — 话题全景页
+
 ## [2026-04-17] ingest | pepsico | Y2026 PEP Influencer Planner 项目提案（明略科技，2026.01）
 
 - pepsico/sources/influencer-planner-proposal-2026 — 四模块平台 + CCFI框架 + 三级风险评级 + DeepMiner热点自动化

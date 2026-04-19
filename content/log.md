@@ -1,5 +1,20 @@
 # 更新日志
 
+## [2026-04-19] ingest | shixiang | 拾象 LP Meeting Dec 2025 — How to Play AI Beta
+
+- shixiang/sources/shixiang-lp-meeting-dec-2025 — 50页，4大部分（AI关键判断/湾区趋势/技术进展/投资策略）
+- shixiang/concepts/continual-learning — 下一代AI范式，Static→Living，Cursor Online RL
+- shixiang/concepts/proactive-agent — 2026年胜负手，Always-on+长期记忆+主动行动
+- shixiang/concepts/ai-bubble — OpenAI $1.4T承诺分析，2/3可撤销，二级市场无明显泡沫
+- shixiang/concepts/ai-war — Google vs OpenAI/NVIDIA 两阵营竞争框架
+- shixiang/concepts/voice-agent — 新一代OS入口，ROI最早跑通，医疗等待时间↓50%
+- shixiang/concepts/world-model — 多模态与机器人Interface，实时交互派vs物理仿真派
+- shixiang/concepts/llmflation — 3年推理成本↓1000倍，但Agent让体感不便宜
+- shixiang/entities/shixiang-tech — 拾象科技，AGI投资研究，Ideal AGI Basket
+- shixiang/entities/mercor — RL的AWS，17个月$1M→$500M ARR
+- shixiang/entities/harvey — 法律AI OS，AmLaw 100渗透率42-50%，ARR $150M
+- shixiang/synthesis/how-to-play-ai-beta — AI Beta投资策略综合分析
+
 ## [2026-04-18] ingest | hongxing-mkl | 明略解决方案-红星美凯龙 CDP & AI 交流（2026.03）
 
 - hongxing-mkl/sources/minglie-cdp-ai-2026-03 — 53页完整方案，三大模块+AI经纪人产品规划

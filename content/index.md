@@ -128,8 +128,16 @@ Adidas China member data intelligence project. Key themes: 87M members with only
 
 ---
 
+### 拾象AI洞察 (Shixiang AGI Insights)
+拾象科技年度 LP Meeting 报告（Dec 2025）。核心主题：7个AI关键判断、Continual Learning 是下一代范式、Proactive Agent 是2026年胜负手、AI War（Google vs OpenAI/NVIDIA 两阵营交替领先）、AI Bubble 分析（$1.4T OpenAI 承诺）、Ideal AGI Basket（OpenAI 25% + ByteDance 25% + 其余各10%）、头部AI公司ARR数据。
+
+→ [[shixiang/overview|拾象AI洞察 全景概览]]
+
+---
+
 ## Recently Added
 
+- 2026-04-19 · [[shixiang/overview|拾象AI洞察]] — 新话题：拾象 LP Meeting Dec 2025，7大AI关键判断，Continual Learning 下一代范式，Proactive Agent 胜负手，AI War 两阵营框架，AI Bubble $1.4T 分析，AGI Basket（OpenAI 25%+ByteDance 25%），头部ARR数据（OpenAI $21B/Anthropic $9B/Claude Code $1B）
 - 2026-04-18 · [[hongxing-mkl/overview|红星美凯龙×明略科技]] — 新话题：明略 CDP & AI 交流方案（2026.03），三模块标签体系（房屋状态/需求偏好/意向分级），高意向打分模型 AUC=0.89，三方标签 80%+匹配率，AI 经纪人平台，案例成单 16M+超目标 502%
 - 2026-04-17 · [[pepsico/overview|百事×明略科技]] — 新话题：Influencer Planner平台提案（2026.01），Planning/Vetting/Content/Measurement四模块，CCFI评分框架，三级风险评级，DeepMiner 40s→6min热点流水线，250W+达人数据库
 - 2026-04-17 · [[ceibs/overview|中欧商学院×明略科技]] — 新话题：明略科技数字化营销提案（2025.07），四大业务模块+三阶段路线，LBS转化+50%，Leads分级Hot/Warm/Cold，OneID图计算，1000+标签体系

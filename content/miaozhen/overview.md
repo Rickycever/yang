@@ -29,6 +29,9 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/concepts/spirits-dmp-audience-strategy|白酒DMP人群三层策略]] — 买酒人群/趋势人群/存量用户分析三层框架，LBS+标签+CDP集成
 - [[miaozhen/concepts/ai-tvc-creation|AI赋能人群洞察至TVC创意]] — DeepMiner八步法：249,572条社媒数据→分镜脚本，对比DeepSeek优势显著
 
+**私域导购**
+- [[miaozhen/concepts/ai-cloud-shopping-guide|AI 云导购系统]] — 80%AI+20%真人模型，四模块（接管/跟单/质检/文案），销冠化私域导购
+
 **Data Agent / DeepMiner**
 - [[miaozhen/concepts/enterprise-ai-four-stages|企业数智化四阶段]] — 1.0烟囱式→4.0 AI驱动动态服务，MCP/A2A重构，68%企业数据未利用
 - [[miaozhen/concepts/data-agent-framework|Data Agent框架]] — 问题解决能力×决策执行效率2×2定位矩阵，ML Data Agent四象限服务策略
@@ -82,6 +85,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/sources/aigc-brand-content-solution-20251016|AIGC品牌内容一站式解决方案（2025-10-16）]] — 零壹贰叁科技出品，Content Flow工作流，KOS/KOC矩阵，户外/护肤/家具/餐饮多行业案例
 - [[miaozhen/sources/insightflow-cms-kfc-2024|insightFlow CMS feat.KFC（2024）]] — 洞察驱动内容营销四阶段，KFC热点×产品案例，AI供稿互动量+12%实验数据
 - [[miaozhen/sources/domo-content-grass-strategy-20260413|DOMO多谋引擎产品介绍（2026-04-13）]] — 千人千言双矩阵，真人素人库，海外达人全链路AI赋能，标准报价体系
+- [[miaozhen/sources/ai-shopping-guide-20250910|AI 云导购方案（2025-09-10）]] — 大模型+Agent驱动，四模块（接管/跟单/质检/文案），NB运动/美妆/母婴案例，80%AI+20%真人协作模型
 
 ---
 

@@ -1,5 +1,29 @@
 # 更新日志
 
+## [2026-04-19] ingest | miaozhen | AI云导购方案（2025.09，明略科技）
+
+- miaozhen/sources/ai-shopping-guide-20250910 — 21页，四模块（接管/跟单/质检/文案），NB运动/美妆/母婴案例
+- miaozhen/concepts/ai-cloud-shopping-guide — 80%AI+20%真人模型，销冠化私域导购，线上+线下双场景
+
+## [2026-04-19] ingest | shixiang | 拾象 Best Ideas 高价值 Agent 深度讨论（2026-Feb）
+
+- shixiang/sources/best-ideas-agent-2026-feb — 19页，7个 Agent 核心判断
+- shixiang/concepts/token-as-metric — Token 消耗是 AI-native 核心指标，单任务千倍于 Chat，日均 billion 级案例
+- shixiang/concepts/open-source-floor — 开源模型下限达标（GLM-4.7），Token 大爆炸关键拐点
+- shixiang/concepts/agent-infra — Infra of Agent vs. Infra for Agent，Agent专用浏览器/支付/安全
+- shixiang/concepts/end-of-saas — SaaS 终结两派：软件被吞噬 vs Software as Tools + Ontology 壁垒
+- shixiang/concepts/agent-generalization — Agent 泛化三条路径：分层渗透/电脑vs手机/具身机器人终局
+
+## [2026-04-19] ingest | nvidia-gtc-2026 | NVIDIA GTC 2026 主题演讲（Jensen Huang）
+
+- nvidia-gtc-2026/sources/gtc-2026-keynote — 76页，推理拐点/Vera Rubin/AI Factory/AaaS/OpenClaw
+- nvidia-gtc-2026/concepts/inference-inflection — 推理拐点，10,000X 算力增长，Token 五档定价，$300B 营收机会
+- nvidia-gtc-2026/concepts/ai-factory — AI 时代工业基础设施，DSX Platform，1GW 700M Tokens/sec
+- nvidia-gtc-2026/concepts/agent-as-a-service — 企业 IT 从 SaaS 转向 AaaS 范式判断
+- nvidia-gtc-2026/entities/vera-rubin — 新旗舰平台，10X Perf/W，7芯片体系
+- nvidia-gtc-2026/entities/groq-3-lpx — Groq 深度整合，1,200 TB/s SRAM，专攻 Prefill，2H26 量产
+- nvidia-gtc-2026/entities/openclaw — 开放 Agent 协议，NemoClaw 参考实现
+
 ## [2026-04-19] ingest | shixiang | 拾象 LP Meeting Dec 2025 — How to Play AI Beta
 
 - shixiang/sources/shixiang-lp-meeting-dec-2025 — 50页，4大部分（AI关键判断/湾区趋势/技术进展/投资策略）

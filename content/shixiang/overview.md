@@ -16,6 +16,14 @@ tags: [shixiang, ai-investment, agi, ai-trends, investment-strategy]
 
 ## 核心概念
 
+**Best Ideas Agent（2026-Feb）新增**：
+- [[shixiang/concepts/token-as-metric|Token 消耗量作为 AI-native 指标]] — 用 Token 消耗而非 DAU 衡量 AI-native 程度
+- [[shixiang/concepts/open-source-floor|开源模型下限达标]] — GLM-4.7 标志历史拐点，Token 大爆炸关键驱动力
+- [[shixiang/concepts/agent-infra|Agent 专用 Infra]] — Infra of Agent vs. Infra for Agent，2026 年最确定性机会
+- [[shixiang/concepts/end-of-saas|SaaS 终结？]] — 激进派（软件被吞噬）vs 保守派（Software as Tools / Ontology 壁垒）
+- [[shixiang/concepts/agent-generalization|Agent 泛化三条路径]] — 从几千万到几十亿用户的鸿沟跨越策略
+
+**LP Meeting Dec 2025**：
 - [[shixiang/concepts/continual-learning|Continual Learning]] — 下一代 AI 范式，从冻结的智能到越用越聪明
 - [[shixiang/concepts/proactive-agent|Proactive Agent]] — 2026年胜负手，Always-on + 长期记忆 + 主动行动
 - [[shixiang/concepts/ai-bubble|AI Bubble]] — OpenAI $1.4T 承诺分析，2/3可撤销，二级市场无明显泡沫
@@ -61,7 +69,8 @@ tags: [shixiang, ai-investment, agi, ai-trends, investment-strategy]
 
 ## 来源
 
-- [[shixiang/sources/shixiang-lp-meeting-dec-2025|拾象 LP Meeting Dec 2025]] — 核心报告（50页）
+- [[shixiang/sources/shixiang-lp-meeting-dec-2025|拾象 LP Meeting Dec 2025]] — 核心报告（50页），7大AI关键判断
+- [[shixiang/sources/best-ideas-agent-2026-feb|Best Ideas 高价值 Agent 讨论（2026-Feb）]] — Best Ideas 社群讨论（19页），7个 Agent 核心判断
 
 ## Connections
 

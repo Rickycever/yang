@@ -37,12 +37,16 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/concepts/data-agent-framework|Data Agent框架]] — 问题解决能力×决策执行效率2×2定位矩阵，ML Data Agent四象限服务策略
 - [[miaozhen/concepts/deepminer-agent-architecture|DeepMiner多智能体架构]] — Swarm+Supervisor架构，CoT模板沉淀，Human-in-loop，MCP数据集成
 
+**GUI Agent**
+- [[miaozhen/concepts/gui-agent-cua|GUI Agent / CUA]] — 纯视觉操控任意 GUI 界面，无需 API，感知→规划→操作→验证四步闭环，解决自动化最后一公里
+
 ---
 
 ## 核心实体
 
 - [[byhealth/entities/deepminer|DeepMiner]] — 明略科技AI底座，三个AI Use Case的执行平台
 - [[adidas/entities/miaozhen|秒针明略（公司实体）]] — 公司概况、产品矩阵、主要客户
+- [[miaozhen/entities/mano-p|Mano-P 1.0]] — GUI感知智能体，OSWorld全球第一(58.2%)，13项SOTA，Apache 2.0开源
 - [[miaozhen/entities/wuliangye-nongxiang|五粮液浓香酒]] — DMP项目甲方，尖庄品牌，白酒中端市场
 - [[miaozhen/entities/saic-buick|上汽通用·别克]] — GEO项目甲方，别克至境L7，AI可见度第三梯队
 
@@ -86,6 +90,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/sources/insightflow-cms-kfc-2024|insightFlow CMS feat.KFC（2024）]] — 洞察驱动内容营销四阶段，KFC热点×产品案例，AI供稿互动量+12%实验数据
 - [[miaozhen/sources/domo-content-grass-strategy-20260413|DOMO多谋引擎产品介绍（2026-04-13）]] — 千人千言双矩阵，真人素人库，海外达人全链路AI赋能，标准报价体系
 - [[miaozhen/sources/ai-shopping-guide-20250910|AI 云导购方案（2025-09-10）]] — 大模型+Agent驱动，四模块（接管/跟单/质检/文案），NB运动/美妆/母婴案例，80%AI+20%真人协作模型
+- [[miaozhen/sources/mano-p-intro-20260421|Mano-P 1.0产品介绍（2026）]] — GUI感知智能体，13项SOTA，OSWorld第一，三种部署形态，7大行业场景，Apache 2.0开源路线图
 
 ---
 

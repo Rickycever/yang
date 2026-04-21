@@ -1,5 +1,11 @@
 # 更新日志
 
+## [2026-04-21] ingest | miaozhen | Mano-P 1.0 GUI感知智能体产品介绍（2026，明略科技）
+
+- miaozhen/sources/mano-p-intro-20260421 — 来源页，8页PPT，13项SOTA，OSWorld第一(58.2%)，三种部署形态，7大行业场景
+- miaozhen/concepts/gui-agent-cua — 新概念页，GUI Agent / CUA范式，感知→规划→操作→验证四步闭环
+- miaozhen/entities/mano-p — 新实体页，产品数据（476 tokens/s，4.3GB内存，Apache 2.0）
+
 ## [2026-04-19] ingest | miaozhen | AI云导购方案（2025.09，明略科技）
 
 - miaozhen/sources/ai-shopping-guide-20250910 — 21页，四模块（接管/跟单/质检/文案），NB运动/美妆/母婴案例

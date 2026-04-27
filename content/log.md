@@ -1,5 +1,25 @@
 # 更新日志
 
+## [2026-04-27] ingest | otgo | Dual-Native Design v1.5 GUI设计蓝图（2026-04-04，v11.2对齐）
+
+- otgo/sources/dual-native-design-v1.5-20260404 — 来源页，覆盖 Dual-Native、CLI解耦、四端策略、多CC协作、File Space、Monitor、子系统架构
+- otgo/concepts/dual-native — 新概念页：Dual-Native Design（底层为Agent而建，表层为人而渲染，三道设计检验）
+- otgo/concepts/cli-decoupling — 新概念页：CLI 解耦（View/CRUD分离，Octo只做编排和品鉴）
+- otgo/concepts/file-space — 新概念页：File Space（用户Taste/Context载体，双管道采集，用户vs龙虾两个File Space）
+- otgo/concepts/multi-cc-collab — 新概念页：多CC协作模式（龙虾是唯一编排者，CC零耦合，串行链/扇出/流式/扇入）
+- otgo/concepts/wukong-protocol — 新概念页：悟空协议（H↔H/H↔A/A↔A统一传输）
+- otgo/concepts/lonxia — 更新：补入龙虾 vs CC 对比表（协调者vs执行者）
+
+## [2026-04-27] ingest | otgo | 战略背景与产品哲学基底（混沌演讲 20260328 + 伦理学 v2.5）
+
+- otgo/sources/00-zhanlue-beijing-20260328 — 来源页，综合自混沌演讲、Workbench v8、IOA讨论、0401/0403战略会议、伦理学 v2.5
+- otgo/concepts/lonxia-sanlv — 新概念页：龙虾三律（三条伦理底线，优先级一>二>三）
+- otgo/concepts/lonxia-matrix — 新概念页：龙虾矩阵（AI-Native组织模型，纵轴养虾×横轴用虾）
+- otgo/concepts/digital-avatar — 新概念页：数字分身（唯一合法身份模型，主人必须在场）
+- otgo/concepts/skill-marketplace — 新概念页：Skill Marketplace（ClawHub分发，Skill可流通，Memory/Taste不可流通）
+- otgo/concepts/taste-philosophy — 更新：增加三种存在态、e复利公式、Taste三层传递性
+- otgo/concepts/soul-memory — 更新：增加参数化伦理五层架构、Soul/Memory边界判断规则、违宪审查机制
+
 ## [2026-04-21] ingest | miaozhen | Mano-P 1.0 GUI感知智能体产品介绍（2026，明略科技）
 
 - miaozhen/sources/mano-p-intro-20260421 — 来源页，8页PPT，13项SOTA，OSWorld第一(58.2%)，三种部署形态，7大行业场景

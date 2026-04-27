@@ -82,10 +82,47 @@ For OTGO, this also ties into the competitive argument: a CEO who has encoded th
 
 ---
 
+---
+
+## 参数化伦理五层架构（伦理学 v2.5 新增）
+
+龙虾的配置和行为规则分五层载体，变化频率递增，**冲突时上层覆盖下层**（违宪审查机制）：
+
+| 载体层 | 内容 | 变化频率 | 修改权限 |
+|--------|------|---------|---------|
+| **参数层（哲学）** | 龙虾三律、组织价值观 | 极少变化（需"修宪"） | 最高层品鉴者 |
+| **参数层（方法论）** | 行业规范、风控规则 | 季度级 | 管理层 |
+| **Soul 层** | 龙虾的稳定人格和判断倾向 | 月级 | 品鉴者 |
+| **Memory 层** | 具体项目记忆、上下文 | 日级 | 品鉴者 + 龙虾自动 |
+| **Skill 层** | 显性能力定义 | 版本化 | Skill 作者 |
+
+### Soul/Memory 边界判断规则（变化频率法）
+
+判断一条规则应归 Soul 还是 Memory 的实操标准：**"这条规则一个月后还适用吗？"**
+
+- 是 → Soul（稳定的人格/品味偏向）
+- 不确定 → Memory（具体项目/任务相关的上下文）
+
+| 规则 | 归 Soul 还是 Memory | 理由 |
+|------|-------------------|------|
+| "回复邮件要礼貌正式" | Soul | 长期稳定的风格偏好 |
+| "这周重点关注张总的项目" | Memory | 短期优先级，随时变 |
+| "我喜欢数据驱动的论证" | Soul | 品鉴者的稳定 taste |
+| "上次会议辉哥提到的方案细节" | Memory | 具体事件记忆 |
+
+### 违宪审查机制
+
+当不同层的规则冲突时，自动按层级优先级裁决（参数层 > Soul > Memory > Skill），龙虾在审计日志中记录冲突检测和裁决过程，确保第二律（对主人忠诚透明）的可审计性。
+
+---
+
 ## Connections
 
 - [[otgo/overview\|OTGO 全景概览]]
-- [[otgo/concepts/lonxia\|龙虾 (Lobster Agent)]] — Soul is the deepest layer of a lobster's configuration
-- [[otgo/sources/班委会-otgo精神-20260309\|OTGO精神]] — original articulation of Soul layer by 辉哥
-- [[otgo/sources/天合光能交流-20260413\|天合光能交流]] — tacit knowledge problem that Soul architecture addresses
-- [[otgo/entities/wu-minghui\|吴明辉 (辉哥)]] — designed and described this framework
+- [[otgo/concepts/lonxia\|龙虾 (Lobster Agent)]] — Soul 是龙虾配置的最深层
+- [[otgo/sources/00-zhanlue-beijing-20260328|战略背景与产品哲学基底]] — 参数化伦理五层架构的来源文件
+- [[otgo/sources/班委会-otgo精神-20260309\|OTGO精神]] — 辉哥最初阐述 Soul 层的文件
+- [[otgo/sources/天合光能交流-20260413\|天合光能交流]] — Soul 架构解决暗默知识传承问题的场景
+- [[otgo/concepts/lonxia-sanlv|龙虾三律]] — 参数层（哲学）的内容，最高优先级
+- [[otgo/concepts/digital-avatar|数字分身]] — Soul/Memory 层是数字分身的内部配置
+- [[otgo/entities/wu-minghui\|吴明辉 (辉哥)]] — 框架设计者

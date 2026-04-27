@@ -47,8 +47,49 @@ This concept is the philosophical foundation of OTGO's entire organizational mod
 
 <div class="zh-trans">这一概念是OTGO整个组织模型的哲学基础：为什么人在AI重度组织中仍有价值（品不可替代）；为什么主动在场很重要（品通过行增长）；为什么必须公开异议（未表达的品=失职）；为什么AI绝不能替代人的独立行动和判断（那会抹去他们的存在）。</div>
 
+---
+
+## 三种存在态（混沌演讲 2026-03-28）
+
+辉哥在混沌创新院演讲中提出的核心框架，是"我品故我在"的完整论证语境：
+
+| 存在态 | 含义 | AI 时代的命运 |
+|-------|------|-------------|
+| **我思故我在** | 靠推理、分析、知识量立足 | 被冲击最大——AI 推理能力已超人万倍 |
+| **我行故我在** | 靠执行力、勤奋立足 | 被 Agent 替代——龙虾不睡觉、不请假 |
+| **我品故我在** | 靠人生阅历的整体性判断立足 | 不可替代——taste 是 AI 无法复制的 |
+
+首先被冲击的是"我思"人群——大量白领和中高管，没有独特 context 也没有独特 taste。终极状态是所有人都要成为"我品故我在"。
+
+---
+
+## e 的复利公式
+
+e^x 的数学特征：**导数等于自身——干活的过程就在磨刀**。
+
+映射到组织：品鉴者贡献 1/n 的 taste 差异，被龙虾调用 n 次方后，组织的 taste 精度呈指数提升。每个人的 taste 哪怕与别人只有一点点不同都有价值——这是 e 公式的人文主义内涵。
+
+**磨刀计划实证**：品鉴者两周仅介入 3 次（< 30 分钟），龙虾执行 > 50 小时，杠杆率 > 100x。
+
+---
+
+## Taste 的三层传递性
+
+| 层 | 可传递性 | 举例 | 产品映射 |
+|----|---------|------|---------|
+| **结果层** | 完全可传递 | "这个方案通过了" | 品鉴操作栏的通过/驳回 |
+| **理由层** | 部分可传递 | "因为开头不够吸引人" | 批注内容、Checklist |
+| **根基层** | 不可传递 | 品鉴者基于人生阅历的整体判断 | 只能品鉴者亲自裁定 |
+
+Checklist（作为 Harness）覆盖前两层。根基层只能品鉴者亲自裁定——这是正确的人机分工。Taste 只能被"采集"（通过/驳回信号），不能被"提取"（直接复制品鉴模式）。
+
+---
+
 ## Connections
 
-- [[otgo/sources/minglie-charter-v12-20260414|明略组织行为准则 v12]] — the document that formalizes this philosophy
-- [[otgo/entities/wu-minghui|吴明辉]] — originator of the 品哲学 framework
-- [[otgo/concepts/bihe|闭环 (Closed-loop)]] — both concepts are OTGO's "judgment filters"
+- [[otgo/sources/00-zhanlue-beijing-20260328|战略背景与产品哲学基底]] — 三种存在态、e公式、Taste三层传递性的完整论证
+- [[otgo/sources/minglie-charter-v12-20260414|明略组织行为准则 v12]] — 品哲学的制度化文件
+- [[otgo/entities/wu-minghui|吴明辉]] — 品哲学框架的提出者
+- [[otgo/concepts/bihe|闭环 (Closed-loop)]] — 两者都是 OTGO 的核心判断过滤器
+- [[otgo/concepts/lonxia-sanlv|龙虾三律]] — 第三律：暗默知识（taste）最高保护级别
+- [[otgo/concepts/skill-marketplace|Skill Marketplace]] — Taste 不可流通的产品落地

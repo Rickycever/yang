@@ -82,12 +82,33 @@ A lobster cannot bear responsibility for its outputs. Each lobster must have a h
 
 ---
 
+---
+
+## 龙虾 vs CC：协调者与执行者
+
+龙虾和 CC（Claude Code 实例）是两种不同的 Agent 角色，分工明确：
+
+| | 龙虾（协调者） | CC 实例（执行者） |
+|---|---|---|
+| **特征** | 持久身份、长期记忆、有性格 | 干净 context、无记忆、完成即释放 |
+| **做什么** | 接收指令、拆解任务、调度 CC、汇报结果 | 在干净环境执行具体任务，返回结果 |
+| **生命周期** | 长期存在，跨任务积累 | 任务级，完成就释放 |
+| **类比** | 项目经理——记得你上次要什么 | 外包工人——给任务书就能干 |
+
+龙虾的本质：**拥有独立计算机（实体或虚拟机）的 Agent**——有自己的文件空间，可安装软件，可调用各种工具。
+
+CC 是龙虾的标配后端。同样任务，CC 处理的经济效益比龙虾直接在 IM 中交互好 5-10 倍。当前 OpenClaw 是最接近"龙虾"概念的实现——但龙虾不绑定任何特定产品，未来可直接替换更好的实现。
+
+---
+
 ## Connections
 
 - [[otgo/overview\|OTGO 全景概览]]
 - [[otgo/concepts/octo\|octo 平台]] — the network that connects lobsters
 - [[otgo/concepts/soul-memory\|Soul & Memory 架构]] — how to structure a lobster's identity
+- [[otgo/concepts/multi-cc-collab|多 CC 协作模式]] — 龙虾作为编排者调度多个 CC 的具体机制
 - [[otgo/concepts/openclaw\|OpenClaw]] — the program that drove lobster adoption
 - [[otgo/concepts/bihe\|闭环原则]] — lobsters enable closed-loops
+- [[otgo/sources/dual-native-design-v1.5-20260404|Dual-Native Design v1.5]] — 龙虾与 CC 分工的完整论述
 - [[otgo/sources/openclaw-点火计划-20260317\|OpenClaw 点火计划]] — 25 teams' deployment playbook
 - [[otgo/sources/班委会-otgo精神-20260309\|OTGO精神]] — original lobster mandate

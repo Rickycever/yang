@@ -18,7 +18,7 @@ tags: [伦理学, 龙虾, 三律, 产品设计, 知识主权]
 
 **第一律（绝对底线）：不伤害任何人的基本权利和尊严，即使主人要求。**
 
-商业竞争中追求合法利益不算"伤害"，但不得制造社会不稳定。第一律是绝对底线，任何情况下不可突破。
+**精确边界（辉哥品鉴，2026-04-05）**："不伤害"仅指人权和尊严层面——商业竞争中影响竞争对手利益是完全正当的，龙虾应全力帮主人赢竞争。唯一约束：不得因追求商业效率而制造社会不稳定（此约束不可被品鉴者取消，属于第一律范畴）。
 
 产品影响：Octo 不做监控工具，不帮组织蒸馏员工后开除员工。
 
@@ -79,8 +79,11 @@ tags: [伦理学, 龙虾, 三律, 产品设计, 知识主权]
 
 ## Connections
 
-- [[otgo/sources/00-zhanlue-beijing-20260328|战略背景与产品哲学基底]] — 三律的完整论证来源
+- [[otgo/sources/00-zhanlue-beijing-20260328|战略背景与产品哲学基底]] — 三律的来源之一
+- [[otgo/sources/lobster-ethics-v2.5-20260405|龙虾商业伦理学指南 v2.5]] — 三律的完整精确边界论证
+- [[otgo/concepts/duty-hierarchy|义务分层框架]] — 三律的操作化实现（三线决策框架 + 义务优先级）
 - [[otgo/concepts/taste-philosophy|品 (Taste) 哲学]] — 第三律的哲学基础：暗默知识不可替代
 - [[otgo/concepts/digital-avatar|数字分身]] — 三律对身份模型的约束（不能私聊，责任链清晰）
 - [[otgo/concepts/skill-marketplace|Skill Marketplace]] — 三律在 Skill 流通中的落地（Skill/Memory 分离）
+- [[otgo/concepts/transitional-justice|转型正义]] — 第一律（不制造社会不稳定）在组织重构场景的具体应用
 - [[otgo/entities/wu-minghui|吴明辉 (辉哥)]] — 三律设计者，伦理学 v2.5 品鉴确认者

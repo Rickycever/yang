@@ -1,5 +1,37 @@
 # 更新日志
 
+## [2026-04-27] ingest | otgo | Octo 产品架构与战略补充（产品团队口述，2026-04-27）
+
+- otgo/sources/octo-product-vision-20260427 — 来源页，两类子系统划分、A2A 管理 GUI（第三栏）、Runtime vs 长记忆 Agent 区分、Token 成本量化（10x / $1000 vs $100）、Octo 不强绑定龙虾的战略决策
+- otgo/concepts/runtime-agent — 更新：补入 Token 成本量化示例 + 不强绑定龙虾的战略意图
+- otgo/concepts/octo-architecture — 更新：补入两类子系统（公共板块 vs 外部 SaaS）、A2A 管理 GUI 位置（第三栏）、信息流转示例、创新者窘境视角
+
+## [2026-04-27] synthesis | otgo | OTGO 产品经理入职简报
+
+- otgo/synthesis/pm-onboarding-brief-20260427 — 综合今日五个文件，面向新加入PM的全景简报（公司使命/产品定位/架构/设计原则/商业模式/五个注意点）
+
+## [2026-04-27] ingest | otgo | Octo 概念架构文档 v11.2（齐静春，2026-04-20）
+
+- otgo/sources/octo-arch-v11.2-20260420 — 来源页，四端产品形态、四个独立系统、两种部署场景、Space/Chat/Bot、信息流、连接密度模型、语义契约、六条架构原则、竞争路径分析
+- otgo/concepts/octo-architecture — 新概念页：Octo系统架构（Auth/IM/OpenClaw/ClawHub四系统、部署拓扑A/B、Space/Chat/Bot三核心概念、连接密度模型、语义契约）
+- otgo/concepts/browser-extension — 新概念页：Browser Extension（零集成成本协作桥梁，Chat侧边栏+Cmd+K+引用到Chat）
+- otgo/concepts/dual-native — 更新：补入 Artifact 批判（三条理由）和渲染归子系统原则，更新 Connections
+
+## [2026-04-27] ingest | otgo | 龙虾商业伦理学指南 v2.5（收官版）
+
+- otgo/sources/lobster-ethics-v2.5-20260405 — 来源页，三律精确边界、义务分层、五项义务、三线决策框架、Skill License v1.1、Skill 利益生命周期、转型正义、转型窗口机制、参数化伦理宪法结构、22B 保守默认值
+- otgo/concepts/duty-hierarchy — 新概念页：义务分层框架（三层义务结构 + 五项义务优先级 + 伦理审计日志 + 三线整合决策框架 + 多品鉴者冲突 + 多层责任链）
+- otgo/concepts/transitional-justice — 新概念页：转型正义（卢德运动镜鉴 + 重构+保护三条路 + 转型窗口机制保底条款+坡度敏感+输出端验证）
+- otgo/concepts/lonxia-sanlv — 更新：补入第一律精确边界（商业竞争正当性澄清），更新 Connections
+- otgo/concepts/skill-marketplace — 更新：Skill License 从 5 要素升级为 7 要素，新增双线署名、Taste 回流质量加权、Skill 利益生命周期模型（v2.2）
+
+## [2026-04-27] ingest | otgo | 事项（Item）设计 V2
+
+- otgo/sources/item-design-v2-20260427 — 来源页，6个结构性红利，5字段骨架，生命周期，Agent协议
+- otgo/concepts/item — 新概念页：事项（结构化工作单元，append-only品鉴流，Agent可观测通道）
+- otgo/concepts/runtime-agent — 新概念页：Runtime Agent（执行层，组织资产，事项驱动的真实口碑评级）
+- otgo/concepts/multi-cc-collab — 更新：补充 CC = Runtime Agent 的语境对照
+
 ## [2026-04-27] ingest | otgo | Dual-Native Design v1.5 GUI设计蓝图（2026-04-04，v11.2对齐）
 
 - otgo/sources/dual-native-design-v1.5-20260404 — 来源页，覆盖 Dual-Native、CLI解耦、四端策略、多CC协作、File Space、Monitor、子系统架构

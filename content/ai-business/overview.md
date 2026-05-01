@@ -37,6 +37,9 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 | [[ai-business/concepts/gea-architecture\|GEA 企业级智能体架构]] | 通用Agent + 上下文 + 技能 + 编排层 |
 | [[ai-business/concepts/context-system\|上下文系统]] | AI时代的企业护城河核心 |
 | [[ai-business/concepts/subjective-world-model\|主观世界模型]] | AI驱动的消费者心智模型模拟 |
+| [[ai-business/concepts/im-as-enterprise-entry\|IM 作为企业统一入口]] | IM是Agent的最优入口：使用频率/上下文完整性/协作输出/跨系统粘合四层逻辑 |
+| [[ai-business/concepts/skills-composable-architecture\|Skills 可编排架构]] | 业务规则原子化：从"流程驱动系统"到"意图驱动编排"的范式转移 |
+| [[ai-business/concepts/enterprise-knowledge-flywheel\|企业知识飞轮]] | 越用越聪明的运营型飞轮：当GPT-5成公共资源，知识飞轮是真正的护城河 |
 
 ---
 
@@ -65,6 +68,7 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 - [[ai-business/sources/gea-speech-notes-20260410\|GEA演讲精简纪要]] — 2026-04-10，结构化版本
 - [[ai-business/sources/anker-ai-20260410\|安克创新 AI 转型演讲]] — 2026-04-10，四阶段实践
 - [[ai-business/sources/ceibs-dingtalk-ai-strategy-mgmt-20250703\|CEIBS × 钉钉：AI时代战略落地与管理跃迁（2025-07-03）]] — 阿里组织变革史+DSTE体系+Agoal/TeamBition/组织大脑产品全景+FOMO与数字骨骼隐喻
+- [[ai-business/sources/im-agent-skills-kb-architecture-20260420\|IM + Agent + Skills + KB：新一代企业软件架构（2026-04-20）]] — 半瓶水笔记：50年企业软件三次失败→第四条路（以知识为中心），IM入口四层逻辑，Skills意图驱动编排，知识飞轮护城河
 
 ---
 
@@ -89,3 +93,4 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 - 2026-04-15 · 华懋科技：AI+CAE三阶段方案，新实体页（汽车被动安全系统，20亿营收）
 - 2026-04-15 · 2026白皮书：4个新概念（主动AI、L1-L4、3x3矩阵、企业判断系统）、5个新实体（玛氏、森马、博世、美的、更新安克）
 - 2026-04-14 · 摄入3个来源（GEA演讲×2、安克创新）；创建4个概念、2个实体、1个综合页
+- 2026-05-01 · 半瓶水笔记（2026-04-20）：IM+Agent+Skills+KB新一代企业软件架构；创建1个来源页、3个概念页（IM入口/Skills可编排/知识飞轮）

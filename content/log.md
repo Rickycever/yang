@@ -339,3 +339,7 @@
 
 ## [2026-04-16] ingest | miaozhen | DOMO多谋引擎——明略可信跨平台内容种草策略生态（2026-04-13）
 新建来源页（miaozhen/sources/domo-content-grass-strategy-20260413），新建概念页（miaozhen/concepts/domo-dual-matrix-strategy），更新miaozhen/overview + index.md
+
+## [2026-05-01] ingest | ai-business | IM + Agent + Skills + Knowledge Base：新一代企业软件架构（半瓶水笔记，2026-04-20）
+- 来源页：im-agent-skills-kb-architecture-20260420
+- 新概念页：im-as-enterprise-entry, skills-composable-architecture, enterprise-knowledge-flywheel

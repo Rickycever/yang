@@ -3,7 +3,7 @@ title: AI趋势 2026 — 全景概览
 topic: ai-trends
 created: 2026-04-15
 type: overview
-tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai]
+tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai, ai-labs, coding-agent, agent-era]
 ---
 
 # AI趋势 2026（AI Trends）
@@ -29,6 +29,10 @@ tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai]
 | [[ai-trends/concepts/continual-learning\|持续学习系统]] | 解决"权重冻结"问题；部署后真正积累知识，避免灾难性遗忘 |
 | [[ai-trends/concepts/rl-platforms\|RL平台]] | 以交互经验替代静态标注数据；训练Agent处理多步骤复杂任务 |
 | [[ai-trends/concepts/inference-inflection\|推理拐点]] | 推理算力需求超越训练；边缘/端侧AI兴起；Jensen Huang GTC 2026 |
+| [[ai-trends/concepts/coding-agent\|Coding Agent]] | 科技史上增速最快新物种；2026年 ARR 预计破千亿美元；AGI 路线图核心 |
+| [[ai-trends/concepts/to-human-to-agent\|To Human / To Agent]] | 替代 To B/To C 的 Agent 时代新市场坐标系；Agent 成为独立经济主体 |
+| [[ai-trends/concepts/managed-agents\|Managed Agents]] | Anthropic 从 API 公司向 Agent 云公司的结构性转变；卖 Token → 卖 Runtime |
+| [[ai-trends/concepts/robot-data-pyramid\|机器人数据金字塔]] | Robotics 数据体系四层框架（Egocentric/UMI/Teleop/World Model）；VLA→WAM 路线转移 |
 
 ---
 
@@ -76,8 +80,24 @@ tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai]
 
 ---
 
+## AI Labs 竞争格局
+
+| 机构 | 核心判断 |
+|------|---------|
+| Anthropic | 凭 Coding Agent 战略聚焦领先，AGI-native 文化；预计年中追平 OpenAI ARR |
+| OpenAI | ChatGPT WAU 接近 10 亿，战略误判 Coding 优先级；约 300 个项目并行 |
+| Google（Gemini）| TPU 资源充裕，最能穿越周期；增速已降至 13%（2026年2月） |
+| xAI | 2026年5月已宣布解散，算力并入 SpaceXAI |
+| Meta | 密集引进顶级人才，冲击 Tier 1，短期差距仍存 |
+
+---
+
 ## 关键数据
 
+- AI Coding ARR 预计 2026 年突破 **1000 亿美元**
+- Anthropic 预计年中追平 OpenAI ARR；Claude Code ARR 已达 **$1B**
+- ChatGPT WAU 接近 **10 亿**，付费用户超 **5000 万**
+- WAM（World Action Model）在新任务泛化能力比 SOTA VLA 提升 **2 倍以上**
 - MIT研究：95%企业AI投资尚未产生可量化业务价值
 - Gartner预测：30%的GenAI项目将在PoC阶段被终止（至2025年末）
 - 54%公司报告正向AI ROI，同时62%仍处于实验阶段（矛盾并存）
@@ -92,6 +112,7 @@ tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai]
 - [[ai-trends/sources/ai-trends-report-2026-statworx|AI Trends Report 2026]] — statworx × AI Hub Frankfurt，139页，70+专家洞察
 - [[ai-trends/sources/bvp-ai-infra-roadmap-2026|AI基础设施路线图（BVP）]] — Bessemer Venture Partners，2026年3月，5大技术前沿
 - [[ai-trends/sources/tencent-ai-whitepaper-2026q1|AI趋势研究白皮书2026Q1（腾讯科技）]] — 腾讯科技，2026年4月，60页，4大趋势因果链分析
+- [[ai-trends/sources/era-of-agent-shixiang-2026-may|拾象 AGI 洞察 2026-05（海外独角兽）]] — The Era of Agent：Coding Agent 千亿 ARR、AI Labs 竞争格局、To Human/To Agent、Robotics 数据金字塔
 
 ---
 
@@ -106,6 +127,7 @@ tags: [ai-trends, statworx, agentic-ai, geopolitics, enterprise-ai]
 
 ## Recently Added
 
+- 2026-05-09 · 合并 ai-industry 话题：拾象 AGI 洞察（2026-05）来源页、4个新概念页（Coding Agent、To Human/To Agent、Managed Agents、机器人数据金字塔）、AI Labs 竞争格局表
 - 2026-04-15 · 腾讯AI白皮书2026Q1：1个新来源、3个新概念页（Agent主流化、递归研发加速、Skill知识载体）、1个新实体页（OpenClaw）、更新Harness基础设施（接力赛/甲方乙方/仓库卫生学三大模式）
 - 2026-04-15 · BVP路线图：4个新概念页（Harness基础设施、持续学习、RL平台、推理拐点），更新世界模型（三大架构范式）
 - 2026-04-15 · 新话题：1个来源（AI Trends Report 2026，139页），6个概念页（Agent管理、独角兽微团队、B2AI2C、算力地缘政治、世界模型、DataOps+AgentOps）

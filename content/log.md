@@ -1,5 +1,14 @@
 # 更新日志
 
+## [2026-05-09] merge | ai-industry → ai-trends | The Era of Agent：拾象 AGI 投资洞察（2026-05）
+
+- ai-trends/sources/era-of-agent-shixiang-2026-may — 来源页：Coding Agent 千亿 ARR、AI Labs 组织战略竞争、To Human/To Agent、Managed Agents、Robotics 数据金字塔、Neo Labs 两条路线
+- ai-trends/concepts/coding-agent — 新概念页：科技史最快新物种、Agent Loop 机制、飞轮效应、组织壁垒
+- ai-trends/concepts/to-human-to-agent — 新概念页：替代 To B/To C 的新市场坐标系、Agent 独立经济主体
+- ai-trends/concepts/managed-agents — 新概念页：Anthropic 从 API → Agent 云公司，卖 Token → 卖 Runtime
+- ai-trends/concepts/robot-data-pyramid — 新概念页：机器人数据四层框架、VLA 转向 WAM 的四大原因
+- ai-trends/overview — 更新：新增 AI Labs 竞争格局表、4个概念、1个来源（ai-industry 话题内容合并）
+
 ## [2026-04-27] ingest | otgo | Octo 产品架构与战略补充（产品团队口述，2026-04-27）
 
 - otgo/sources/octo-product-vision-20260427 — 来源页，两类子系统划分、A2A 管理 GUI（第三栏）、Runtime vs 长记忆 Agent 区分、Token 成本量化（10x / $1000 vs $100）、Octo 不强绑定龙虾的战略决策

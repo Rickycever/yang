@@ -51,3 +51,6 @@ tags: [ceibs, mininglamp, digital-marketing, leads-management, cdp, emba]
 - [[miaozhen/overview|秒针/明略科技]] — 方案提供方，CDP+MA+DMP 全线产品
 - [[benz/overview|奔驰 CDP+MA 项目]] — 同为明略科技 CDP 项目，可类比技术架构
 - [[nestle/overview|雀巢 DMP 项目]] — 同为明略×秒针服务的消费品/服务类客户
+- [[adidas/overview|阿迪达斯 DMP 标签项目]] — 同系供应商，标签增补在教育 vs 运动行业的差异对比
+- [[hongxing-mkl/overview|红星美凯龙×明略科技]] — 同类 CDP+标签体系，教育招生 vs 家居转化两种精细化运营路径
+- [[ai-business/overview|AI 商业进化]] — CEIBS 自身是 AI 商业教育领域的重要机构，与本话题形成客户+内容双重关联

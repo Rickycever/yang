@@ -44,3 +44,5 @@ tags: [red-star-macalline, CDP, tag-enrichment, home-furnishing, mininglamp, use
 - [[adidas/overview|阿迪达斯 DMP 标签项目]] — 同为明略标签增补方案，可对比参考
 - [[benz/overview|奔驰 CDP+MA 项目]] — 同类 CDP+MA 全栈方案，可对比方案深度
 - [[nestle/overview|雀巢 DMP 项目]] — 同类消费品数据运营案例
+- [[ceibs/overview|中欧商学院×明略科技]] — 同系供应商，教育 vs 家居行业的精细化运营对比
+- [[pepsico/overview|百事×明略科技]] — 同属明略科技营销科技服务矩阵，家居 vs 食品行业横向对比

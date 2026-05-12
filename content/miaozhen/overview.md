@@ -26,6 +26,8 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 **监测与数据**
 - [[miaozhen/concepts/ivt-monitoring-tech|IVT监测技术革新]] — HSV色彩空间+感知哈希双方案，IPTV专网监测突破，蚂蚁集团ID验真合作
 - [[miaozhen/concepts/dmp-ai-insight|明日DMP AI洞察架构]] — RaaS化转型路径，UPLIFT模型，Core TA研究，MCP开放平台
+- [[miaozhen/concepts/mingri-open-platform|明日开放平台（API/MCP）]] — 近30个API接口覆盖DMP全功能，MCP服务供AI Agent直接调用，2026 H1重点
+- [[miaozhen/concepts/mingri-ai-agent-center|明日AI能力中心]] — ClawHub已发布DMP Agents（1个月200+下载）；智能圈包Agent含4个Human-in-loop确认节点
 - [[miaozhen/concepts/spirits-dmp-audience-strategy|白酒DMP人群三层策略]] — 买酒人群/趋势人群/存量用户分析三层框架，LBS+标签+CDP集成
 - [[miaozhen/concepts/ai-tvc-creation|AI赋能人群洞察至TVC创意]] — DeepMiner八步法：249,572条社媒数据→分镜脚本，对比DeepSeek优势显著
 
@@ -59,7 +61,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 | 成立年份 | 2006年 |
 | 股票代码 | 2718.HK |
 | 官网 | www.mininglamp.com |
-| API开发数量 | 23个（涵盖DMP全功能） |
+| API开发数量 | ~30个（涵盖DMP全功能，2026-05更新）|
 | DeepMiner社媒数据上传量 | 249,572条（vs DeepSeek约200+条） |
 | 社媒数据日增覆盖 | 市场90%公开社媒数据 |
 | DeepMiner标签体系 | PUGC标签+圈层标签+9大行业知识图谱 |
@@ -76,6 +78,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - **2025年**：明日数据完成品类数据+聚类算法+开放平台基础建设，完成23个API开发
 - **2026年1月31日**：秒针Day Workshop，向P&G汇报2025回顾与2026规划
 - **2026年2月**：蚂蚁集团设备ID验真合作预计上线，IPTV监测流程跑通
+- **2026年5月12日**：明日DMP产品分享，AI能力中心 ClawHub Agents 200+下载，京东/银联/百望/航旅数据源发布案例
 
 ---
 
@@ -91,6 +94,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/sources/domo-content-grass-strategy-20260413|DOMO多谋引擎产品介绍（2026-04-13）]] — 千人千言双矩阵，真人素人库，海外达人全链路AI赋能，标准报价体系
 - [[miaozhen/sources/ai-shopping-guide-20250910|AI 云导购方案（2025-09-10）]] — 大模型+Agent驱动，四模块（接管/跟单/质检/文案），NB运动/美妆/母婴案例，80%AI+20%真人协作模型
 - [[miaozhen/sources/mano-p-intro-20260421|Mano-P 1.0产品介绍（2026）]] — GUI感知智能体，13项SOTA，OSWorld第一，三种部署形态，7大行业场景，Apache 2.0开源路线图
+- [[miaozhen/sources/mingri-dmp-intro-20260512|明日数据 DMP 产品介绍（2026-05-12）]] — 24页产品分享，产品升级概览（开放平台/AI能力中心）+ 新数据源案例（京东/银联/百望/航旅/品类）
 
 ---
 
@@ -100,3 +104,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[adidas/overview|阿迪达斯 DMP 标签项目]] — 秒针明略的第三方标签增补方案
 - [[benz/overview|奔驰 CDP+MA 项目]] — 明略科技CDP产品与Hermes Agent框架
 - [[byhealth/overview|汤臣倍健×明略科技]] — DeepMiner在营销全链路的落地案例
+- [[pepsico/overview|百事×明略科技]] — DeepMiner/DOMO 技术底座在达人营销场景的应用
+- [[hongxing-mkl/overview|红星美凯龙×明略科技]] — 明略集团整体资源整合的家居行业案例
+- [[ceibs/overview|中欧商学院×明略科技]] — 明略科技在教育行业的 CDP+DMP 落地
+- [[palantir/overview|Palantir]] — DeepMiner Data Agent 框架与 Palantir Foundry+AIP 同属企业数据分析智能化赛道

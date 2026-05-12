@@ -1,4 +1,18 @@
+---
+title: Wiki 更新日志
+type: 更新日志
+date: 2026-04-13
+tags: [更新日志, wiki管理, 知识库]
+---
+
 # 更新日志
+
+## [2026-05-12] ingest | miaozhen 补充 | 明日数据 DMP 产品介绍（2026-05-12 分享版）
+
+- miaozhen/sources/mingri-dmp-intro-20260512 — 来源页，24页产品分享，产品升级概览 + 新数据源及案例（明日数据=明略科技旗下DMP品牌，合并入miaozhen话题）
+- miaozhen/concepts/mingri-open-platform — 新概念页：明日开放平台（API/MCP化，近30个接口，AI可直接调用）
+- miaozhen/concepts/mingri-ai-agent-center — 新概念页：AI能力中心（ClawHub 200+下载，4节点Human-in-loop圈包Agent）
+- miaozhen/overview — 更新：新增2个概念页、1个来源、时间线补充、API数量更新（~30个）
 
 ## [2026-05-09] merge | ai-industry → ai-trends | The Era of Agent：拾象 AGI 投资洞察（2026-05）
 

@@ -60,3 +60,6 @@ tags: [byhealth, deepminer, ai-agent, marketing-automation, sports-nutrition]
 - [[nestle/overview|雀巢 DMP 项目]] — 同为秒针明略体系在快消品行业的AI营销实践
 - [[adidas/overview|阿迪达斯 DMP 标签项目]] — 秒针明略标签增补技术在运动品类的应用
 - [[ai-business/overview|AI 商业进化]] — 六节点框架可与GEA架构、Full Stack AI落地路径对照
+- [[miaozhen/overview|秒针/明略科技]] — DeepMiner（Mano+Cito）是本项目的核心技术底座
+- [[pepsico/overview|百事×明略科技]] — 同为明略科技 AI 营销方案，食品饮料行业横向对比
+- [[my/overview|明胜品智（MY）]] — 餐饮 vs 营养品行业 AI Agent 营销路径对比

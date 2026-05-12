@@ -83,6 +83,10 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 - [[otgo/overview\|OTGO]] — OTGO is the AI-first B2B actor in this landscape
 - [[industry-research/overview\|行业研究]] — Quantum computing reshaping the compute paradigm underlying all AI
 - [[tools/overview\|工具方法论]] — LLM Wiki as personal-scale context accumulation
+- [[shixiang/overview|拾象AI洞察]] — 拾象 LP Meeting 对企业 AI 投资判断与本话题的企业转型案例形成买方视角对照
+- [[nvidia-gtc-2026/overview|NVIDIA GTC 2026]] — AI Factory 和 AaaS 是企业 AI 基础设施层的上游战略，与 GEA 架构的落地层互补
+- [[palantir/overview|Palantir]] — Palantir FDE 模式是企业 AI 交付的成熟参照，与本话题中的 Full Stack AI 部署方法对比
+- [[my/overview|明胜品智（MY）]] — 餐饮行业企业 AI 落地的具体案例，是 Company as an Agent 理论的实践验证
 
 ---
 

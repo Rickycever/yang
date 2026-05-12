@@ -101,4 +101,8 @@ OTGO is a Chinese AI company founded by 吴明辉 (辉哥). Its core product is 
 
 ## Connections
 
-- [[index\|Wiki 首页]]
+- [[ai-business/overview|AI 商业进化]] — octo 平台是企业 AI Agent 落地的产品形态，与 GEA 架构、Full Stack AI 部署形成呼应
+- [[ai-trends/overview|AI趋势 2026]] — Agent 管理（T3）、独角兽微团队（T5）等趋势正是 octo 平台的设计前提
+- [[palantir/overview|Palantir]] — 两者同为企业软件平台：Palantir FDE 驻场模式 vs OTGO 龙虾矩阵，不同路径的企业 AI 交付对比
+- [[nvidia-gtc-2026/overview|NVIDIA GTC 2026]] — octo 加入 OpenClaw 生态，GTC 披露的 NemoClaw 是 octo 的技术合作方
+- [[tools/overview|工具方法论]] — LLM Wiki 与 octo 的 Soul/Memory 架构均为知识复利机制，个人 vs 企业尺度的对照

@@ -33,6 +33,9 @@ Knowledge management and productivity tools and patterns used in AI-native workf
 
 - [[ai-business/concepts/context-system\|上下文系统]] — enterprise-scale version of the same compounding knowledge principle
 - [[otgo/concepts/soul-memory\|Soul & Memory Architecture]] — agent memory design, parallel concept
+- [[otgo/overview|OTGO]] — octo 平台的 Soul/Memory/Taste 架构是企业级知识复利机制，与 LLM Wiki 个人级机制形成对照
+- [[ai-business/overview|AI 商业进化]] — 企业知识飞轮（IM+Agent+Skills+KB）与 LLM Wiki 个人知识复利同属知识管理在 AI 时代的演进
+- [[ai-trends/overview|AI趋势 2026]] — Skill 作为知识载体（T20）直接对应 LLM Wiki 的模式理论依据
 
 ---
 

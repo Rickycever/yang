@@ -62,3 +62,8 @@ tags: [adidas, dmp, tag-enrichment, miaozhen, china-market]
 ## Connections
 
 - [[ai-business/overview|AI 商业进化]] — 阿迪达斯的数据智能项目属于 AI+Data 企业落地范畴
+- [[miaozhen/overview|秒针/明略科技]] — 本项目供应商，标签增补是秒针明略核心 DMP 能力
+- [[benz/overview|奔驰 CDP+MA 项目]] — 明略科技服务的另一大客户，同源技术，可对比交付形态
+- [[nestle/overview|雀巢 DMP 项目]] — 同属明略×秒针大品牌 DMP 项目，运动 vs 快消行业对比
+- [[hongxing-mkl/overview|红星美凯龙×明略科技]] — 明略标签体系在家居行业的迁移，三层架构同源
+- [[ceibs/overview|中欧商学院×明略科技]] — 同系供应商服务案例，运动 vs 教育行业数字化营销对比

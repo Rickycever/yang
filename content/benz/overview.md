@@ -84,3 +84,6 @@ tags: [benz, cdp, marketing-automation, miaozhen, china-market]
 - [[adidas/overview|阿迪达斯 DMP 标签项目]] — 明略科技服务的另一大品牌，两个项目构成明略在大品牌数据智能业务的典型案例
 - [[adidas/entities/miaozhen|秒针 / 明略科技]] — 本项目核心供应商
 - [[ai-business/overview|AI 商业进化]] — CDP+MA 项目属于 AI+Data 企业数字化转型范畴
+- [[nestle/overview|雀巢 DMP 项目]] — 同为明略科技服务的品牌客户，汽车 vs 快消行业数字化对比
+- [[hongxing-mkl/overview|红星美凯龙×明略科技]] — 同类 CDP 全栈方案，可对比家居 vs 汽车行业差异
+- [[palantir/overview|Palantir]] — 两者均采用私有化部署保障数据主权，不同行业的相似技术决策

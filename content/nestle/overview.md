@@ -95,3 +95,6 @@ tags: [nestle, dmp, sales-driven-retargeting, m2s, miaozhen]
 - [[adidas/overview|阿迪达斯 DMP 标签项目]] — 同一供应商（秒针明略），均为大品牌 DMP 数据增补，可对比差异
 - [[benz/overview|奔驰 CDP+MA 项目]] — 明略科技服务的另一大客户，技术能力同源
 - [[adidas/entities/miaozhen|秒针 / 明略科技]] — 本项目核心供应商
+- [[hongxing-mkl/overview|红星美凯龙×明略科技]] — 同类标签增补+打分模型，不同行业（快消 vs 家居）可对比
+- [[byhealth/overview|汤臣倍健×明略科技]] — 同属快消品/健康品行业，AI 营销全链路 vs DMP 两种切入路径对比
+- [[ceibs/overview|中欧商学院×明略科技]] — 同系供应商，消费品 DMP vs 教育行业 Leads 精细化运营对比

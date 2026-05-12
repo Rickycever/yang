@@ -84,3 +84,5 @@ tags: [my, mingsheng-pinzhi, mingqi, private-domain, ai-agent, restaurant-tech]
 - [[miaozhen/overview|秒针/明略科技]] — 明略科技是明胜品智的技术股东，共享AI底座
 - [[nestle/overview|雀巢 DMP 项目]] — 快消品数字化营销路径参照
 - [[byhealth/overview|汤臣倍健×明略科技]] — AI Agent营销全链路，与餐饮精准营销体系对照
+- [[otgo/overview|OTGO]] — 餐饮 AI Agent 与 octo 平台的企业多 Agent 协作方案可相互参照
+- [[palantir/overview|Palantir]] — 两者均采用 FDE 类驻场服务模式深度绑定客户，餐饮 vs 政府/大企业行业对比

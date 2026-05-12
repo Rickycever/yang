@@ -32,3 +32,11 @@ Research and analysis on technology and market trends that shape the broader AI 
 ## Recently Added
 
 - 2026-04-14 · 量子计算对GPU加速行业的重构 — 1 source, 1 concept
+
+---
+
+## Connections
+
+- [[nvidia-gtc-2026/overview|NVIDIA GTC 2026]] — GTC 发布的 Vera Rubin/Groq 是英伟达防御量子挑战的当前硬件布局
+- [[ai-trends/overview|AI趋势 2026]] — 算力地缘政治（T9）与量子对 GPU 的长期影响是同一宏观视角
+- [[shixiang/overview|拾象AI洞察]] — 拾象对算力基础设施的投资判断与量子挑战同属算力赛道研究

@@ -62,3 +62,6 @@ Year 3（生态延伸）：向代理商开放，与 Global 平台互通，Retail
 - [[miaozhen/overview|秒针/明略科技]] — 方案提供方，DeepMiner/DOMO 技术底座
 - [[my/overview|明胜品智（MY）]] — 同类营销科技项目，可类比 AI Agent 营销架构
 - [[byhealth/overview|汤臣倍健×明略科技]] — 同为明略科技 AI 营销方案，六节点框架可类比
+- [[adidas/overview|阿迪达斯 DMP 标签项目]] — 同属明略科技服务的大品牌客户，标签体系 vs 达人策略两种数字营销路径
+- [[nestle/overview|雀巢 DMP 项目]] — 同系供应商快消品行业案例，DMP 数据运营 vs 达人营销对比
+- [[ai-business/overview|AI 商业进化]] — 达人营销 AI 化是 AI+营销业务落地的典型场景

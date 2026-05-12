@@ -74,6 +74,9 @@ tags: [shixiang, ai-investment, agi, ai-trends, investment-strategy]
 
 ## Connections
 
-- [[ai-trends/overview|AI趋势全景概览]] — 相关话题：AI 趋势与技术判断
-- [[industry-research/overview|行业研究全景概览]] — 相关话题：技术市场趋势分析
+- [[ai-trends/overview|AI趋势全景概览]] — 拾象与 statworx/BVP/腾讯白皮书高度重叠：Continual Learning、Proactive Agent、World Models 均同步出现
+- [[industry-research/overview|行业研究全景概览]] — 拾象对算力地缘政治的投资判断与量子 vs GPU 研究属同一宏观叙事
+- [[nvidia-gtc-2026/overview|NVIDIA GTC 2026]] — GTC 2026 的 AaaS 和推理拐点判断与拾象 Best Ideas 的 Token 消耗/Agent Infra 判断互为印证
+- [[ai-business/overview|AI 商业进化]] — 拾象投资视角（买方）与 AI 商业进化案例（卖方/实践方）形成完整的 AI 企业价值链视图
+- [[otgo/overview|OTGO]] — 拾象投资的 OpenClaw 生态与 OTGO octo 平台存在关联，Agent 协作平台是拾象重点关注赛道
 - [[shixiang/synthesis/how-to-play-ai-beta|How to Play AI Beta]] — 综合投资策略分析

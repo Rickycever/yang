@@ -65,6 +65,7 @@ tags: [my, mingsheng-pinzhi, mingqi, private-domain, ai-agent, restaurant-tech]
 - **2023年**：百胜中国CDP建设+标签运营深化，会员达4.6亿
 - **2024年**：北极星AI预估运营平台上线，日均准确率90%+
 - **2026年1月**：明奇科技发布品牌私域深度运营案例集
+- **2026年**：海底捞 AI 私域客服一期上线 1,360 家门店，AI 独立解决率 22%，全年节省 200-300 万元；二期目标 50%+，3-6 个月回本
 
 ---
 
@@ -74,6 +75,7 @@ tags: [my, mingsheng-pinzhi, mingqi, private-domain, ai-agent, restaurant-tech]
 - [[my/sources/pizzahut-pi-copilot-202404|必胜客 π 超级助手（2024-04）]] — Copilot+Agents架构，COL成本管理，RGM三问，数据底座+知识底座
 - [[my/sources/mingqi-private-domain-cases-202601|明奇科技案例集（2026年1月）]] — 哈根达斯/赛百味/海底捞私域+AI客服案例
 - [[my/sources/haidilao-ai-cs-gtm-0620|海底捞AI客服GTM方案（明胜品智，2025）]] — 完整架构（单一Agent+MCP+HiAgent）、动态知识库、Dify vs Coze、四大模块GTM复制路径
+- [[my/sources/haidilao-ai-solution-complete-2026|AI私域客服解决方案：海底捞实践&行业复制可行性]] — 一期1,360家门店数据（AI独立解决率22%→目标50%+）、三层业务场景、行业适配矩阵、SaaS/项目制双模式收费
 
 ---
 

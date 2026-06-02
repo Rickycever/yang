@@ -7,7 +7,10 @@ tags: [更新日志, wiki管理, 知识库]
 
 # 更新日志
 
-## [2026-05-22] ingest | miaozhen 补充 | 同创意横竖屏创意效果分析（2026.04.01–15，百青平台，A/B测试）
+## [2026-06-02] ingest | ai-business | 德勤2026趋势解读：企业如何围绕AI重写端到端流程（公众号文章）
+
+- ai-business/sources/deloitte-2026-ai-end-to-end-process-rewrite-20260602 — 来源页，AI原生流程、KDD金字塔、落地挑战（数据/人才/ROI）、标杆案例（美的/科沃斯/中信泰富）
+- ai-business/overview — 更新：新增来源页与最近更新条目
 
 ## [2026-05-22] ingest | my | AI私域客服解决方案：海底捞实践 & 行业复制可行性（2026）
 

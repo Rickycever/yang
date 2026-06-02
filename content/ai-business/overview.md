@@ -69,6 +69,8 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 - [[ai-business/sources/anker-ai-20260410\|安克创新 AI 转型演讲]] — 2026-04-10，四阶段实践
 - [[ai-business/sources/ceibs-dingtalk-ai-strategy-mgmt-20250703\|CEIBS × 钉钉：AI时代战略落地与管理跃迁（2025-07-03）]] — 阿里组织变革史+DSTE体系+Agoal/TeamBition/组织大脑产品全景+FOMO与数字骨骼隐喻
 - [[ai-business/sources/im-agent-skills-kb-architecture-20260420\|IM + Agent + Skills + KB：新一代企业软件架构（2026-04-20）]] — 半瓶水笔记：50年企业软件三次失败→第四条路（以知识为中心），IM入口四层逻辑，Skills意图驱动编排，知识飞轮护城河
+- [[ai-business/sources/deloitte-2026-ai-end-to-end-process-rewrite-20260602\|德勤2026趋势解读：企业如何围绕AI重写端到端流程]] — 公众号文章：AI原生流程、KDD金字塔、企业落地案例（美的/科沃斯/中信泰富)
+
 
 ---
 

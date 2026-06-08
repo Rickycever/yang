@@ -161,7 +161,7 @@ Meta 广告平台自动化背景下的出海 AIGC 创意工具研究。核心主
 
 ## Recently Added
 
-- 2026-06-08 · [[cross-border-marketing-aigc/overview|出海营销AIGC]] — 补充《出海营销产业链价值分布与创意板块商业机会分析》：代理商返点风险、创意毛利提升、AI改造环节、创意SaaS转型路径
+- 2026-06-08 · [[cross-border-marketing-aigc/overview|出海营销AIGC]] — 补充《Meta广告 × AIGC创意产品策略全景笔记》：品牌级广告创意工作站、Brand Kit、多尺寸导出、结构化变体、Hook裂变、供应商降本与产品化路径
 - 2026-06-08 · [[cross-border-marketing-aigc/overview|出海营销AIGC]] — 新主题：Meta 广告平台与 AIGC 创意工具定位、数字人模块、创意数据飞轮、三巨头工作流、价值链成本结构；新增 5 个来源页、7 个概念页、4 个实体页、2 个综合页
 - 2026-06-02 · [[ai-business/overview|AI 商业进化]] — 德勤2026趋势解读：企业如何围绕AI重写端到端流程（公众号文章）：AI原生流程、KDD金字塔、企业落地案例（美的/科沃斯/中信泰富）
 - 2026-05-22 · [[miaozhen/sources/tongchuangyi-vertical-horizontal-abtest-20260415|同创意横竖屏创意效果分析]] — 在线教育广告A/B测试（2026.04.01–15）：竖屏CTR高9%/横屏CVR高18%/竖屏CPA优14%，结论竖屏优先

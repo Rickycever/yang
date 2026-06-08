@@ -7,6 +7,12 @@ tags: [更新日志, wiki管理, 知识库]
 
 # 更新日志
 
+## [2026-06-08] ingest | cross-border-marketing-aigc 补充 | Meta广告 × AIGC创意产品策略全景笔记
+
+- cross-border-marketing-aigc/sources/meta-aigc-creative-strategy — 来源页，Meta广告规格、AIGC产品定位、品牌资产库、脚本模板、视频Hook裂变、供应商成本优化、业务诊断和项目亏本拆解
+- cross-border-marketing-aigc/overview — 更新：新增来源和时间线补充
+- index.md — 更新 Recently Added 条目
+
 ## [2026-06-08] ingest | cross-border-marketing-aigc 补充 | 出海营销产业链价值分布与创意板块商业机会分析
 
 - cross-border-marketing-aigc/sources/overseas-marketing-value-chain-analysis — 来源页，代理商返点/服务费/创意制作溢价、Andromeda下创意战略地位、AI改造环节、TAM/SAM/SOM、创意SaaS转型路径

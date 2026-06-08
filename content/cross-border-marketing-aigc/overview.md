@@ -52,6 +52,7 @@ tags: [cross-border-marketing, aigc, meta-ads, creative-automation, data-flywhee
 - 2025-10：Meta Marketing API 开始强制迁移至 Advantage+ Framework。
 - 2026 Q1：旧版 ASC/AAC API 停用，自建工具必须基于新 Advantage+ Framework 重写。
 - 2026：自建 AIGC 工具窗口期集中在数字人、行业模板、跨渠道编排、创意表现回流训练。
+- 2026：Meta AIGC 创意产品策略进一步收敛为“品牌级广告创意工作站”：先做品牌调性锁定、多尺寸导出、结构化变体和效果归因反哺，再扩展视频 Hook 裂变与模板合成。
 
 ## 来源
 
@@ -61,6 +62,7 @@ tags: [cross-border-marketing, aigc, meta-ads, creative-automation, data-flywhee
 - [[cross-border-marketing-aigc/sources/cross-border-agencies-ai-creative|出海营销三巨头创意工作流与 AIGC 程度对比]]
 - [[cross-border-marketing-aigc/sources/value-chain-cost-breakdown|出海营销价值链与成本结构拆解]]
 - [[cross-border-marketing-aigc/sources/overseas-marketing-value-chain-analysis|出海营销产业链价值分布与创意板块商业机会分析]]
+- [[cross-border-marketing-aigc/sources/meta-aigc-creative-strategy|Meta广告 × AIGC创意产品策略全景笔记]]
 
 ## Connections
 

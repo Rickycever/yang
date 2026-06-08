@@ -7,6 +7,23 @@ tags: [更新日志, wiki管理, 知识库]
 
 # 更新日志
 
+## [2026-06-08] ingest | miaozhen 补充 | 明略 AI 能力与企业应用方案
+
+- miaozhen/sources/mininglamp-ai-capabilities-enterprise-applications — 来源页，47页企业AI落地方案：AI转型洞察、Agent平台、企业知识库、Skill管理、流程闭环、企业协同、Token治理
+- miaozhen/concepts/enterprise-agent-os — 新概念页：企业级 Agent OS（知识沉淀/技能接入/流程闭环/企业协同）
+- miaozhen/concepts/enterprise-knowledge-governance — 新概念页：企业知识治理（语料资产化、知识切片、检索、发布、权限、安全）
+- miaozhen/concepts/skill-lifecycle-management — 新概念页：Skill 生命周期管理（API桥接、审批上线、灰度、Human-in-loop、回滚）
+- miaozhen/concepts/token-governance — 新概念页：Token 成本治理（消耗、质量、ROI、Agent评分、异常熔断）
+- miaozhen/overview — 更新：新增企业AI落地平台概念组、关键数据、时间线和来源
+
+## [2026-06-08] ingest | cross-border-marketing-aigc | 出海营销AIGC（5 个 Markdown 资料）
+
+- cross-border-marketing-aigc/overview — 新主题全景页：Meta 自动化广告、数字人、行业模板、CAPI、创意飞轮、自建 vs 集成
+- sources — 新增 5 个来源页：Meta AIGC 创意工具定位、数字人模块、飞轮 A 数据流、三巨头工作流、价值链成本结构
+- concepts — 新增 7 个概念页：创意数据飞轮、数字人营销模块、Meta API 边界、CAPI 归因管道、行业模板体系、创意特征库、AIGC 创意价值链
+- entities — 新增 4 个实体页：Meta、蓝色光标、飞书深诺、钛动科技
+- synthesis — 新增 2 个综合页：自建 vs 集成策略、Meta 侧 AIGC 创意机会
+
 ## [2026-06-02] ingest | ai-business | 德勤2026趋势解读：企业如何围绕AI重写端到端流程（公众号文章）
 
 - ai-business/sources/deloitte-2026-ai-end-to-end-process-rewrite-20260602 — 来源页，AI原生流程、KDD金字塔、落地挑战（数据/人才/ROI）、标杆案例（美的/科沃斯/中信泰富）

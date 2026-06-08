@@ -39,6 +39,12 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/concepts/data-agent-framework|Data Agent框架]] — 问题解决能力×决策执行效率2×2定位矩阵，ML Data Agent四象限服务策略
 - [[miaozhen/concepts/deepminer-agent-architecture|DeepMiner多智能体架构]] — Swarm+Supervisor架构，CoT模板沉淀，Human-in-loop，MCP数据集成
 
+**企业 AI 落地平台**
+- [[miaozhen/concepts/enterprise-agent-os|企业级 Agent OS]] — 知识沉淀、Skill接入、流程闭环、企业协同四层架构，支撑 Agent 规模化上线运营
+- [[miaozhen/concepts/enterprise-knowledge-governance|企业知识治理]] — 语料资产化、知识切片、指标字典、权限安全、审核发布和效果评测
+- [[miaozhen/concepts/skill-lifecycle-management|Skill 生命周期管理]] — API桥接、提示词编排、权限继承、Human-in-loop、审批上线、灰度和回滚
+- [[miaozhen/concepts/token-governance|Token 成本治理]] — Token消耗、质量、活跃、Agent评分和ROI效果的全局可视化管控
+
 **GUI Agent**
 - [[miaozhen/concepts/gui-agent-cua|GUI Agent / CUA]] — 纯视觉操控任意 GUI 界面，无需 API，感知→规划→操作→验证四步闭环，解决自动化最后一公里
 
@@ -69,6 +75,8 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 | IVT新突破 | IPTV专网监测（广电总局SDK） |
 | 分析平台提效 | 归因分析执行提效50% |
 | 2026 H1新功能 | MCP服务上线，支持AI系统接入 |
+| 企业AI落地方法 | 语料资产化 → 岗位数字化 → 流程智能化 → 触点智能化 → 多智能体协同 → AI持续进化 |
+| Agent平台四层 | 知识沉淀 / 技能接入 / 流程闭环 / 企业协同 |
 
 ---
 
@@ -79,6 +87,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - **2026年1月31日**：秒针Day Workshop，向P&G汇报2025回顾与2026规划
 - **2026年2月**：蚂蚁集团设备ID验真合作预计上线，IPTV监测流程跑通
 - **2026年5月12日**：明日DMP产品分享，AI能力中心 ClawHub Agents 200+下载，京东/银联/百望/航旅数据源发布案例
+- **2026年6月8日**：补充明略 AI 能力与企业应用方案，明确企业级 Agent OS、知识治理、Skill 生命周期和 Token 成本治理四类能力
 
 ---
 
@@ -95,6 +104,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/sources/ai-shopping-guide-20250910|AI 云导购方案（2025-09-10）]] — 大模型+Agent驱动，四模块（接管/跟单/质检/文案），NB运动/美妆/母婴案例，80%AI+20%真人协作模型
 - [[miaozhen/sources/mano-p-intro-20260421|Mano-P 1.0产品介绍（2026）]] — GUI感知智能体，13项SOTA，OSWorld第一，三种部署形态，7大行业场景，Apache 2.0开源路线图
 - [[miaozhen/sources/mingri-dmp-intro-20260512|明日数据 DMP 产品介绍（2026-05-12）]] — 24页产品分享，产品升级概览（开放平台/AI能力中心）+ 新数据源案例（京东/银联/百望/航旅/品类）
+- [[miaozhen/sources/mininglamp-ai-capabilities-enterprise-applications|明略 AI 能力与企业应用方案]] — 47页企业AI落地方案，Agent Portal、企业知识库、Skill管理、Token治理、企业AI能力菜单
 
 ---
 

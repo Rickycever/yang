@@ -25,6 +25,7 @@ tags: [cross-border-marketing, aigc, meta-ads, creative-automation, data-flywhee
 - [[cross-border-marketing-aigc/concepts/industry-template-system|行业模板体系]] — 将行业 know-how 产品化的核心层
 - [[cross-border-marketing-aigc/concepts/creative-feature-library|创意特征库]] — 连接素材特征、投放表现和模型训练的结构化资产
 - [[cross-border-marketing-aigc/concepts/aigc-value-chain|AIGC 创意价值链]] — 判断自建、集成、SaaS 化的经济账框架
+- [[cross-border-marketing-aigc/sources/overseas-marketing-value-chain-analysis|出海营销产业链价值分布与创意板块商业机会分析]] — 补充代理商返点、创意毛利、AI改造环节和创意SaaS转型路径
 
 ## 核心实体
 
@@ -38,6 +39,8 @@ tags: [cross-border-marketing, aigc, meta-ads, creative-automation, data-flywhee
 - 2025 全球广告市场约 1.14 万亿美元，数字广告占比 60%+。
 - 中国出海营销市场预计从 2024 年 420 亿美元增长至 2029 年 1237 亿美元，CAGR 24.3%。
 - 创意生产通常占数字营销预算 10-15%，工具/技术占 2-5%。
+- 中国出海品牌在 Meta/Google 的年度创意制作支出估算为 50-150 亿元，Agency 渠道可服务市场约 15-30 亿元。
+- AI 可将典型创意项目毛利率从 27-31% 提升至 60-65%，执行性创意工作约 65% 成本可被高度自动化。
 - AIGC 可将单条创意成本降低 95-99%，效率提升 8-30 倍。
 - 数字人短视频/直播场景中，部分案例显示 ROI 可达 1:5.2，年节省人力成本 300 万+。
 - Meta 侧创意生产节点价值高于 Google 侧，因为 Meta 更依赖视觉素材与 Reels/DPA 等创意形态。
@@ -57,6 +60,7 @@ tags: [cross-border-marketing, aigc, meta-ads, creative-automation, data-flywhee
 - [[cross-border-marketing-aigc/sources/flywheel-a-data-flow|数据反馈优化大模型的数据流]]
 - [[cross-border-marketing-aigc/sources/cross-border-agencies-ai-creative|出海营销三巨头创意工作流与 AIGC 程度对比]]
 - [[cross-border-marketing-aigc/sources/value-chain-cost-breakdown|出海营销价值链与成本结构拆解]]
+- [[cross-border-marketing-aigc/sources/overseas-marketing-value-chain-analysis|出海营销产业链价值分布与创意板块商业机会分析]]
 
 ## Connections
 

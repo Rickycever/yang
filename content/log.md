@@ -7,6 +7,12 @@ tags: [更新日志, wiki管理, 知识库]
 
 # 更新日志
 
+## [2026-06-08] ingest | cross-border-marketing-aigc 补充 | 出海营销产业链价值分布与创意板块商业机会分析
+
+- cross-border-marketing-aigc/sources/overseas-marketing-value-chain-analysis — 来源页，代理商返点/服务费/创意制作溢价、Andromeda下创意战略地位、AI改造环节、TAM/SAM/SOM、创意SaaS转型路径
+- cross-border-marketing-aigc/overview — 更新：新增来源、关键数据和价值链补充
+- index.md — 更新 Recently Added 条目
+
 ## [2026-06-08] ingest | miaozhen 补充 | 明略 AI 能力与企业应用方案
 
 - miaozhen/sources/mininglamp-ai-capabilities-enterprise-applications — 来源页，47页企业AI落地方案：AI转型洞察、Agent平台、企业知识库、Skill管理、流程闭环、企业协同、Token治理

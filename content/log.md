@@ -7,7 +7,39 @@ tags: [更新日志, wiki管理, 知识库]
 
 # 更新日志
 
-## [2026-06-08] ingest | cross-border-marketing-aigc 补充 | Meta广告 × AIGC创意产品策略全景笔记
+## [2026-06-18] ingest | aigc-china-players | 如意产品介绍v1
+
+- raw/如意产品介绍v1.pdf — 原始 PDF 已保存
+- aigc-china-players/sources/ruyi-product-introduction-v1 — 来源页，如意 RUYI 多模态 AIGC 生成平台介绍
+- aigc-china-players/entities/ruyi — 新实体页：如意 RUYI
+- aigc-china-players/entities/0123-technology — 新实体页：零壹贰叁科技
+- aigc-china-players/concepts/multimodal-marketing-platform — 新概念页：多模态营销内容平台
+- aigc-china-players/concepts/ai-storyboard-workbench — 新概念页：AI视频分镜工作台
+- aigc-china-players/overview — 更新核心概念、核心实体、关键数据、时间线和来源
+- index.md — 更新主题摘要和 Recently Added 条目
+
+## [2026-06-18] ingest | aigc-china-players | GMI F26 AIGC Solution_20250606-特赞
+
+- raw/GMI F26 AIGC Solution_20250606-特赞.pdf — 原始 PDF 已保存
+- aigc-china-players/overview — 新主题全景页：AIGC国内玩家方案
+- aigc-china-players/sources/gmi-f26-aigc-solution-tezign-20250606 — 来源页，特赞 GMI F26 AIGC 营销素材服务方案
+- aigc-china-players/concepts/content-factory — 新概念页：AIGC内容工厂
+- aigc-china-players/concepts/human-ai-workflow — 新概念页：人机协作交付模式
+- aigc-china-players/concepts/brand-specific-model — 新概念页：品牌专属模型训练
+- aigc-china-players/entities/tezign — 新实体页：特赞 Tezign
+- aigc-china-players/entities/gmi — 新实体页：GMI
+- index.md — 更新 Topics 和 Recently Added 条目
+
+## [2026-06-10] ingest | cross-border-marketing | 亚马逊 AI 投手与轻选品方案
+
+- cross-border-marketing/sources/amazon-ai-pitcher-light-selection-20260610 — 来源页，亚马逊 AI 投手、竞品分析、轻选品、商业模式与 MVP 建议
+- cross-border-marketing/overview — 新主题全景页：投手助手、轻选品、经验知识图谱
+- index.md — 更新 Recently Added 条目
+
+- miaozhen/sources/booming-eba-mother-baby-private-domain-20260609 — 母婴私域运营方案，四模块（接管/跟单/质检/社群文案），云导购+快闪群+朋友圈真人感+KOC养成
+- miaozhen/overview — 更新：补充母婴私域方案来源与概览链接
+- miaozhen/concepts/ai-cloud-shopping-guide — 更新：补充母婴场景落地来源
+- index.md — 更新 Recently Added 条目
 
 - cross-border-marketing-aigc/sources/meta-aigc-creative-strategy — 来源页，Meta广告规格、AIGC产品定位、品牌资产库、脚本模板、视频Hook裂变、供应商成本优化、业务诊断和项目亏本拆解
 - cross-border-marketing-aigc/overview — 更新：新增来源和时间线补充

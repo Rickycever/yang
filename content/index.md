@@ -159,9 +159,26 @@ Meta 广告平台自动化背景下的出海 AIGC 创意工具研究。核心主
 
 ---
 
-## Recently Added
+### AIGC国内玩家方案
+国内 AIGC 内容服务玩家面向品牌营销的解决方案研究。当前核心资料：特赞 GMI F26 AIGC 营销素材服务方案、零壹贰叁科技如意 RUYI 多模态 AIGC 生成平台。重点包括内容工厂、人机协作交付、品牌专属模型训练、多模态平台、AI 视频分镜工作台和多渠道内容生产。
 
-- 2026-06-08 · [[cross-border-marketing-aigc/overview|出海营销AIGC]] — 补充《Meta广告 × AIGC创意产品策略全景笔记》：品牌级广告创意工作站、Brand Kit、多尺寸导出、结构化变体、Hook裂变、供应商降本与产品化路径
+→ [[aigc-china-players/overview|AIGC国内玩家方案全景概览]]
+
+---
+
+### 跨境营销 (Cross-border Marketing)
+Cross-border ad operations and Amazon PPC strategy. Current focus: AI ad assistant, experience knowledge graph, and light-selection decisioning.
+
+<div class="zh-trans">跨境广告投放与亚马逊 PPC 策略。当前聚焦：AI 投手助手、经验知识图谱和轻选品决策。</div>
+
+→ [[cross-border-marketing/overview|跨境营销 全景概览]]
+
+---
+
+- 2026-06-18 · [[aigc-china-players/overview|AIGC国内玩家方案]] — 补充如意 RUYI 产品介绍：新增 1 个来源页、2 个概念页、2 个实体页，聚焦多模态营销内容平台和 AI 视频分镜工作台
+- 2026-06-18 · [[aigc-china-players/overview|AIGC国内玩家方案]] — 新主题：特赞 GMI F26 AIGC 营销素材服务方案，新增 1 个来源页、3 个概念页、2 个实体页，聚焦内容工厂、人机协作交付、品牌专属模型训练
+- 2026-06-10 · [[cross-border-marketing/overview|跨境营销]] — 亚马逊 AI 投手与轻选品方案：新增跨境营销主题，聚焦投手助手、轻选品、经验知识图谱
+- 2026-06-09 · [[miaozhen/overview|秒针/明略科技]] — 明略 AI & Booming EBA 母婴私域运营方案：补充母婴场景的云导购、AI 跟单、AI 质检、社群文案与人机协作模型
 - 2026-06-08 · [[cross-border-marketing-aigc/overview|出海营销AIGC]] — 新主题：Meta 广告平台与 AIGC 创意工具定位、数字人模块、创意数据飞轮、三巨头工作流、价值链成本结构；新增 5 个来源页、7 个概念页、4 个实体页、2 个综合页
 - 2026-06-02 · [[ai-business/overview|AI 商业进化]] — 德勤2026趋势解读：企业如何围绕AI重写端到端流程（公众号文章）：AI原生流程、KDD金字塔、企业落地案例（美的/科沃斯/中信泰富）
 - 2026-05-22 · [[miaozhen/sources/tongchuangyi-vertical-horizontal-abtest-20260415|同创意横竖屏创意效果分析]] — 在线教育广告A/B测试（2026.04.01–15）：竖屏CTR高9%/横屏CVR高18%/竖屏CPA优14%，结论竖屏优先

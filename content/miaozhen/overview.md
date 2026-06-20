@@ -105,6 +105,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/sources/mano-p-intro-20260421|Mano-P 1.0产品介绍（2026）]] — GUI感知智能体，13项SOTA，OSWorld第一，三种部署形态，7大行业场景，Apache 2.0开源路线图
 - [[miaozhen/sources/mingri-dmp-intro-20260512|明日数据 DMP 产品介绍（2026-05-12）]] — 24页产品分享，产品升级概览（开放平台/AI能力中心）+ 新数据源案例（京东/银联/百望/航旅/品类）
 - [[miaozhen/sources/mininglamp-ai-capabilities-enterprise-applications|明略 AI 能力与企业应用方案]] — 47页企业AI落地方案，Agent Portal、企业知识库、Skill管理、Token治理、企业AI能力菜单
+- [[miaozhen/sources/booming-eba-mother-baby-private-domain-20260609|明略 AI & Booming EBA 母婴私域运营方案]] — 母婴私域场景下的云导购方案，聚焦接管、跟单、质检和社群文案四模块
 
 ---
 

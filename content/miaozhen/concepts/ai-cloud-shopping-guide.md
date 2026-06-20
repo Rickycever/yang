@@ -71,6 +71,7 @@ AI 回复 / 转人工（情绪异常 or 无法处理）
 ## Connections
 
 - [[miaozhen/sources/ai-shopping-guide-20250910|AI 云导购方案 Deck（2025.09）]] — 本概念出处
+- [[miaozhen/sources/booming-eba-mother-baby-private-domain-20260609|明略 AI & Booming EBA 母婴私域运营方案]] — 本概念在母婴私域场景的落地版本
 - [[miaozhen/concepts/deepminer-agent-architecture|DeepMiner Agent 架构]] — AI 云导购的 Agent 底层架构支撑
 - [[miaozhen/concepts/enterprise-ai-four-stages|企业 AI 四阶段框架]] — AI 云导购处于 AI 2.0/3.0 阶段（Agent 驱动）
 - [[byhealth/overview|汤臣倍健×明略科技]] — DeepMiner 六节点营销框架与 AI 云导购在私域跟单上高度重叠

@@ -7,6 +7,18 @@ tags: [更新日志, wiki管理, 知识库]
 
 # 更新日志
 
+## [2026-06-22] ingest | clients-practices/kaizhong-ai | 凯众-项目实施路径及效益分享-260611pptx
+
+- raw/凯众-项目实施路径及效益分享-260611pptx.pdf — 原始 PDF 已保存
+- clients-practices/kaizhong-ai/overview — 新主题全景页：凯众 AI 项目实施路径与效益
+- clients-practices/kaizhong-ai/sources/kaizhong-ai-implementation-benefits-20260611 — 来源页，研发 AI、知识库治理、财务 RPA 阶段性成果
+- clients-practices/kaizhong-ai/concepts/rd-ai-agent — 新概念页：研发 AI Agent
+- clients-practices/kaizhong-ai/concepts/rd-knowledge-governance — 新概念页：研发知识治理
+- clients-practices/kaizhong-ai/concepts/finance-rpa — 新概念页：财务 RPA
+- clients-practices/kaizhong-ai/entities/kaizhong — 新实体页：凯众
+- clients-practices/kaizhong-ai/entities/digiwin — 新实体页：鼎捷数智
+- index.md — 更新 Topics 和 Recently Added 条目
+
 ## [2026-06-18] ingest | aigc-china-players | 如意产品介绍v1
 
 - raw/如意产品介绍v1.pdf — 原始 PDF 已保存

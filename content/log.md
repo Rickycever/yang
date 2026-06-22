@@ -7,6 +7,17 @@ tags: [更新日志, wiki管理, 知识库]
 
 # 更新日志
 
+## [2026-06-22] ingest | ai-business | 分享版_AI 智能体助力决策新范式
+
+- raw/分享版_AI 智能体助力决策新范式.pdf — 原始 PDF 已保存
+- ai-business/sources/ai-agent-decision-new-paradigm-deepzero-20260622 — 来源页，企业级 Agent 架构、Human-at-the-helm、营销增长 Agent OS、AI 搜索新范式
+- ai-business/concepts/enterprise-agent-architecture — 新概念页：Enterprise Agent Architecture
+- ai-business/concepts/human-at-the-helm — 新概念页：Human-at-the-helm
+- ai-business/concepts/agentic-marketing-os — 新概念页：Agentic Marketing OS
+- ai-business/entities/deepzero — 新实体页：DeepZero / 深演智能
+- ai-business/overview — 更新核心概念、实体、来源和 Recently Added
+- index.md — 更新 AI 商业进化主题摘要和 Recently Added 条目
+
 ## [2026-06-22] ingest | clients-practices/kaizhong-ai | 凯众-项目实施路径及效益分享-260611pptx
 
 - raw/凯众-项目实施路径及效益分享-260611pptx.pdf — 原始 PDF 已保存

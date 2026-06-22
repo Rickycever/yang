@@ -33,9 +33,9 @@ Key themes: lobster agents (龙虾), closed-loop (闭环), token economy, multi-
 ---
 
 ### AI 商业进化 (AI Business Evolution)
-Frameworks and enterprise cases for AI-driven business transformation. Key themes: AI three stages (Empowered → Native → Awakened), GEA architecture, enterprise context systems, Full Stack AI deployment, IM+Agent+Skills+KB new enterprise software architecture.
+Frameworks and enterprise cases for AI-driven business transformation. Key themes: AI three stages (Empowered → Native → Awakened), GEA architecture, enterprise context systems, Full Stack AI deployment, IM+Agent+Skills+KB new enterprise software architecture, and enterprise agents for marketing-growth decisions.
 
-<div class="zh-trans">AI驱动商业变革的框架和企业案例。核心主题：AI三阶段（赋能→原生→觉醒）、GEA架构、企业上下文系统、Full Stack AI落地、IM+Agent+Skills+KB新一代企业软件架构。</div>
+<div class="zh-trans">AI驱动商业变革的框架和企业案例。核心主题：AI三阶段（赋能→原生→觉醒）、GEA架构、企业上下文系统、Full Stack AI落地、IM+Agent+Skills+KB新一代企业软件架构，以及面向营销增长决策的企业级 Agent。</div>
 
 → [[ai-business/overview|AI 商业进化全景概览]]
 
@@ -184,6 +184,7 @@ Enterprise AI and digital transformation implementation case library. Current ca
 
 ---
 
+- 2026-06-22 · [[ai-business/overview|AI 商业进化]] — 深演智能《AI 智能体助力决策新范式》：新增 1 个来源页、3 个概念页、1 个实体页，聚焦企业级 Agent 架构、Human-at-the-helm、Agentic Marketing OS 与 AI 搜索新范式
 - 2026-06-22 · [[clients-practices/overview|Clients Practices]] — 新建客户实践主题，并将 [[clients-practices/kaizhong-ai/overview|凯众 AI 项目]] 迁入该目录
 - 2026-06-22 · [[clients-practices/kaizhong-ai/overview|凯众 AI 项目]] — 新主题：鼎捷数智凯众项目实施路径及效益分享，新增 1 个来源页、3 个概念页、2 个实体页，聚焦研发 AI、知识库治理和财务 RPA
 - 2026-06-18 · [[aigc-china-players/overview|AIGC国内玩家方案]] — 补充如意 RUYI 产品介绍：新增 1 个来源页、2 个概念页、2 个实体页，聚焦多模态营销内容平台和 AI 视频分镜工作台

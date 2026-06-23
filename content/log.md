@@ -7,6 +7,15 @@ tags: [更新日志, wiki管理, 知识库]
 
 # 更新日志
 
+## [2026-06-23] ingest | agentic-player | 润典企业智能体解决方案
+
+- raw/润典 企业智能体 整体解决方案2.8.pdf — 原始 PDF 已保存
+- agentic-player/sources/rundian-enterprise-agent-solution-20260623 — 来源页，餐饮门店/线上私域的企微智能体方案
+- agentic-player/concepts/wecom-store-agent — 新概念页：WeCom Store Agent
+- agentic-player/entities/xiaochubot — 新实体页：小厨bot
+- agentic-player/overview — 更新核心概念、实体、来源和 Recently Added
+- index.md — 更新 Agentic Player 主题摘要和 Recently Added 条目
+
 ## [2026-06-23] ingest | agentic-player | 分享版_AI 智能体助力决策新范式
 
 - raw/分享版_AI 智能体助力决策新范式.pdf — 原始 PDF 已保存

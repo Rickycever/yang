@@ -176,9 +176,9 @@ Cross-border ad operations and Amazon PPC strategy. Current focus: AI ad assista
 ---
 
 ### Agentic Player
-Enterprise agent-first cases and operating patterns. Current reference: DeepZero's enterprise AI agent deck, covering enterprise agent architecture, human-at-the-helm governance, and agentic marketing OS.
+Enterprise agent-first cases and operating patterns. Current references: DeepZero's enterprise AI agent deck and the restaurant-oriented WeCom store agent solution.
 
-<div class="zh-trans">面向企业 Agent-first 的案例与运行模式。当前参考：深演智能的企业 AI Agent 材料，覆盖企业级 Agent 架构、人类执掌式治理和 Agentic Marketing OS。</div>
+<div class="zh-trans">面向企业 Agent-first 的案例与运行模式。当前参考包括深演智能的企业 AI Agent 材料，以及餐饮行业的企微门店智能体方案。</div>
 
 → [[agentic-player/overview|Agentic Player 全景概览]]
 

@@ -175,17 +175,17 @@ Cross-border ad operations and Amazon PPC strategy. Current focus: AI ad assista
 
 ---
 
-### Clients Practices
-Enterprise AI and digital transformation implementation case library. Current case: Kaizhong AI project covering R&D demand parsing, drawing understanding, knowledge governance, and finance/order RPA.
+### Agentic Player
+Enterprise agent-first cases and operating patterns. Current reference: DeepZero's enterprise AI agent deck, covering enterprise agent architecture, human-at-the-helm governance, and agentic marketing OS.
 
-<div class="zh-trans">企业 AI 与数字化转型客户实践案例库。当前案例：凯众 AI 项目，覆盖研发需求拆解、图纸理解、知识治理和财务/订单 RPA。</div>
+<div class="zh-trans">面向企业 Agent-first 的案例与运行模式。当前参考：深演智能的企业 AI Agent 材料，覆盖企业级 Agent 架构、人类执掌式治理和 Agentic Marketing OS。</div>
 
-→ [[clients-practices/overview|Clients Practices 全景概览]]
+→ [[agentic-player/overview|Agentic Player 全景概览]]
 
 ---
 
-- 2026-06-22 · [[ai-business/overview|AI 商业进化]] — 深演智能《AI 智能体助力决策新范式》：新增 1 个来源页、3 个概念页、1 个实体页，聚焦企业级 Agent 架构、Human-at-the-helm、Agentic Marketing OS 与 AI 搜索新范式
 - 2026-06-22 · [[clients-practices/overview|Clients Practices]] — 新建客户实践主题，并将 [[clients-practices/kaizhong-ai/overview|凯众 AI 项目]] 迁入该目录
+- 2026-06-22 · [[agentic-player/overview|Agentic Player]] — 新建企业 Agent-first 主题，聚焦 DeepZero 的企业级 Agent 架构、Human-at-the-helm 与 Agentic Marketing OS
 - 2026-06-22 · [[clients-practices/kaizhong-ai/overview|凯众 AI 项目]] — 新主题：鼎捷数智凯众项目实施路径及效益分享，新增 1 个来源页、3 个概念页、2 个实体页，聚焦研发 AI、知识库治理和财务 RPA
 - 2026-06-18 · [[aigc-china-players/overview|AIGC国内玩家方案]] — 补充如意 RUYI 产品介绍：新增 1 个来源页、2 个概念页、2 个实体页，聚焦多模态营销内容平台和 AI 视频分镜工作台
 - 2026-06-18 · [[aigc-china-players/overview|AIGC国内玩家方案]] — 新主题：特赞 GMI F26 AIGC 营销素材服务方案，新增 1 个来源页、3 个概念页、2 个实体页，聚焦内容工厂、人机协作交付、品牌专属模型训练

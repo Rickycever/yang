@@ -1,6 +1,6 @@
 ---
 title: AI 智能体助力决策新范式
-topic: ai-business
+topic: agentic-player
 type: source
 created: 2026-06-22
 tags: [enterprise-agents, decision-intelligence, marketing-ai, deepzero, agent-workflow]
@@ -68,8 +68,8 @@ The deck proposes a five-phase evolution path: tool replacement, workflow collab
 
 ## Connections
 
-- [[ai-business/overview|AI 商业进化]] — 本来源所属主题入口
-- [[ai-business/concepts/enterprise-agent-architecture|Enterprise Agent Architecture]] — 企业级 Agent 的架构内核
-- [[ai-business/concepts/human-at-the-helm|Human-at-the-helm]] — 企业 AI 的人机协作治理模式
-- [[ai-business/concepts/agentic-marketing-os|Agentic Marketing OS]] — 营销增长场景的 Agent 化操作系统
-- [[ai-business/entities/deepzero|DeepZero]] — 本材料提出方
+- [[agentic-player/overview|Agentic Player]] — 本来源所属主题入口
+- [[agentic-player/concepts/enterprise-agent-architecture|Enterprise Agent Architecture]] — 企业级 Agent 的架构内核
+- [[agentic-player/concepts/human-at-the-helm|Human-at-the-helm]] — 企业 AI 的人机协作治理模式
+- [[agentic-player/concepts/agentic-marketing-os|Agentic Marketing OS]] — 营销增长场景的 Agent 化操作系统
+- [[agentic-player/entities/deepzero|DeepZero]] — 本材料提出方

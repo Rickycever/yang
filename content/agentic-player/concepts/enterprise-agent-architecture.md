@@ -1,6 +1,6 @@
 ---
 title: Enterprise Agent Architecture
-topic: ai-business
+topic: agentic-player
 type: concept
 created: 2026-06-22
 tags: [enterprise-agent, agent-architecture, rag, mcp, skills]
@@ -28,7 +28,7 @@ For enterprise decision-makers, the key issue is not whether the model is impres
 
 ## Connections
 
-- [[ai-business/sources/ai-agent-decision-new-paradigm-deepzero-20260622|AI 智能体助力决策新范式]] — 概念来源
-- [[ai-business/concepts/gea-architecture|GEA 企业级智能体架构]] — 企业级 Agent 架构的相关框架
-- [[ai-business/concepts/enterprise-knowledge-flywheel|企业知识飞轮]] — 架构中的知识资产基础
-- [[ai-business/concepts/human-at-the-helm|Human-at-the-helm]] — 架构落地时的人机协作原则
+- [[agentic-player/sources/agentic-player-decision-new-paradigm-deepzero-20260622|AI 智能体助力决策新范式]] — 概念来源
+- [[agentic-player/concepts/enterprise-agent-architecture|Enterprise Agent Architecture]] — 企业级 Agent 架构的相关框架
+- [[agentic-player/concepts/enterprise-agent-architecture|Enterprise Agent Architecture]] — 架构中的知识资产基础
+- [[agentic-player/concepts/human-at-the-helm|Human-at-the-helm]] — 架构落地时的人机协作原则

@@ -1,6 +1,6 @@
 ---
 title: Agentic Marketing OS
-topic: ai-business
+topic: agentic-player
 type: concept
 created: 2026-06-22
 tags: [marketing-ai, agentic-marketing, crm, voc, ai-search]
@@ -28,7 +28,7 @@ For CMOs and growth leaders, the strategic value is not only efficiency. The lar
 
 ## Connections
 
-- [[ai-business/sources/ai-agent-decision-new-paradigm-deepzero-20260622|AI 智能体助力决策新范式]] — 概念来源
+- [[agentic-player/sources/agentic-player-decision-new-paradigm-deepzero-20260622|AI 智能体助力决策新范式]] — 概念来源
 - [[miaozhen/concepts/ai-cloud-shopping-guide|AI云导购]] — 销售/导购场景的相关落地
 - [[cross-border-marketing-aigc/overview|出海营销AIGC]] — 内容生成与广告创意场景相关
 - [[miaozhen/concepts/geo-brand-ai-optimization|GEO品牌AI优化]] — AI 搜索可见度优化相关

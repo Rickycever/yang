@@ -1,6 +1,6 @@
 ---
 title: Human-at-the-helm
-topic: ai-business
+topic: agentic-player
 type: concept
 created: 2026-06-22
 tags: [human-ai-collaboration, enterprise-agent, governance, workflow]
@@ -28,6 +28,6 @@ Enterprise AI adoption often fails when organizations demand either full automat
 
 ## Connections
 
-- [[ai-business/sources/ai-agent-decision-new-paradigm-deepzero-20260622|AI 智能体助力决策新范式]] — 概念来源
-- [[ai-business/concepts/enterprise-agent-architecture|Enterprise Agent Architecture]] — 支撑该协作模式的系统架构
-- [[ai-business/concepts/ai-maturity-l1-l4|AI成熟度旅程L1-L4]] — 与从辅助到自主的成熟度演进相关
+- [[agentic-player/sources/agentic-player-decision-new-paradigm-deepzero-20260622|AI 智能体助力决策新范式]] — 概念来源
+- [[agentic-player/concepts/enterprise-agent-architecture|Enterprise Agent Architecture]] — 支撑该协作模式的系统架构
+- [[agentic-player/concepts/ai-maturity-l1-l4|AI成熟度旅程L1-L4]] — 与从辅助到自主的成熟度演进相关

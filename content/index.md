@@ -184,6 +184,7 @@ Enterprise agent-first cases and operating patterns. Current references: DeepZer
 
 ---
 
+- 2026-06-24 · [[aigc-china-players/overview|AIGC国内玩家方案]] — 补充筷子科技品牌商业 Token 化闭门会：新增 1 个来源页、2 个概念页、2 个实体页，聚焦 Seedance、IP 商业化和智能体运行环境
 - 2026-06-22 · [[clients-practices/overview|Clients Practices]] — 新建客户实践主题，并将 [[clients-practices/kaizhong-ai/overview|凯众 AI 项目]] 迁入该目录
 - 2026-06-22 · [[agentic-player/overview|Agentic Player]] — 新建企业 Agent-first 主题，聚焦 DeepZero 的企业级 Agent 架构、Human-at-the-helm 与 Agentic Marketing OS
 - 2026-06-22 · [[clients-practices/kaizhong-ai/overview|凯众 AI 项目]] — 新主题：鼎捷数智凯众项目实施路径及效益分享，新增 1 个来源页、3 个概念页、2 个实体页，聚焦研发 AI、知识库治理和财务 RPA

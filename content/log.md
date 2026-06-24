@@ -7,14 +7,16 @@ tags: [更新日志, wiki管理, 知识库]
 
 # 更新日志
 
-## [2026-06-23] ingest | agentic-player | 润典企业智能体解决方案
+## [2026-06-24] ingest | aigc-china-players | 2026 FORCE大会·筷子科技分论坛——品牌商业的Token化跃迁闭门交流会
 
-- raw/润典 企业智能体 整体解决方案2.8.pdf — 原始 PDF 已保存
-- agentic-player/sources/rundian-enterprise-agent-solution-20260623 — 来源页，餐饮门店/线上私域的企微智能体方案
-- agentic-player/concepts/wecom-store-agent — 新概念页：WeCom Store Agent
-- agentic-player/entities/xiaochubot — 新实体页：小厨bot
-- agentic-player/overview — 更新核心概念、实体、来源和 Recently Added
-- index.md — 更新 Agentic Player 主题摘要和 Recently Added 条目
+- raw/2026年Force 筷子“品牌商业的Token化跃迁”闭门会 会议纪要.pdf — 原始 PDF 已保存
+- aigc-china-players/sources/kuaizi-brand-commercial-tokenization-force-20260623 — 来源页，品牌商业 Token 化、Seedance、IP 商业化、智能体运行环境
+- aigc-china-players/concepts/brand-commercial-tokenization — 新概念页：品牌商业 Token 化
+- aigc-china-players/concepts/agent-runtime-environment-service — 新概念页：智能体运行环境服务商
+- aigc-china-players/entities/kuaizi-tech — 新实体页：筷子科技
+- aigc-china-players/entities/volcengine — 新实体页：火山引擎
+- aigc-china-players/overview — 更新核心概念、核心实体、关键数据、时间线和来源
+- index.md — 更新 AIGC 国内玩家方案主题摘要和 Recently Added 条目
 
 ## [2026-06-23] ingest | agentic-player | 分享版_AI 智能体助力决策新范式
 

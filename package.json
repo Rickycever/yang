@@ -14,7 +14,7 @@
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
     "sync-dashboard": "node scripts/sync-dashboard.mjs",
-    "build": "npm run sync-dashboard && npx quartz build",
+    "build": "npx quartz build && npm run sync-dashboard",
     "docs": "npx quartz build --serve -d docs",
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",

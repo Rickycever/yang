@@ -13,6 +13,13 @@ Personal knowledge wiki powered by Quartz + Claude Code.
 
 ---
 
+<div style="margin: 1.25rem 0 1.5rem; padding: 1rem 1.1rem; border: 2px solid var(--secondary); border-radius: 14px; background: linear-gradient(135deg, rgba(120, 119, 198, 0.14), rgba(99, 179, 237, 0.10)); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);">
+  <div style="font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--secondary); margin-bottom: 0.35rem;">Featured</div>
+  <div style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem;">Skills Memory Dashboard</div>
+  <div style="margin-bottom: 0.8rem; color: var(--darkgray);">个人技能记忆看板，直接查看技能与记忆的关联情况。</div>
+  <a href="./SkillsMemoryDashboard.html" style="display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.6rem 0.9rem; border-radius: 999px; background: var(--secondary); color: var(--light); font-weight: 700; text-decoration: none;">打开 Skills Memory Dashboard →</a>
+</div>
+
 ## Topics
 
 ### Palantir
@@ -56,6 +63,13 @@ Knowledge management and AI-native workflow tools. Current focus: LLM Wiki patte
 <div class="zh-trans">知识管理和AI原生工作流工具。当前聚焦：LLM Wiki模式作为个人规模的复利知识库。</div>
 
 → [[tools/overview|工具方法论全景概览]]
+
+---
+
+### Skills Memory Dashboard
+个人技能记忆看板。
+
+→ [打开 Skills Memory Dashboard](./SkillsMemoryDashboard.html)
 
 ---
 

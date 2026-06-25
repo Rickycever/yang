@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url"
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const source = path.join(root, "raw", "SkillsMemoryDashboard.html")
-const target = path.join(root, "content", "SkillsMemoryDashboard.html")
+const target = path.join(root, "content", "SkillsMemoryDashboard", "index.html")
 
 await stat(source)
 await mkdir(path.dirname(target), { recursive: true })

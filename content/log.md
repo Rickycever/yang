@@ -471,3 +471,9 @@ tags: [更新日志, wiki管理, 知识库]
 ## [2026-05-01] ingest | ai-business | IM + Agent + Skills + Knowledge Base：新一代企业软件架构（半瓶水笔记，2026-04-20）
 - 来源页：im-agent-skills-kb-architecture-20260420
 - 新概念页：im-as-enterprise-entry, skills-composable-architecture, enterprise-knowledge-flywheel
+
+## [2026-07-13] ingest | ai-business | Adobe：不是在做AI绘图，而是重写企业内容供应链
+- 来源页：adobe-content-supply-chain-strategy-20260713
+- 新实体页：adobe
+- 新概念页：content-production-order, trusted-content-flywheel
+- 原始文件保存至：raw/adobe/（含4张配图）

@@ -40,9 +40,9 @@ Key themes: lobster agents (龙虾), closed-loop (闭环), token economy, multi-
 ---
 
 ### AI 商业进化 (AI Business Evolution)
-Frameworks and enterprise cases for AI-driven business transformation. Key themes: AI three stages (Empowered → Native → Awakened), GEA architecture, enterprise context systems, Full Stack AI deployment, IM+Agent+Skills+KB new enterprise software architecture, and enterprise agents for marketing-growth decisions.
+Frameworks and enterprise cases for AI-driven business transformation. Key themes: AI three stages (Empowered → Native → Awakened), GEA architecture, enterprise context systems, Full Stack AI deployment, IM+Agent+Skills+KB new enterprise software architecture, enterprise agents for marketing-growth decisions, and Adobe's shift from creative tools to a trusted enterprise content supply chain.
 
-<div class="zh-trans">AI驱动商业变革的框架和企业案例。核心主题：AI三阶段（赋能→原生→觉醒）、GEA架构、企业上下文系统、Full Stack AI落地、IM+Agent+Skills+KB新一代企业软件架构，以及面向营销增长决策的企业级 Agent。</div>
+<div class="zh-trans">AI驱动商业变革的框架和企业案例。核心主题：AI三阶段（赋能→原生→觉醒）、GEA架构、企业上下文系统、Full Stack AI落地、IM+Agent+Skills+KB新一代企业软件架构、面向营销增长决策的企业级 Agent，以及 Adobe 从创意工具到可信企业内容供应链的转型。</div>
 
 → [[ai-business/overview|AI 商业进化全景概览]]
 
@@ -198,6 +198,7 @@ Enterprise agent-first cases and operating patterns. Current references: DeepZer
 
 ---
 
+- 2026-07-13 · [[ai-business/overview|AI 商业进化]] — Adobe：不是在做AI绘图，而是重写企业内容供应链：新增 1 个来源页、1 个实体页、2 个概念页，聚焦 Firefly 商业安全、GenStudio 端到端方案、可信内容飞轮
 - 2026-06-24 · [[aigc-china-players/overview|AIGC国内玩家方案]] — 补充筷子科技品牌商业 Token 化闭门会：新增 1 个来源页、2 个概念页、2 个实体页，聚焦 Seedance、IP 商业化和智能体运行环境
 - 2026-06-22 · [[clients-practices/overview|Clients Practices]] — 新建客户实践主题，并将 [[clients-practices/kaizhong-ai/overview|凯众 AI 项目]] 迁入该目录
 - 2026-06-22 · [[agentic-player/overview|Agentic Player]] — 新建企业 Agent-first 主题，聚焦 DeepZero 的企业级 Agent 架构、Human-at-the-helm 与 Agentic Marketing OS

@@ -40,6 +40,8 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 | [[ai-business/concepts/im-as-enterprise-entry\|IM 作为企业统一入口]] | IM是Agent的最优入口：使用频率/上下文完整性/协作输出/跨系统粘合四层逻辑 |
 | [[ai-business/concepts/skills-composable-architecture\|Skills 可编排架构]] | 业务规则原子化：从"流程驱动系统"到"意图驱动编排"的范式转移 |
 | [[ai-business/concepts/enterprise-knowledge-flywheel\|企业知识飞轮]] | 越用越聪明的运营型飞轮：当GPT-5成公共资源，知识飞轮是真正的护城河 |
+| [[ai-business/concepts/content-production-order\|内容生产秩序]] | 当所有工具都能生成内容，企业瓶颈从"会不会生成"转向"敢不敢商用"，需要可控可审计可复盘的工作流 |
+| [[ai-business/concepts/trusted-content-flywheel\|可信内容飞轮]] | 专业工具→创意工作流→品牌权利约束→可商用生成→可信发布→投放反馈的闭环，卖的是"创作秩序"而非"创作自由" |
 
 ---
 
@@ -55,6 +57,7 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 | [[ai-business/entities/bosch-pt\|博世电动工具]] | 虚拟客户公司，AI前置发散+人后置决策 |
 | [[ai-business/entities/midea\|美的]] | 从黑灯工厂到智能体工厂，14智能体×38场景 |
 | [[ai-business/entities/huamao\|华懋科技]] | 汽车被动安全系统（气囊/安全带），AI+CAE三阶段方案，研发周期-30% |
+| [[ai-business/entities/adobe\|Adobe]] | 创意软件巨头转型为企业可信内容供应链组织者，Firefly信任接口+GenStudio端到端方案 |
 
 ---
 
@@ -70,6 +73,7 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 - [[ai-business/sources/ceibs-dingtalk-ai-strategy-mgmt-20250703\|CEIBS × 钉钉：AI时代战略落地与管理跃迁（2025-07-03）]] — 阿里组织变革史+DSTE体系+Agoal/TeamBition/组织大脑产品全景+FOMO与数字骨骼隐喻
 - [[ai-business/sources/im-agent-skills-kb-architecture-20260420\|IM + Agent + Skills + KB：新一代企业软件架构（2026-04-20）]] — 半瓶水笔记：50年企业软件三次失败→第四条路（以知识为中心），IM入口四层逻辑，Skills意图驱动编排，知识飞轮护城河
 - [[ai-business/sources/deloitte-2026-ai-end-to-end-process-rewrite-20260602\|德勤2026趋势解读：企业如何围绕AI重写端到端流程]] — 公众号文章：AI原生流程、KDD金字塔、企业落地案例（美的/科沃斯/中信泰富)
+- [[ai-business/sources/adobe-content-supply-chain-strategy-20260713\|Adobe：不是在做AI绘图，而是重写企业内容供应链]] — 公众号文章：从卖工具到卖内容生产秩序，Firefly信任接口+GenStudio端到端方案，可信内容飞轮
 
 
 ---
@@ -95,6 +99,7 @@ AI is reshaping how enterprises create customers and compete. As of Q1 2026, the
 
 ## Recently Added
 
+- 2026-07-13 · Adobe：不是在做AI绘图，而是重写企业内容供应链（公众号文章）：从卖工具到卖内容生产秩序，Firefly商业安全+GenStudio端到端方案，高通案例，可信内容飞轮，新增1个来源页、1个实体页、2个概念页
 - 2026-04-16 · 龚斌Robin（谦询，2025-04）：10-30-60原则 + 点-线-面-体 + AI领导力6维度 + AI产业四次浪潮 + Mid-training
 - 2026-04-16 · Ricky内部分享（2025-06）：Company as an Agent框架 + 智慧门店六维框架（看听感应规划思考）+ 餐饮行业多场景案例
 - 2026-04-15 · 华懋科技：AI+CAE三阶段方案，新实体页（汽车被动安全系统，20亿营收）

@@ -27,3 +27,501 @@ projects/
 \u{2514}\u{2500}\u{2500} [\u{5F52}\u{6863}\u{9879}\u{76EE}...]`})]})]}),"routes"===c&&(0,i.jsxs)("div",{className:"routes-section",children:[(0,i.jsxs)("div",{className:"knowledge-intro",children:[(0,i.jsx)("h2",{children:"⚡ 快速路由"}),(0,i.jsx)("p",{children:"告诉瑞克你的需求，系统推荐最合适的 Skill / 知识库 / 工具链。输入具体任务名称即可。"})]}),(0,i.jsx)("div",{className:"routes-grid",children:m.map(e=>(0,i.jsxs)("div",{className:"route-card",children:[(0,i.jsxs)("div",{className:"route-query",children:['"',e.query,'"']}),(0,i.jsx)("div",{className:"route-arrow",children:"→"}),(0,i.jsxs)("div",{className:"route-target",children:[(0,i.jsxs)("span",{className:"route-skill-badge",children:["📦 ",e.skill]}),(0,i.jsx)("p",{className:"route-desc",children:e.desc})]})]},e.query))}),(0,i.jsxs)("div",{className:"model-strategy",children:[(0,i.jsx)("h3",{children:"🧠 大模型分层策略（当前配置）"}),(0,i.jsx)("div",{className:"model-cards",children:[{model:"minimax/MiniMax-M2.7",role:"默认 / 调研",desc:"日常对话、文档整合、调研任务",color:"#7c3aed",bg:"#f5f3ff"},{model:"mininglamp/claude-sonnet-4-6",role:"Sonnet 4.6 / 主力",desc:"方案结构、质量把关、客户沟通",color:"#1d4ed8",bg:"#eff6ff"},{model:"mininglamp/claude-opus-4-6",role:"Opus 4.6 / 旗舰",desc:"董事会级输出、RFP响应、深度推理",color:"#b45309",bg:"#fffbeb"}].map(e=>(0,i.jsxs)("div",{className:"model-card",style:{background:e.bg,borderColor:e.color+"44"},children:[(0,i.jsx)("strong",{style:{color:e.color},children:e.model}),(0,i.jsx)("span",{className:"model-role",style:{color:e.color},children:e.role}),(0,i.jsx)("p",{children:e.desc})]},e.model))})]})]}),(0,i.jsxs)("footer",{className:"footer",children:[(0,i.jsx)("span",{children:"🦞 OpenClaw Skills & Memory Dashboard"}),(0,i.jsx)("span",{children:"·"}),(0,i.jsx)("span",{children:"121 Skills · 24 KB Topics · 日均 Worklog"}),(0,i.jsx)("span",{children:"·"}),(0,i.jsx)("span",{children:"Updated: 2026-06-25"})]})]})},{})}));</script>
   
 
+
+
+<!-- ============ 合并版 Skill 目录 + 全站浅色科技风覆盖 (由 Claude 生成，v2：不再操作 React DOM 树，避免与原 App 冲突) ============ -->
+<style>
+/* ---- 全局浅色科技风覆盖：纯 CSS，不改动任何 DOM 结构，安全叠加在原样式之后 ---- */
+.dashboard{ background:#f4f7fc !important; color:#1e293b !important; min-height:auto !important; height:auto !important; }
+html, body{ min-height:auto !important; height:auto !important; }
+.header{ background:#ffffff !important; border-bottom:1px solid #e2e8f0 !important; }
+.title{ color:#1e293b !important; }
+.subtitle{ color:#64748b !important; }
+.header-search{ display:none !important; }
+.stats-row{ display:none !important; }
+.tabs{ border-bottom:1px solid #e2e8f0 !important; background:#ffffff !important; }
+.tab{ color:#64748b !important; }
+.tab:hover{ color:#2563eb !important; }
+.tab.active{ color:#2563eb !important; border-bottom-color:#2563eb !important; }
+
+/* 原 "Skills 总览" tab 的旧列表整体隐藏，改由下方合并版目录呈现 */
+.layout{ display:none !important; }
+
+.knowledge-section, .routes-section{ background:#f4f7fc !important; }
+.knowledge-intro h2{ color:#1e293b !important; }
+.knowledge-intro p{ color:#64748b !important; }
+.kb-card{ background:#ffffff !important; border-color:#e2e8f0 !important; box-shadow:0 1px 3px rgba(15,23,42,.05); }
+.kb-card:hover{ border-color:#2563eb !important; }
+.kb-info h3{ color:#1e293b !important; }
+.kb-path{ color:#2563eb !important; }
+.kb-desc{ color:#64748b !important; }
+.kb-tag{ color:#475569 !important; background:#f1f5f9 !important; border-color:#e2e8f0 !important; }
+.memory-structure h3{ color:#1e293b !important; }
+.tree-code{ color:#334155 !important; background:#f8fafc !important; border-color:#e2e8f0 !important; }
+
+.route-card{ background:#ffffff !important; border-color:#e2e8f0 !important; box-shadow:0 1px 3px rgba(15,23,42,.05); }
+.route-card:hover{ border-color:#2563eb !important; }
+.route-query{ color:#475569 !important; }
+.route-skill-badge{ color:#2563eb !important; background:#eff6ff !important; }
+.route-desc{ color:#64748b !important; }
+.model-strategy h3{ color:#1e293b !important; }
+.model-card p{ color:#64748b !important; }
+.footer{ display:none !important; }
+
+/* ---- Skill 目录面板：完全独立于 #root，作为普通兄弟节点，不会被 React 覆盖/冲突 ---- */
+#sc-panel{ display:none; box-sizing:border-box; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  color:#1e293b; min-height:60vh; background:
+    linear-gradient(rgba(37,99,235,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37,99,235,.04) 1px, transparent 1px);
+  background-size:36px 36px; background-color:#f4f7fc;
+}
+#sc-panel.sc-visible{ display:block; }
+#sc-panel *{ box-sizing:border-box; }
+#sc-panel .sc-header{ padding:28px 32px 16px; text-align:center; }
+#sc-panel .sc-kicker{ font-size:.7rem; letter-spacing:.16em; color:#2563eb; font-weight:700;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace; margin-bottom:8px; }
+#sc-panel .sc-header h2{ font-size:1.7rem; margin:0 0 8px; font-weight:800; line-height:1.3;
+  background:linear-gradient(135deg,#2563eb,#06b6d4); -webkit-background-clip:text; background-clip:text; color:transparent; }
+#sc-panel .sc-header p{ color:#64748b; font-size:.92rem; margin:0 auto; max-width:640px; line-height:1.6; }
+#sc-panel .sc-stats{ display:flex; gap:24px; justify-content:center; margin-top:18px; flex-wrap:wrap; }
+#sc-panel .sc-stat{ text-align:center; background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:8px 20px; box-shadow:0 2px 8px rgba(15,23,42,.04); }
+#sc-panel .sc-stat .sc-num{ font-size:1.35rem; font-weight:800; color:#2563eb; line-height:1.3; }
+#sc-panel .sc-stat .sc-label{ font-size:.72rem; color:#64748b; }
+
+#sc-panel .sc-controls{ max-width:1140px; margin:20px auto 8px; padding:0 24px; display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
+#sc-panel .sc-chip{ padding:7px 14px; border-radius:999px; border:1px solid #dbeafe; background:#fff; color:#475569;
+  font-size:.8rem; cursor:pointer; transition:all .15s ease; user-select:none; }
+#sc-panel .sc-chip:hover{ color:#2563eb; border-color:#93c5fd; background:#eff6ff; }
+#sc-panel .sc-chip.sc-active{ background:linear-gradient(135deg,#2563eb,#06b6d4); color:#fff; border-color:transparent; font-weight:700;
+  box-shadow:0 4px 12px rgba(37,99,235,.25); }
+
+#sc-panel .sc-search-wrap{ max-width:480px; margin:18px auto 32px; padding:0 24px; position:relative; }
+#sc-panel .sc-search-icon{ position:absolute; left:40px; top:50%; transform:translateY(-50%); color:#94a3b8; font-size:.95rem; }
+#sc-panel #scSearch{ width:100%; padding:10px 16px 10px 40px; border-radius:10px; border:1px solid #dbeafe;
+  background:#fff; color:#1e293b; font-size:.9rem; outline:none; box-shadow:0 2px 8px rgba(15,23,42,.04); }
+#sc-panel #scSearch:focus{ border-color:#2563eb; box-shadow:0 0 0 3px rgba(37,99,235,.12); }
+
+#sc-panel #scMain{ max-width:1140px; margin:0 auto; padding:0 24px 60px; }
+#sc-panel .sc-category-block{ margin-bottom:36px; }
+#sc-panel .sc-category-title{ font-size:1.02rem; font-weight:800; margin-bottom:4px; display:flex; align-items:center; gap:9px; color:#1e293b; }
+#sc-panel .sc-dot{ width:9px; height:9px; border-radius:50%; flex:none; }
+#sc-panel .sc-category-sub{ color:#64748b; font-size:.8rem; margin-bottom:14px; }
+
+#sc-panel .sc-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:14px; }
+#sc-panel .sc-card{ background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:16px; transition:all .18s ease;
+  display:flex; flex-direction:column; gap:8px; box-shadow:0 1px 3px rgba(15,23,42,.04); }
+#sc-panel .sc-card:hover{ border-color:#93c5fd; box-shadow:0 8px 20px rgba(37,99,235,.12); transform:translateY(-2px); }
+#sc-panel .sc-card-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
+#sc-panel .sc-card-name{ font-weight:700; font-size:.92rem; color:#1e293b; word-break:break-word; }
+#sc-panel .sc-badge{ font-size:.65rem; padding:2px 8px; border-radius:999px; white-space:nowrap; font-weight:700; flex:none; }
+#sc-panel .sc-card-desc{ color:#64748b; font-size:.82rem; line-height:1.5; }
+#sc-panel .sc-card-value{ font-size:.78rem; color:#334155; background:#eff6ff; border-left:3px solid #2563eb; padding:7px 9px; border-radius:6px; line-height:1.5; }
+#sc-panel .sc-card-value b{ color:#0891b2; font-weight:700; }
+#sc-panel .sc-empty{ text-align:center; color:#94a3b8; padding:60px 0; }
+</style>
+
+<div id="sc-panel">
+  <div class="sc-header">
+    <div class="sc-kicker">RICKY · UNIFIED SKILL LIBRARY</div>
+    <h2>全部 Skill 技能图谱</h2>
+    <p>业务分析类 Skill 与 OpenClaw 系统工具 Skill 已合并为一套分类体系，按能力域浏览。</p>
+    <div class="sc-stats">
+      <div class="sc-stat"><div class="sc-num" id="scTotalCount">0</div><div class="sc-label">Skills 总数</div></div>
+      <div class="sc-stat"><div class="sc-num" id="scCatCount">0</div><div class="sc-label">能力分类</div></div>
+    </div>
+  </div>
+  <div class="sc-controls" id="scFilterChips"></div>
+  <div class="sc-search-wrap">
+    <span class="sc-search-icon">⌕</span>
+    <input id="scSearch" type="text" placeholder="搜索 skill 名称、功能或关键词…">
+  </div>
+  <main id="scMain"></main>
+  <div class="sc-empty" id="scEmptyState" style="display:none;">没有找到匹配的 Skill，换个关键词试试～</div>
+</div>
+
+<script>
+(function(){
+  try {
+    const SC_DATA = [
+  {
+    category: "文档与格式输出", color:"#2563eb",
+    desc: "把内容变成可交付的成品文件",
+    items: [
+      {name:"docx", tag:"文档", desc:"创建、读取、编辑 Word 文档（.docx/.dotx），支持目录、页眉页脚、表格、图片替换、修订与批注。", value:"适合<b>报告、备忘录、合同模板</b>等正式文档的生成与批量处理。"},
+      {name:"xlsx", tag:"表格", desc:"创建/编辑/清洗 Excel、CSV、TSV 文件，支持公式、图表、格式化、脏数据整理。", value:"适合<b>数据整理、报表制作</b>，是表格类任务的核心工具。"},
+      {name:"pptx", tag:"演示", desc:"创建和编辑 PowerPoint 幻灯片、模板、备注、批注，支持内容提取与重组。", value:"适合<b>路演/汇报/培训</b>类演示文稿的一站式制作。"},
+      {name:"pdf", tag:"文档", desc:"PDF 的读取、提取、合并、拆分、加水印、加密、填表、OCR 识别。", value:"适合<b>合同归档、扫描件转可搜索文本</b>等 PDF 全流程处理。"},
+      {name:"architecture-diagram", tag:"图示", desc:"生成暗色系专业架构图（SVG+HTML），覆盖系统架构、云架构、安全、网络拓扑。", value:"适合<b>技术方案汇报、系统设计文档</b>配图。"},
+      {name:"html-slide-mender", tag:"编辑器", desc:"把本地 HTML PPT / AI 生成的单页幻灯片变成可视化编辑版本，支持改文字、换图、调位置大小，最后干净导出回原始 HTML。", value:"适合<b>微调 AI 生成的 HTML 演示稿</b>，不用整页重新生成。"},
+    ]
+  },
+  {
+    category: "数据分析与可视化", color:"#0891b2",
+    desc: "从数据探查到报表 Dashboard 的完整链路",
+    items: [
+      {name:"data:analyze", tag:"分析", desc:"回答从单一指标查询到完整分析报告的各类数据问题，能定位趋势/异常背后的原因。", value:"适合<b>业务复盘、异常归因</b>，一站式数据问答。"},
+      {name:"data:build-dashboard", tag:"可视化", desc:"构建带图表、筛选器、表格的交互式 HTML Dashboard，单文件可直接分享。", value:"适合<b>高管概览、团队监控看板</b>，无需服务器即可查看。"},
+      {name:"data:create-viz", tag:"可视化", desc:"用 Python 制作出版级图表，支持交互式悬浮、缩放。", value:"适合<b>报告插图、演示图表</b>的专业制作。"},
+      {name:"data:data-visualization", tag:"可视化", desc:"基于 matplotlib/seaborn/plotly 的图表设计原则应用（配色、可访问性等）。", value:"帮助产出<b>更专业、更易读</b>的数据图表。"},
+      {name:"data:explore-data", tag:"探查", desc:"对新数据集做画像分析：结构、缺失值、分布、重复值、异常检测。", value:"适合拿到新表/新文件时的<b>第一步质量体检</b>。"},
+      {name:"data:sql-queries", tag:"SQL", desc:"跨 Snowflake/BigQuery/Databricks/Postgres 等主流数仓方言编写与优化 SQL。", value:"适合<b>复杂查询、慢查询优化、方言转换</b>。"},
+      {name:"data:write-query", tag:"SQL", desc:"把自然语言需求直接转成优化过的多 CTE SQL 查询。", value:"适合<b>快速把业务问题落地成可执行 SQL</b>。"},
+      {name:"data:statistical-analysis", tag:"统计", desc:"描述性统计、趋势分析、异常检测、假设检验、相关性分析。", value:"适合需要<b>统计学严谨性</b>的分析场景。"},
+      {name:"data:validate-data", tag:"质检", desc:"在汇报前对分析做方法论、准确性、偏差三重校验。", value:"适合<b>汇报前最后一道质检关卡</b>，降低出错风险。"},
+      {name:"data:data-context-extractor", tag:"知识库", desc:"提炼分析师的隐性知识，生成公司专属的数据分析技能（含 schema、指标口径、术语）。", value:"适合<b>沉淀团队数据资产</b>，让后续分析更懂业务语境。"},
+    ]
+  },
+  {
+    category: "战略分析框架", color:"#c2410c",
+    desc: "经典商业分析模型，一键生成结构化报告",
+    items: [
+      {name:"swot-analysis", tag:"战略", desc:"优势/劣势/机会/威胁四维分析，支持品牌、企业、产品、个人多种对象。", value:"适合<b>战略规划、竞争分析、项目评估</b>报告。"},
+      {name:"pestel-analysis", tag:"战略", desc:"政治/经济/社会/技术/环境/法律六维宏观环境分析。", value:"适合<b>市场研究、商业规划</b>的外部环境扫描。"},
+      {name:"bcg-matrix", tag:"战略", desc:"基于市场增长率与相对市场份额，将产品分为明星/现金牛/问题/瘦狗四类。", value:"适合<b>产品组合优化、资源配置</b>决策。"},
+      {name:"tam-sam-som", tag:"战略", desc:"测算总市场(TAM)/可服务市场(SAM)/可获得市场(SOM)三层市场规模。", value:"适合<b>创业融资、投资决策</b>中的市场规模测算。"},
+      {name:"mckinsey-ai-consulting-advisor", tag:"咨询", desc:"用麦肯锡方法论（MECE、金字塔原理、7步法、ADKAR）回答 AI 战略与组织变革问题。", value:"适合<b>模拟专业顾问</b>，产出结构化咨询建议。"},
+      {name:"vrio-analysis", tag:"战略", desc:"基于价值/稀缺性/不可模仿性/组织四要素，评估企业资源能力是否构成核心竞争力。", value:"适合判断<b>竞争优势是否可持续</b>。"},
+      {name:"porter-five-forces", tag:"战略", desc:"波特五力模型：供应商议价、购买者议价、新进入者威胁、替代品威胁、现有竞争。", value:"适合<b>行业吸引力评估、市场进入决策</b>。"},
+      {name:"porter-value-chain", tag:"战略", desc:"分析企业主要活动（进货/生产/出货/营销/售后）与支持活动，定位价值创造环节。", value:"适合找<b>降本增效与差异化来源</b>。"},
+      {name:"value-chain-analysis", tag:"战略", desc:"产业链/价值链利润分布分析，识别关键成功因素，指导垂直整合与生态合作。", value:"适合<b>产业链地图、利润池分析</b>。"},
+      {name:"competitor-analysis", tag:"战略", desc:"整合竞争者画像、战略群组、4P 竞品对标，输出竞争地图与对手画像。", value:"适合<b>竞争格局梳理、竞争策略制定</b>。"},
+      {name:"ecosystem-analysis", tag:"战略", desc:"识别行业生态中的供应商/合作伙伴/渠道/互补品/平台等角色及合作机会。", value:"适合<b>生态战略与跨界合作</b>规划。"},
+      {name:"blue-ocean-strategy", tag:"战略", desc:"基于剔除/减少/增加/创造四步动作框架绘制战略坐标图，寻找无竞争市场空间。", value:"适合<b>差异化定位、避开红海竞争</b>。"},
+      {name:"pod-pop-analysis", tag:"战略", desc:"分析品牌差异点(POD)与共性点(POP)，识别竞争优势和品类必备要素。", value:"适合<b>品牌定位验证</b>。"},
+      {name:"game-theory", tag:"战略", desc:"博弈模型、均衡分析，适用于定价博弈、竞争策略、谈判策略、市场进入。", value:"适合分析<b>竞品互动与市场均衡</b>。"},
+      {name:"system-dynamics", tag:"战略", desc:"反馈循环、存量流量分析、系统基模，适用于长期策略与政策设计。", value:"适合理解<b>复杂系统的长期行为</b>。"},
+    ]
+  },
+  {
+    category: "营销与洞察工具", color:"#b45309",
+    desc: "词频、GEO 可见度等一线营销分析工具",
+    items: [
+      {name:"wordfreq-analysis（词云）", tag:"文本分析", desc:"先做 LLM 逐条打标（话题+情感+关键词），再基于打标结果做词频统计，输出正负面词频、话题声量 Excel 与词云图。", value:"适合<b>社媒评论分析、口碑/热词提炼</b>，比机械分词更准。"},
+      {name:"geo-brand-visibility-public", tag:"GEO", desc:"计算品牌在 AI 大模型推荐结果中的可见度，支持自定义 1-5 级分析层级，输出 Total/Top3/Top1 三种可见度及月度/日度趋势。", value:"适合<b>AI 搜索时代的品牌曝光度监测</b>。"},
+      {name:"GEO可见度核查执行手册", tag:"GEO", desc:"对 AIRENZ 平台的可见度数据做独立复核，识别同一品牌不同表述未合并导致的可见度偏低问题。", value:"适合<b>GEO 数据质量核对</b>，发现漏合并识别问题。"},
+      {name:"GEO品牌产品问题分析执行手册", tag:"GEO", desc:"对六大中国主流 AI 搜索平台导出的品牌/产品问答文本做结构化分析。", value:"适合<b>AI 搜索问答内容的专项分析</b>。"},
+      {name:"GEO错误信息核查执行手册", tag:"GEO", desc:"逐行核查 AI 平台回答中与官方信息不符的产品参数、名称、价格等事实性错误，输出 Excel 错误报告。", value:"适合<b>AI 幻觉信息的品牌风险排查</b>。"},
+      {name:"GEO可见度评估报告PPT生成执行手册", tag:"GEO", desc:"按固定问答流程（目标品牌、竞品、提问次数等）一键生成 GEO 可见度评估报告 PPT。", value:"适合把 GEO 分析<b>直接产出汇报级 PPT</b>。"},
+    ]
+  },
+  {
+    category: "营销与客户洞察", color:"#be123c",
+    desc: "面向营销、CRM、用户反馈场景的专用技能",
+    items: [
+      {name:"crm-monthly-review", tag:"CRM", desc:"把 CRM 商机分析报表 Excel 一键转成给老板看的执行层 Dashboard。", value:"适合<b>月度销售汇报、管道健康度分析</b>。"},
+      {name:"brand-audience-tag-matcher", tag:"营销", desc:"将品牌人群描述自动匹配为 DMP 标签组合方案，输出结构化 Excel。", value:"适合<b>广告投放、人群圈选</b>的标签体系配置。"},
+      {name:"voc-sentiment", tag:"VOC", desc:"句子级+上下文感知的会话情感分类（正/负/中性），面向营养顾问微信会话场景。", value:"适合<b>客户会话质检、情感分布分析</b>。"},
+      {name:"voc-feedback-loop", tag:"VOC", desc:"管理「LLM 跑分析→人工纠错→反哺下次运行」闭环，支持多项目独立规则库。", value:"适合<b>持续提升情感分析准确率</b>的迭代场景。"},
+    ]
+  },
+  {
+    category: "会议与知识处理", color:"#7c3aed",
+    desc: "把非结构化材料变成决策可用的信息",
+    items: [
+      {name:"meeting-analyst", tag:"会议", desc:"处理会议纪要/分享实录/路演材料，双层产出：标准纪要+多元视角批判性洞察。", value:"适合<b>会议复盘、投资/合作决策</b>前的材料分析。"},
+    ]
+  },
+  {
+    category: "风险与合规核查", color:"#dc2626",
+    desc: "面向达人/KOL 合作的身份与舆情审查",
+    items: [
+      {name:"russia-influencer-verification（KOL vetting）", tag:"风控", desc:"对俄罗斯地区 TikTok/Instagram/YouTube/VK 博主做身份验证、俄英双语负面舆情扫描、品牌合作记录调查与风险评估（政治敏感、犯罪、反华言论等）。", value:"适合<b>出海品牌合作达人前的风险尽调</b>。"},
+    ]
+  },
+  {
+    category: "品牌情绪 4E 战略 Skill 体系", color:"#db2777",
+    desc: "围绕《品牌情绪：用 AI 塑造品牌情绪的 4E 战略》构建的一整套调研-战略-方法-场景应用技能（Explore/Establish/Engage/Evaluate）",
+    items: [
+      {name:"Skill 00 品牌调研统一入口", tag:"入口", desc:"统一接入品牌调研任务，调度基础调研 Skill，输出结构化调研底稿。", value:"整套体系的<b>统一信息入口</b>。"},
+      {name:"S01 品牌与赛道基础调研", tag:"调研", desc:"整合品牌基础事实、竞品格局与行业趋势为完整底稿。", value:"为后续分析提供<b>基础事实证据</b>。"},
+      {name:"S02 用户与传播情绪调研", tag:"调研", desc:"整合用户评价、社交传播与危机风险，识别真实需求与传播风险。", value:"适合<b>舆情/口碑</b>前置调研。"},
+      {name:"S03 专项场景深度调研", tag:"调研", desc:"整合创始人 IP、门店空间、B2B 决策链三类专项深度调研。", value:"面向<b>人物/空间/组织采购</b>复杂场景。"},
+      {name:"Skill 01 品牌情绪 4E 战略框架", tag:"核心框架", desc:"提供 Explore/Establish/Engage/Evaluate 四大环节总框架。", value:"搭建<b>完整品牌情绪战略</b>的主干。"},
+      {name:"Skill 02 AI情绪洞察与感知图", tag:"Explore", desc:"在“传统-现代”“理性-感性”坐标系中定位品牌情绪与竞争空位。", value:"看清<b>品牌情绪坐标</b>。"},
+      {name:"Skill 03 情绪锚点定位五步法", tag:"Establish", desc:"五步法完成主情绪、辅情绪定位，形成差异化情绪锚点。", value:"确定<b>品牌该占据哪种情绪</b>。"},
+      {name:"Skill 07 情绪融入全触点策略", tag:"Engage", desc:"把品牌情绪写入产品、服务、渠道、内容、体验五大触点。", value:"让情绪定位<b>落地到每个接触点</b>。"},
+      {name:"Skill 08 情绪红利评估与量化", tag:"Evaluate", desc:"对情绪增长力、ROI 与波动预警进行评估量化。", value:"衡量<b>情绪战略的真实回报</b>。"},
+      {name:"Skill 04 品牌情绪词库与分类", tag:"方法资源", desc:"提供情绪词库、情绪维度和四种品牌情绪类型分类参考。", value:"分析时的<b>标准词汇/分类工具</b>。"},
+      {name:"Skill 05 AI提示词模板库", tag:"方法资源", desc:"收录情绪分析、竞品分析、定位、融入、评估等场景提示词模板。", value:"加速<b>各环节的 AI 协作</b>。"},
+      {name:"Skill 06 竞品情绪分析与差异化", tag:"方法资源", desc:"分析竞品情绪占位、竞争地图、竞争空白圈，识别差异化路径。", value:"找到<b>情绪层面的竞争空档</b>。"},
+      {name:"Skill 09 品牌情绪类型诊断", tag:"方法资源", desc:"根据品牌表现判断所属情绪类型并匹配策略。", value:"快速给品牌<b>做情绪画像分类</b>。"},
+      {name:"Skill 10 情绪内容创作指南", tag:"方法资源", desc:"把情绪定位转化为内容语言、叙事风格与创作方法。", value:"适合<b>内容/文案团队</b>落地执行。"},
+      {name:"Skill 11 B2B企业情绪营销", tag:"场景应用", desc:"面向组织采购和长决策链，设计 B2B 品牌情绪价值与营销策略。", value:"适合<b>B2B 企业</b>的情绪营销场景。"},
+      {name:"Skill 12 服务业情绪服务设计", tag:"场景应用", desc:"识别服务接触关键时刻，设计情绪化服务体验。", value:"适合<b>服务业客户体验</b>设计。"},
+      {name:"Skill 13 新品发布情绪策略", tag:"场景应用", desc:"设计预热、预售、发布、持续运营各阶段的情绪节奏。", value:"适合<b>新品上市</b>营销节奏规划。"},
+      {name:"Skill 14 危机公关情绪修复", tag:"场景应用", desc:"面向品牌危机与负面事件，设计情绪控制、修复与信任重建。", value:"适合<b>危机公关</b>应急处理。"},
+      {name:"Skill 15 社交媒体情绪运营", tag:"场景应用", desc:"面向平台内容、互动管理、舆情监测与情绪放大机制。", value:"适合<b>日常社媒运营</b>。"},
+      {name:"Skill 16 品牌升级情绪迁移", tag:"场景应用", desc:"面向品牌焕新与升级情境，设计旧情绪到新情绪的迁移路径。", value:"适合<b>品牌重塑/升级</b>项目。"},
+      {name:"Skill 17 用户增长情绪驱动", tag:"场景应用", desc:"面向 AARRR 全链路设计情绪驱动的增长策略。", value:"适合<b>增长团队</b>做情绪化拉新留存。"},
+      {name:"Skill 18 员工情绪与雇主品牌", tag:"场景应用", desc:"面向组织内部情绪管理与外部雇主品牌建设。", value:"适合<b>HR/雇主品牌</b>建设。"},
+      {name:"Skill 19 创始人IP情绪打造", tag:"场景应用", desc:"面向创始人个人品牌、人设定位、内容矩阵与风险管控。", value:"适合<b>创始人 IP</b>打造。"},
+      {name:"Skill 20 线下门店情绪体验设计", tag:"场景应用", desc:"面向门店、零售空间和五感体验设计，强化线下情绪体验。", value:"适合<b>线下零售/体验空间</b>设计。"},
+    ]
+  },
+  {
+    category: "效率与系统工具", color:"#475569",
+    desc: "任务调度、插件管理与技能自建",
+    items: [
+      {name:"schedule", tag:"自动化", desc:"创建/更新定时任务，支持每天、每周、指定时间等多种周期。", value:"适合<b>日报、提醒、周期性检查</b>类需求。"},
+      {name:"skill-creator", tag:"元技能", desc:"从零创建新 Skill，优化现有 Skill 的触发描述，运行评测与性能基准。", value:"适合<b>自建专属技能</b>或改进已有技能触发准确率。"},
+      {name:"setup-cowork", tag:"配置", desc:"引导安装角色匹配的插件、连接工具、体验一个技能的 Cowork 入门流程。", value:"适合<b>新用户/新场景的初始配置</b>向导。"},
+      {name:"cowork-plugin-management:cowork-plugin-customizer", tag:"插件", desc:"针对具体组织的工具和工作流定制已有插件。", value:"适合<b>企业内部插件的个性化调整</b>。"},
+      {name:"cowork-plugin-management:create-cowork-plugin", tag:"插件", desc:"从零引导创建一个全新的插件，最终产出 .plugin 文件。", value:"适合<b>打包自定义能力为可分发插件</b>。"},
+    ]
+  },
+  {
+    category: "飞书 / Lark 协同办公", color:"#1d4ed8",
+    desc: "打通飞书生态的文档、沟通、审批、日程与自动化",
+    items: [
+      {name:"📦 feishu-doc", tag:"OpenClaw", desc:"Feishu document read/write operations.", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 feishu-wiki", tag:"OpenClaw", desc:"Feishu knowledge base navigation.", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 feishu-drive", tag:"OpenClaw", desc:"Feishu cloud storage file management.", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 feishu-perm", tag:"OpenClaw", desc:"Feishu permission management for…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-doc", tag:"OpenClaw", desc:"飞书云文档：创建和编辑飞书文档。默认使…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-wiki", tag:"OpenClaw", desc:"飞书知识库：管理知识空间、空间成员和文…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-drive", tag:"OpenClaw", desc:"飞书云空间：管理云空间中的文件和文件夹…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-sheets", tag:"OpenClaw", desc:"飞书电子表格：创建和操作电子表格。创建…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-base", tag:"OpenClaw", desc:"当需要用 lark-cli…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-okr", tag:"OpenClaw", desc:"飞书…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-calendar", tag:"OpenClaw", desc:"飞书日历（calendar）：提供日历与日程（…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-task", tag:"OpenClaw", desc:"飞书任务：管理任务和清单。创建待办任务…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-minutes", tag:"OpenClaw", desc:"飞书妙记：妙记相关基本功能。1.", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-approval", tag:"OpenClaw", desc:"飞书审批 API：审批实例、审批任务管理。", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-attendance", tag:"OpenClaw", desc:"飞书考勤打卡：查询自己的考勤打卡记录…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-mail", tag:"OpenClaw", desc:"飞书邮箱 — draft, compose, send…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-vc", tag:"OpenClaw", desc:"飞书视频会议：查询会议记录、获取会议纪…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-event", tag:"OpenClaw", desc:"飞书事件订阅：通过 WebSocket…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-contact", tag:"OpenClaw", desc:"飞书通讯录：查询组织架构、人员信息和搜…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-im", tag:"OpenClaw", desc:"飞书即时通讯：收发消息和管理群聊。发送…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-shared", tag:"OpenClaw", desc:"飞书/Lark CLI…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-openapi-explorer", tag:"OpenClaw", desc:"飞书/Lark 原生 OpenAPI…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-workflow-meeting-summary", tag:"OpenClaw", desc:"会议纪要整理工作流：汇总指定时间范围内…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-workflow-standup-report", tag:"OpenClaw", desc:"日程待办摘要：编排 calendar +agenda 和…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-slides", tag:"OpenClaw", desc:"飞书幻灯片：创建和编辑幻灯片，接口通过…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-whiteboard", tag:"OpenClaw", desc:"飞书画板：查询和编辑飞书云文档中的画板…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 lark-skill-maker", tag:"OpenClaw", desc:"创建 lark-cli 的自定义…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🔧 ima-skill", tag:"OpenClaw", desc:"统一的 IMA OpenAPI…", value:"隶属 <b>飞书 / Lark 协同办公</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+    ]
+  },
+  {
+    category: "即时通讯与消息协作", color:"#16a34a",
+    desc: "跨平台收发消息、语音通话与群组管理",
+    items: [
+      {name:"💬 slack", tag:"OpenClaw", desc:"Use the Slack tool to react, pin/…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 slack-gif-creator", tag:"OpenClaw", desc:"Knowledge and utilities for creating…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🎮 discord", tag:"OpenClaw", desc:"Discord ops via the message tool…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📨 imsg", tag:"OpenClaw", desc:"iMessage/SMS CLI for listing chats…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🫧 bluebubbles", tag:"OpenClaw", desc:"Send and manage iMessages via…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📱 wacli", tag:"OpenClaw", desc:"Send third-party WhatsApp messages or…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📡 qqbot-channel", tag:"OpenClaw", desc:"QQ…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📸 qqbot-media", tag:"OpenClaw", desc:"QQBot 富媒体收发能力。使用 <qqmedia>…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"⏰ qqbot-remind", tag:"OpenClaw", desc:"QQBot…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📞 voice-call", tag:"OpenClaw", desc:"Start voice calls via the OpenClaw…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 dmwork", tag:"OpenClaw", desc:"DMWork Bot - AI Agent messaging via…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 dmwork-bot-api", tag:"OpenClaw", desc:"DMWork Bot API…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 internal-comms", tag:"OpenClaw", desc:"A set of resources to help me write…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📋 trello", tag:"OpenClaw", desc:"Manage Trello boards, lists, and cards…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🧲 gifgrep", tag:"OpenClaw", desc:"Search GIF providers with CLI/TUI…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📧 himalaya", tag:"OpenClaw", desc:"Use himalaya to list, read, search…", value:"隶属 <b>即时通讯与消息协作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+    ]
+  },
+  {
+    category: "笔记、知识与任务管理", color:"#9333ea",
+    desc: "个人知识库、备忘录与待办事项的读写检索",
+    items: [
+      {name:"📝 apple-notes", tag:"OpenClaw", desc:"Create, view, edit, delete, search…", value:"隶属 <b>笔记、知识与任务管理</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🐻 bear-notes", tag:"OpenClaw", desc:"Create, search, and manage Bear notes…", value:"隶属 <b>笔记、知识与任务管理</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"💎 obsidian", tag:"OpenClaw", desc:"Work with Obsidian vaults (plain…", value:"隶属 <b>笔记、知识与任务管理</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📝 notion", tag:"OpenClaw", desc:"Notion API for creating and managing…", value:"隶属 <b>笔记、知识与任务管理</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 kb-knowledge-retriever", tag:"OpenClaw", desc:"Retrieve knowledge from the personal…", value:"隶属 <b>笔记、知识与任务管理</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📜 session-logs", tag:"OpenClaw", desc:"Search and analyze your own session…", value:"隶属 <b>笔记、知识与任务管理</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"⏰ apple-reminders", tag:"OpenClaw", desc:"List, add, edit, complete, or delete…", value:"隶属 <b>笔记、知识与任务管理</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"✅ things-mac", tag:"OpenClaw", desc:"Add, update, list, search, or inspect…", value:"隶属 <b>笔记、知识与任务管理</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🪝 taskflow", tag:"OpenClaw", desc:"Coordinate multi-step detached tasks…", value:"隶属 <b>笔记、知识与任务管理</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📥 taskflow-inbox-triage", tag:"OpenClaw", desc:"Example TaskFlow pattern for inbox…", value:"隶属 <b>笔记、知识与任务管理</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+    ]
+  },
+  {
+    category: "搜索、数据与情报监测", color:"#0e7490",
+    desc: "网页搜索、热点监测与行情/统计数据查询",
+    items: [
+      {name:"🔍 tavily", tag:"OpenClaw", desc:"Tavily web search, content extraction…", value:"隶属 <b>搜索、数据与情报监测</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 zhipu-web-search", tag:"OpenClaw", desc:"Search the web using Zhipu (智谱) Web…", value:"隶属 <b>搜索、数据与情报监测</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 aihot", tag:"OpenClaw", desc:"AI HOT (aihot.virxact.com) 中文 AI…", value:"隶属 <b>搜索、数据与情报监测</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 hot-topic-monitor", tag:"OpenClaw", desc:"查询小红书/…", value:"隶属 <b>搜索、数据与情报监测</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 browser-automation", tag:"OpenClaw", desc:"Use when controlling web pages with…", value:"隶属 <b>搜索、数据与情报监测</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 westock-data", tag:"OpenClaw", desc:"查询A股、港股、美股个股/指数/…", value:"隶属 <b>搜索、数据与情报监测</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📍 goplaces", tag:"OpenClaw", desc:"Query Google Places for text search…", value:"隶属 <b>搜索、数据与情报监测</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📰 blogwatcher", tag:"OpenClaw", desc:"Monitor blogs and RSS/Atom feeds for…", value:"隶属 <b>搜索、数据与情报监测</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📊 model-usage", tag:"OpenClaw", desc:"Summarize CodexBar local cost logs by…", value:"隶属 <b>搜索、数据与情报监测</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🧾 summarize", tag:"OpenClaw", desc:"Summarize or transcribe URLs, YouTube/…", value:"隶属 <b>搜索、数据与情报监测</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+    ]
+  },
+  {
+    category: "设计与内容创作", color:"#d97706",
+    desc: "PDF/图表/网页/PPT 等内容的生成与美化",
+    items: [
+      {name:"📄 nano-pdf", tag:"OpenClaw", desc:"Edit PDFs with natural-language…", value:"隶属 <b>设计与内容创作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 canvas-design", tag:"OpenClaw", desc:"Create beautiful visual art in .png…", value:"隶属 <b>设计与内容创作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 algorithmic-art", tag:"OpenClaw", desc:"Creating algorithmic art using p5.js…", value:"隶属 <b>设计与内容创作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 echarts-generator", tag:"OpenClaw", desc:"Generate professional data…", value:"隶属 <b>设计与内容创作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 frontend-design", tag:"OpenClaw", desc:"Create distinctive, production-grade…", value:"隶属 <b>设计与内容创作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 theme-factory", tag:"OpenClaw", desc:"Toolkit for styling artifacts with a…", value:"隶属 <b>设计与内容创作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 minimax-ppt-slides", tag:"OpenClaw", desc:"MiniMax PPT演示文稿生成 -…", value:"隶属 <b>设计与内容创作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 web-artifacts-builder", tag:"OpenClaw", desc:"Suite of tools for creating elaborate…", value:"隶属 <b>设计与内容创作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 brand-guidelines", tag:"OpenClaw", desc:"Applies Anthropic's official brand…", value:"隶属 <b>设计与内容创作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 doc-coauthoring", tag:"OpenClaw", desc:"Guide users through a structured…", value:"隶属 <b>设计与内容创作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 prd", tag:"OpenClaw", desc:"Generate high-quality Product…", value:"隶属 <b>设计与内容创作</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+    ]
+  },
+  {
+    category: "音视频与智能设备", color:"#a21caf",
+    desc: "语音合成/识别、影音处理与智能家居设备控制",
+    items: [
+      {name:"🎬 video-frames", tag:"OpenClaw", desc:"Extract frames or short clips from…", value:"隶属 <b>音视频与智能设备</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📸 camsnap", tag:"OpenClaw", desc:"Capture frames or clips from RTSP/…", value:"隶属 <b>音视频与智能设备</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🌊 songsee", tag:"OpenClaw", desc:"Generate spectrograms and feature-…", value:"隶属 <b>音视频与智能设备</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🎤 openai-whisper", tag:"OpenClaw", desc:"Local speech-to-text with the Whisper…", value:"隶属 <b>音视频与智能设备</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🌐 openai-whisper-api", tag:"OpenClaw", desc:"Transcribe audio via OpenAI Audio…", value:"隶属 <b>音视频与智能设备</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🔊 sag", tag:"OpenClaw", desc:"ElevenLabs text-to-speech with mac-…", value:"隶属 <b>音视频与智能设备</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🔉 sherpa-onnx-tts", tag:"OpenClaw", desc:"Local text-to-speech via sherpa-onnx…", value:"隶属 <b>音视频与智能设备</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🎵 spotify-player", tag:"OpenClaw", desc:"Terminal Spotify playback/search via…", value:"隶属 <b>音视频与智能设备</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🔊 sonoscli", tag:"OpenClaw", desc:"Control Sonos speakers (discover/…", value:"隶属 <b>音视频与智能设备</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🫐 blucli", tag:"OpenClaw", desc:"BluOS CLI (blu) for discovery…", value:"隶属 <b>音视频与智能设备</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"💡 openhue", tag:"OpenClaw", desc:"Control Philips Hue lights and scenes…", value:"隶属 <b>音视频与智能设备</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🛌 eightctl", tag:"OpenClaw", desc:"Control Eight Sleep pods (status…", value:"隶属 <b>音视频与智能设备</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+    ]
+  },
+  {
+    category: "开发、自动化与 Agent 工具", color:"#334155",
+    desc: "代码协作、系统运维、MCP 与 Agent 基建工具",
+    items: [
+      {name:"📦 mcp-builder", tag:"OpenClaw", desc:"Guide for creating high-quality MCP…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 node-connect", tag:"OpenClaw", desc:"Diagnose OpenClaw Android, iOS, or…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 skill-vetter", tag:"OpenClaw", desc:"Security-first skill vetting for AI…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🧩 coding-agent", tag:"OpenClaw", desc:"Delegate coding tasks to Codex, Claude…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🐙 github", tag:"OpenClaw", desc:"Use gh for GitHub issues, PR status…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 gh-issues", tag:"OpenClaw", desc:"Fetch GitHub issues, delegate fixes to…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🧵 tmux", tag:"OpenClaw", desc:"Remote-control tmux sessions for…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 mcporter", tag:"OpenClaw", desc:"List, configure, authenticate, call…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"✨ gemini", tag:"OpenClaw", desc:"Gemini CLI for one-shot Q&A…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🧿 oracle", tag:"OpenClaw", desc:"Use oracle CLI to bundle prompts and…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 claude-api", tag:"OpenClaw", desc:"Build apps with the Claude API or…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"👀 peekaboo", tag:"OpenClaw", desc:"Capture and automate macOS UI with the…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 webapp-testing", tag:"OpenClaw", desc:"Toolkit for interacting with and…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 healthcheck", tag:"OpenClaw", desc:"Audit and harden hosts running…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🔐 1password", tag:"OpenClaw", desc:"Set up and use 1Password CLI for sign-…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"📦 clawhub", tag:"OpenClaw", desc:"Search, install, update, sync, or…", value:"隶属 <b>开发、自动化与 Agent 工具</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+    ]
+  },
+  {
+    category: "生活服务与其它", color:"#4d7c0f",
+    desc: "日常生活与杂项效率工具",
+    items: [
+      {name:"🛵 ordercli", tag:"OpenClaw", desc:"Foodora-only CLI for checking past…", value:"隶属 <b>生活服务与其它</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"☔ weather", tag:"OpenClaw", desc:"Get current weather, rain…", value:"隶属 <b>生活服务与其它</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🐦 xurl", tag:"OpenClaw", desc:"Use xurl for authenticated X API…", value:"隶属 <b>生活服务与其它</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+      {name:"🎮 gog", tag:"OpenClaw", desc:"Google Workspace CLI for Gmail…", value:"隶属 <b>生活服务与其它</b> 工具集，属于 Ricky 个人 Agent 的常驻能力。"},
+    ]
+  },
+];
+
+    const scPanel = document.getElementById('sc-panel');
+    // 面板本身是 <body> 里 <div id=root> 之外的独立兄弟节点，React 不会管理/覆盖它，绝不会与原 App 的 DOM 树冲突
+
+    const scMain = document.getElementById('scMain');
+    const scChips = document.getElementById('scFilterChips');
+    const scSearch = document.getElementById('scSearch');
+    const scEmpty = document.getElementById('scEmptyState');
+    let scActiveCat = 'all';
+
+    function scTotalSkills(){ return SC_DATA.reduce((s,c)=>s+c.items.length,0); }
+    document.getElementById('scTotalCount').textContent = scTotalSkills();
+    document.getElementById('scCatCount').textContent = SC_DATA.length;
+
+    const scAllChip = document.createElement('div');
+    scAllChip.className = 'sc-chip sc-active';
+    scAllChip.textContent = '全部';
+    scAllChip.onclick = () => scSetCat('all', scAllChip);
+    scChips.appendChild(scAllChip);
+
+    SC_DATA.forEach(cat => {
+      const chip = document.createElement('div');
+      chip.className = 'sc-chip';
+      chip.textContent = cat.category;
+      chip.onclick = () => scSetCat(cat.category, chip);
+      scChips.appendChild(chip);
+    });
+
+    function scSetCat(cat, el){
+      scActiveCat = cat;
+      [...scChips.children].forEach(c => c.classList.remove('sc-active'));
+      el.classList.add('sc-active');
+      scRender();
+    }
+
+    function scRender(){
+      const q = scSearch.value.trim().toLowerCase();
+      scMain.innerHTML = '';
+      let anyVisible = false;
+
+      SC_DATA.forEach(cat => {
+        if (scActiveCat !== 'all' && scActiveCat !== cat.category) return;
+        const filteredItems = cat.items.filter(it => {
+          if (!q) return true;
+          return (it.name + it.desc + it.value + it.tag).toLowerCase().includes(q);
+        });
+        if (filteredItems.length === 0) return;
+        anyVisible = true;
+
+        const block = document.createElement('div');
+        block.className = 'sc-category-block';
+        block.innerHTML = `
+          <div class="sc-category-title"><span class="sc-dot" style="background:${cat.color}"></span>${cat.category}</div>
+          <div class="sc-category-sub">${cat.desc} · ${filteredItems.length} 个技能</div>
+          <div class="sc-grid"></div>
+        `;
+        const grid = block.querySelector('.sc-grid');
+        filteredItems.forEach(it => {
+          const card = document.createElement('div');
+          card.className = 'sc-card';
+          card.innerHTML = `
+            <div class="sc-card-top">
+              <div class="sc-card-name">${it.name}</div>
+              <span class="sc-badge" style="color:${cat.color};background:${cat.color}1A;border:1px solid ${cat.color}40">${it.tag}</span>
+            </div>
+            <div class="sc-card-desc">${it.desc}</div>
+            <div class="sc-card-value">${it.value}</div>
+          `;
+          grid.appendChild(card);
+        });
+        scMain.appendChild(block);
+      });
+      scEmpty.style.display = anyVisible ? 'block' : 'none';
+    }
+
+    scSearch.addEventListener('input', scRender);
+    scRender();
+
+    // 只读方式跟随原生 Tab 切换（不修改 React DOM，只是监听点击 + 读取 class），
+    // 在 "📦 Skills 总览" 激活时显示合并版目录，其它 tab 时隐藏
+    function syncVisibility(){
+      const activeTab = document.querySelector('.tab.active');
+      const isSkillsTab = !activeTab || /Skills/i.test(activeTab.textContent);
+      scPanel.classList.toggle('sc-visible', isSkillsTab);
+    }
+    document.addEventListener('click', function(e){
+      if (e.target.closest && e.target.closest('.tab')) {
+        setTimeout(syncVisibility, 0);
+      }
+    }, true);
+    setTimeout(syncVisibility, 300);
+    setTimeout(syncVisibility, 1200);
+  } catch (err) {
+    console.error('[Skill 展示面板] 初始化出错:', err);
+  }
+})();
+</script>
+<!-- ============ /合并版 Skill 目录 ============ -->
+
+</body></html>

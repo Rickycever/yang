@@ -7,6 +7,14 @@ tags: [更新日志, wiki管理, 知识库]
 
 # 更新日志
 
+## [2026-08-12] ingest | cross-border-marketing-aigc | STARNET Global Influencer Marketing 3.0 Deck
+
+- raw/SAT DECK.pdf — 原始 PDF 已保存
+- cross-border-marketing-aigc/sources/starnet-global-influencer-marketing-3-202608 — 来源页，STARNET TALENT 的 Influencer Marketing 3.0、PACE、O2O 闭环、七步增长方法和出海案例
+- cross-border-marketing-aigc/entities/starnet — 新实体页：STARNET TALENT
+- cross-border-marketing-aigc/overview — 更新主题概览、核心实体与 STARNET 补充
+- index.md — 更新 Recently Added 条目
+
 ## [2026-06-24] ingest | aigc-china-players | 2026 FORCE大会·筷子科技分论坛——品牌商业的Token化跃迁闭门交流会
 
 - raw/2026年Force 筷子“品牌商业的Token化跃迁”闭门会 会议纪要.pdf — 原始 PDF 已保存

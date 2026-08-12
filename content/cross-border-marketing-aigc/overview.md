@@ -33,6 +33,15 @@ tags: [cross-border-marketing, aigc, meta-ads, creative-automation, data-flywhee
 - [[cross-border-marketing-aigc/entities/bluefocus|蓝色光标 BlueFocus]] — 集团级 All in AI 与 BlueAI 数据飞轮代表
 - [[cross-border-marketing-aigc/entities/meet-experience|飞书深诺 Meet Experience]] — 出海营销三件套 Insight / Muse / Audience 代表
 - [[cross-border-marketing-aigc/entities/tec-do|钛动科技 Tec-Do]] — 创意 Agent、批量混剪、数字人能力代表
+- [[cross-border-marketing-aigc/entities/starnet|STARNET TALENT]] — AI、数据洞察与全球资源网络驱动的出海整合营销机构
+
+## STARNET TALENT 补充
+
+- [[cross-border-marketing-aigc/sources/starnet-global-influencer-marketing-3-202608|STARNET Global Influencer Marketing 3.0 Deck]] — 海外 Influencer Marketing、O2O 执行和品牌增长交付案例
+- **Influencer Marketing 3.0**：从一次性达人采购转向长期红人资源、内容共创、本地化场景和可量化转化。
+- **PACE 敏捷执行链**：以 30 天窗口完成资源锁定、内容共创、矩阵发布、监测优化和转化放大。
+- **O2O 增长闭环**：连接线上内容、线下体验、门店销售和数据复盘，持续优化从兴趣到购买的路径。
+- **Signal → Transformation**：以洞察信号、目标拆解、场景激活、资源调度、网络放大、效果评估和增长转化构成七步方法论。
 
 ## 关键数据
 

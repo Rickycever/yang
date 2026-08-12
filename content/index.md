@@ -173,6 +173,8 @@ Meta 广告平台自动化背景下的出海 AIGC 创意工具研究。核心主
 
 ---
 
+- 2026-08-12 · [[cross-border-marketing-aigc/overview|出海营销 AIGC]] — 摄入 STARNET TALENT《Global Influencer Marketing 3.0》Deck：新增 1 个来源页、1 个实体页，补充海外 Influencer Marketing、PACE、O2O 和 Signal-to-Transformation 方法论
+
 ### AIGC国内玩家方案
 国内 AIGC 内容服务玩家面向品牌营销的解决方案研究。当前核心资料：特赞 GMI F26 AIGC 营销素材服务方案、零壹贰叁科技如意 RUYI 多模态 AIGC 生成平台、筷子科技品牌商业 Token 化闭门会。重点包括内容工厂、人机协作交付、品牌专属模型训练、多模态平台、AI 视频分镜工作台、品牌商业 Token 化和智能体运行环境。
 

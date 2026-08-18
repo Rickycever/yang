@@ -49,9 +49,9 @@ Frameworks and enterprise cases for AI-driven business transformation. Key theme
 ---
 
 ### 行业研究 (Industry Research)
-Technology and market trend analysis. Current focus: quantum computing's impact on GPU acceleration industry and NVIDIA's defense strategy.
+Technology and market trend analysis. Current focus: GEO (Generative Engine Optimization) industry, quantum computing's impact on GPU acceleration industry and NVIDIA's defense strategy.
 
-<div class="zh-trans">技术和市场趋势分析。当前聚焦：量子计算对GPU加速行业的影响和英伟达的防御策略。</div>
+<div class="zh-trans">技术和市场趋势分析。当前聚焦：GEO（生成式引擎优化）行业、量子计算对GPU加速行业的影响和英伟达的防御策略。</div>
 
 → [[industry-research/overview|行业研究全景概览]]
 
@@ -104,7 +104,7 @@ Nestlé China multi-category (coffee, infant formula, snacks) advertising data m
 ---
 
 ### 秒针/明略科技 (Miaozhen × Mininglamp)
-中国最大第三方广告监测与DMP平台。核心主题：IVT监测技术革新、明日DMP RaaS化转型（API/MCP开放平台 + ClawHub AI Agents）、DeepMiner AI Use Cases、GEO（生成式引擎优化）、企业AI四阶段框架、超级智能体OS架构。数据源：京东电商行为/银联/百望车辆/航旅/消费品类。
+中国最大第三方广告监测与DMP平台。核心主题：IVT监测技术革新、明日DMP RaaS化转型（API/MCP开放平台 + ClawHub AI Agents）、DeepMiner AI Use Cases、GEO（生成式引擎优化）、AdEff五维度创意测量、企业AI四阶段框架、超级智能体OS架构。数据源：京东电商行为/银联/百望车辆/航旅/消费品类。
 
 → [[miaozhen/overview|秒针/明略科技 全景概览]]
 
@@ -173,6 +173,8 @@ Meta 广告平台自动化背景下的出海 AIGC 创意工具研究。核心主
 
 ---
 
+- 2026-08-18 · [[miaozhen/overview|秒针/明略科技]] — 摄入《AdEff广告创意效果白皮书》：新增 1 个来源页、1 个概念页，聚焦五维度创意测量体系、记忆驱动归因与创意优化 SOP
+- 2026-08-16 · [[industry-research/overview|行业研究]] — 摄入《2026中国GEO行业白皮书》：新增 1 个来源页、1 个概念页，聚焦 GEO 行业趋势、消费者洞察、AI 模型差异、优化策略与标准规范
 - 2026-08-12 · [[cross-border-marketing-aigc/overview|出海营销 AIGC]] — 摄入 STARNET TALENT《Global Influencer Marketing 3.0》Deck：新增 1 个来源页、1 个实体页，补充海外 Influencer Marketing、PACE、O2O 和 Signal-to-Transformation 方法论
 
 ### AIGC国内玩家方案

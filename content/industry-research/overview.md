@@ -29,8 +29,20 @@ Research and analysis on technology and market trends that shape the broader AI 
 
 ---
 
+### GEO 生成式引擎优化
+
+| Item | Link |
+|------|------|
+| Source analysis | [[industry-research/sources/geo-whitepaper-2026\|2026中国GEO行业白皮书]] |
+| Concept | [[industry-research/concepts/geo\|GEO 生成式引擎优化]] |
+
+**Key thesis**: GEO 标志「第三次品牌管理革命」，2026 年国内 GEO 市场 30 亿元（同比 +1100%）并进入规范化元年。行业从「趋势描述」转向「深度洞察」：消费者以「对话即搜索」重塑消费决策，主流模型（豆包/千问/DeepSeek/元宝）的推荐与信源引用存在显著差异，内容策略的核心是「高人类互动 ≠ 高 AI 引用」。
+
+---
+
 ## Recently Added
 
+- 2026-08-16 · 2026中国GEO行业白皮书 — 1 source, 1 concept
 - 2026-04-14 · 量子计算对GPU加速行业的重构 — 1 source, 1 concept
 
 ---

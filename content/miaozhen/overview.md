@@ -22,6 +22,7 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - [[miaozhen/concepts/aigc-content-flow|AIGC社媒内容工作流]] — 洞察→生成→分发→反馈闭环，内容黄金公式（产品×卖点×人群×场景×话题），三池流量逻辑
 - [[miaozhen/concepts/insightflow-cms|insightFlow CMS]] — 洞察驱动内容营销工具，品牌感知图谱+热点decode+黄金公式+AIGC批量生成，AI供稿互动量+12%（KFC案例）
 - [[miaozhen/concepts/kos-koc-matrix|KOS/KOC营销矩阵]] — 企业员工（KOS）×真人消费者（KOC）双轨分发，AIGC赋能Brief Agent+全链路管理
+- [[miaozhen/concepts/adeff-five-dimensions|AdEff 五维度创意测量体系]] — 注意力/感染力/传达力/品牌力/说服力五维认知链路，说服力是记忆第一驱动力，533条广告实证
 
 **监测与数据**
 - [[miaozhen/concepts/ivt-monitoring-tech|IVT监测技术革新]] — HSV色彩空间+感知哈希双方案，IPTV专网监测突破，蚂蚁集团ID验真合作
@@ -88,11 +89,13 @@ tags: [miaozhen, mininglamp, tracking, dmp, deepminer, pg-china]
 - **2026年2月**：蚂蚁集团设备ID验真合作预计上线，IPTV监测流程跑通
 - **2026年5月12日**：明日DMP产品分享，AI能力中心 ClawHub Agents 200+下载，京东/银联/百望/航旅数据源发布案例
 - **2026年6月8日**：补充明略 AI 能力与企业应用方案，明确企业级 Agent OS、知识治理、Skill 生命周期和 Token 成本治理四类能力
+- **2026年8月**：AdEff 广告创意效果白皮书发布，五维度测量体系 + 533 条竖屏广告实证
 
 ---
 
 ## 来源
 
+- [[miaozhen/sources/adeff-whitepaper-202608|AdEff广告创意效果白皮书（2026-08）]] — 五维度创意测量体系，533条竖屏广告实证，创意元素→记忆编码链路与优化SOP
 - [[miaozhen/sources/saic-geo-solution-20260330|上汽集团AI认知评估优化方案（2026-03-30）]] — GEO三阶段方法论，别克至境L7可见度实测（18.3%），竞品格局分析
 - [[miaozhen/sources/miaozhen-day-workshop-260131|秒针Day Workshop材料（2026-01-31）]] — 内部Workshop PPT，覆盖Tracking/DMP/AI三大方向，宝洁中国案例
 - [[miaozhen/sources/miaozhen-wuliangye-dmp-bid-20260330|五粮液浓香 DMP 投标文件（2026-03-30）]] — 全链路数据管理项目投标，白酒人群三层策略，10个参考合同

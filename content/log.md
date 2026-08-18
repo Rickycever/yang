@@ -7,6 +7,22 @@ tags: [更新日志, wiki管理, 知识库]
 
 # 更新日志
 
+## [2026-08-18] ingest | miaozhen | AdEff广告创意效果白皮书
+
+- raw/发布版-AdEff广告创意效果白皮书.pdf — 原始 PDF 已保存
+- miaozhen/sources/adeff-whitepaper-202608 — 来源页，五维度测量体系、六大核心发现、五维认知链路、创意优化路径与 SOP
+- miaozhen/concepts/adeff-five-dimensions — 新概念页：AdEff 五维度创意测量体系
+- miaozhen/overview — 更新主题概览，新增 AdEff 概念与来源
+- index.md — 更新秒针/明略科技主题描述与 Recently Added 条目
+
+## [2026-08-16] ingest | industry-research | 2026中国GEO行业白皮书
+
+- raw/【对内完整版】《2026中国GEO行业白皮书》.pdf — 原始 PDF 已保存
+- industry-research/sources/geo-whitepaper-2026 — 来源页，GEO 行业趋势、消费者洞察、AI 模型洞察、优化策略、标准规范五大章节
+- industry-research/concepts/geo — 新概念页：GEO 生成式引擎优化
+- industry-research/overview — 更新主题概览，新增 GEO 主题
+- index.md — 更新行业研究主题描述与 Recently Added 条目
+
 ## [2026-08-12] ingest | cross-border-marketing-aigc | STARNET Global Influencer Marketing 3.0 Deck
 
 - raw/SAT DECK.pdf — 原始 PDF 已保存

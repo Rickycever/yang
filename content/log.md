@@ -501,3 +501,10 @@ tags: [更新日志, wiki管理, 知识库]
 - 新实体页：adobe
 - 新概念页：content-production-order, trusted-content-flywheel
 - 原始文件保存至：raw/adobe/（含4张配图）
+
+## [2026-11-01] ingest | Claude memory export
+
+- 原始文件：raw/claude-memory-2026-11-01.zip
+- 新话题：kuaizi-fde、ai-customer-service、ricky-profile
+- 新概念页：kuaizi-atom、fde-delivery-model、video-commerce-loop、living-knowledge-base、safe-chatflow-delivery
+- 补充既有话题：OTGO、出海营销 AIGC

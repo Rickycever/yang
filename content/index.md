@@ -22,6 +22,33 @@ Personal knowledge wiki powered by Quartz + Claude Code.
 
 ## Topics
 
+### 筷子 FDE 与视频商业 (Kuaizi FDE & Video Commerce)
+Kuaizi's transition from SaaS to an AI Agent video-commerce tool stack, including Kuaizi Atom, FDE delivery, asset management, distribution, and data-feedback loops.
+
+<div class="zh-trans">筷子从 SaaS 走向 AI Agent 视频商业工具栈的转型，涵盖 Kuaizi Atom、FDE 交付、资产管理、分发和数据反馈闭环。</div>
+
+→ [[kuaizi-fde/overview|筷子 FDE 与视频商业全景概览]]
+
+---
+
+### AI 客服导购 (AI Customer Service & Shopping Guide)
+AI-native private-domain customer service and shopping-guide delivery for beauty and maternal-and-infant brands, centered on governed knowledge and safe ChatFlow workflows.
+
+<div class="zh-trans">面向美妆与母婴品牌的 AI-native 私域客服与导购交付，核心是受治理的知识体系与安全 ChatFlow 工作流。</div>
+
+→ [[ai-customer-service/overview|AI 客服导购全景概览]]
+
+---
+
+### Ricky 工作档案与交付偏好 (Ricky Work Profile)
+Reference context for professional domains, recurring tools, and delivery preferences extracted from the Claude memory export.
+
+<div class="zh-trans">从 Claude 记忆导出中沉淀的职业领域、常用工具和交付偏好参考上下文。</div>
+
+→ [[ricky-profile/overview|Ricky 工作档案与交付偏好]]
+
+---
+
 ### Palantir
 Data analytics and enterprise AI platform company. Key themes: FDE forward deployment model, RaaS (Results as a Service), value-sharing pricing, five-product matrix (AIP/Foundry/Gotham/Ontology/Apollo), NDR 134%.
 
